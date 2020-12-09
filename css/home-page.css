@@ -12,6 +12,8 @@
 @import './components/hero-home.css';
 @import './components/pricing.css';
 @import './components/testimonials.css';
+@import './components/features.css';
+
 
 /*
 ***********************************************
@@ -20,6 +22,21 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 */
 
 /* main style */
+h2 {
+    font-size: 30px;
+    color: #565656;
+    text-align: center;
+
+}
+h3 {
+    text-size-adjust: 14px;
+    color: #565656;
+}
+p {
+    text-size-adjust: 12px;
+    color: #dadada;
+    padding-top: 10px;
+}
 /* header */
 /* hero */
 /* features */
