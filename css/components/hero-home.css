@@ -1,0 +1,50 @@
+.container > .row.hero{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    height: 47vh; /*uzdejau laikinai hv, kad pasizureti kaip atrodys centravimas palei nuotraukas*/
+}
+   .row.hero > .hero-left {
+    align-self: center;
+    height: 80%;
+    }
+        .hero-left > .hero-header {
+            font-size: 40px;
+            line-height: 42px;
+            margin-bottom: 14px;
+        }
+        .hero-left > .hero-text {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        .hero-left > .hero-btns { 
+
+        }
+            .hero-left > .hero-btns > .hero-btn1 {
+                /*kaip suprantu btn imsim is kitos css failo, tai pakuriau klase prie kurios galima bus
+            prideti default btn ir papildomai sustailinti*/
+            margin-right: 10px;
+            }
+            .hero-left > .hero-btns > .hero-btn2 {
+                
+            }
+    .row.hero > .hero-right {
+        grid-column: 2/4;
+    } 
+        .hero-right > .hero-img1 {
+            width: 50%;
+            float: left;
+            height: 100%;
+        }
+            .hero-right > .hero-img1 > img {
+
+            }
+        .hero-right > .hero-img2 {
+            width: 50%;
+            float: left;
+            height: 100%;
+        }
+            .hero-right > .hero-img2 > img {
+
+            }
