@@ -4,6 +4,8 @@ ALL IMPORTS
 /* header */
 /* hero */
 /* features */
+import { renderOurServices } from './components/OurServices/renderOurServices.js';
+import { ourServicesData } from './Data/ourServicesData.js';
 /* app promo */
 /* app promo 2 */
 /* how works */
@@ -23,6 +25,7 @@ EXECUTION
 /* header */
 /* hero */
 /* features */
+renderOurServices('#our_services_block', ourServicesData);
 /* app promo */
 /* app promo 2 */
 /* how works */
