@@ -23,7 +23,29 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 /* header */
 /* hero */
 /* about */
+.triple {
+    display: grid;
+    grid-template-columns: 300px 300px 600px;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+p {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 400;
+    line-height: 26px;
+}
+p.margin {
+    margin-bottom: 26px;
+}
 /* about video */
+.double {
+    display: grid;
+    grid-template-columns: 600px 600px;
+}
 /* counter */
 /* services */
 /* projects */
