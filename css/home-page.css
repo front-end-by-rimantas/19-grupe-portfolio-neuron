@@ -51,6 +51,13 @@ p {
 /* counter */
 /* services */
 /* projects */
+.center {
+    text-align: center;
+}
+img.project {
+    height: 470px;
+    width: 373px;
+}
 /* news */
 /* partners */
 .container.partner {
