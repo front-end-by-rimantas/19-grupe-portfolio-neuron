@@ -22,33 +22,90 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 */
 
 /* main style */
+h2, h3 {
+    color: #333333;
+    line-height: 1.3;
+}
 h2 {
-    font-size: 30px;
-    color: #565656;
-    text-align: center;
-
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 26px;
 }
 h3 {
-    text-size-adjust: 14px;
-    color: #565656;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 p {
-    text-size-adjust: 12px;
-    color: #dadada;
-    padding-top: 10px;
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 26px;
+}
+.margin-0 {
+    margin: 0;
+
 }
 /* header */
 /* hero */
-/* features */
-/* app promo */
-/* app promo 2 */
-/* how works */
-/* gallery */
-/* testimonials */
-/* pricing */
-/* faq */
-/* team */
-/* app store */
-/* subscribe */
+/* about */
+.block {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #00000030;
+    margin-bottom: 40px;
+}
+    .block > img {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .block > h3 {
+        margin-bottom: 20px;
+    }
+    .block > p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .leftblock {
+        margin-top: -70px;
+    }
+.learnMore > p {
+    font-size: 16px;
+}
+    
+/* about video */
+/* counter */
+/* services */
+/* projects */
+.center {
+    text-align: center;
+}
+img.project {
+    height: 470px;
+    width: 373px;
+}
+/* news */
+/* partners */
+.container.partner {
+    background-image: url(../img/bg/partner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;
+    height: 200px;
+}
+.row.partner {
+    display: inline-block;
+    text-align: center;
+}
+img {
+    height: 35px;
+    width: 170px;
+    margin: 0 0 60px 20px;
+}
+/* how */
+/* blog */
 /* contact */
 /* footer */
+/* chat */
