@@ -88,6 +88,13 @@ body {
         .container > .row > .col-sm-10 { grid-column: auto / span 10; }
         .container > .row > .col-sm-11 { grid-column: auto / span 11; }
         .container > .row > .col-sm-12 { grid-column: auto / span 12; }
+
+        .container > .row > .col-sm-6 > .leftblock { /*About section left cards*/
+            margin-top: 0px;
+        }
+        .container > .row > .col-sm-6 > .block {
+            margin-bottom: 10px;
+        }
 }
 
 @media (max-width: 680px) {
@@ -109,4 +116,5 @@ body {
         .container > .row > .col-xs-10 { grid-column: auto / span 10; }
         .container > .row > .col-xs-11 { grid-column: auto / span 11; }
         .container > .row > .col-xs-12 { grid-column: auto / span 12; }
+        
 }
