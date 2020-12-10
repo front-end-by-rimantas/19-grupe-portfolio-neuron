@@ -116,7 +116,88 @@ img {
     background: linear-gradient(-41deg, #09c778, #01a0f9);
 }
 
+
 /* blog */
+
+.blog-card {
+    padding: 0;
+    border-radius: 0;
+    float: left;
+    box-shadow: 0 0 20px #00000030;
+}
+
+
+.blog-card > .blog-card-top img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+    .blog-card > .blog-card-bottom {
+        padding: 30px 25px;
+    }
+
+        .blog-card > .blog-card-bottom > .blog-info > li {
+            display: inline-block;
+            /* float: left; nenaudojame, nes antraste pradeda lipti*/
+            /* sudarome tarpus tarp info bloku */
+            padding: 0 10px 0 0;
+        }
+
+        /* user/author fontawesome */
+        .fa-calendar-check-o::before{
+            /* reiks prirasyti nuoroda*/
+            content: "fontaw.";
+        }
+
+        /* user/author fontawesome */
+        .fa-user-o::before{
+            /* reiks prirasyti nuoroda*/
+            content: "fontaw.";
+        }
+
+        .blog-card > .blog-card-bottom > .blog-info > li > span {
+            color: #30B2FA;
+            /* teksto dydi, stiliu ir r svori derinti su paragrafu ara priskirti bendra */
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .blog-card > .blog-card-bottom .blog-describ {
+            margin: 10px 0 0 0;
+        }
+
+
+            .blog-card > .blog-card-bottom > .blog-describ > h3 > a {
+                /* nuima teksto pazymejima */
+                text-decoration: none;
+                /* antrasciu teksto spalva, dydis, stilius yra bendras, reiks pakeisti... */
+                color: #343a40;
+                /* #09C778; */
+
+            }
+
+            .blog-card > .blog-card-bottom > .blog-describ > h3 > a:hover {
+                /* toks ispudis, kad  uzvedus rodykle ant antrastes spalva keiciasi po trupi */
+                color:#09C778;
+                /* filter: blur(0.5px); */
+                /* text-shadow: 0 0 40px #fff; */
+                transition: color 1s;
+            }
+
+            .blog-card > .blog-card-bottom > .blog-info {
+                /* priekiniu tasku nuemimas nuo listo */
+                list-style: outside none none;
+            }
+
+            .blog-card > .blog-card-bottom > .blog-describ > p {
+                /* font-weight: none; */
+
+                /* dydis turi buti bendras, veliau suderinti ir sia dali istrinti */
+                font-size: 15px;
+            }
+
+
 /* contact */
 /* footer */
 /* chat */
