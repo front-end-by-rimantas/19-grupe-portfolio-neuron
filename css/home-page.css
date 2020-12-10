@@ -74,6 +74,24 @@ p {
     
 /* about video */
 /* counter */
+.container.counter {
+    background: linear-gradient(0deg, #01a0f9, #09c778);
+}
+.shape {
+    background-image: url(../img/counter/count-shape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+.white {
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+    .white.last {
+        margin-top: 10px;
+    }
 /* services */
 /* projects */
 .center {
