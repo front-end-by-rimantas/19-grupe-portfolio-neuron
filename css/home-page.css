@@ -47,10 +47,42 @@ p {
 /* header */
 /* hero */
 /* about */
+.block {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #00000030;
+    margin-bottom: 40px;
+}
+    .block > img {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .block > h3 {
+        margin-bottom: 20px;
+    }
+    .block > p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .leftblock {
+        margin-top: -70px;
+    }
+.learnMore > p {
+    font-size: 16px;
+}
+    
 /* about video */
 /* counter */
 /* services */
 /* projects */
+.center {
+    text-align: center;
+}
+img.project {
+    height: 470px;
+    width: 373px;
+}
 /* news */
 /* partners */
 .container.partner {
