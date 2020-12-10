@@ -1,0 +1,45 @@
+.container > .row > .preheader.col-12 {
+    padding: 15px;
+}
+.leftPreHeader {
+    width: 50%;
+}
+    .leftPreHeader > .preheadercontacts {
+    width: 50%;
+    float: left;
+    }
+
+.rightPreHeader{
+
+    }
+    .rightPreHeader > .preheadersocials {
+        float: right;
+    }
+.container > .row > .header.col-12 {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+}
+    .header-logo {
+        float: left;
+    }
+    #neuron-white-logo {
+        margin: 0;
+    } 
+    .container > .row > .header > .headerMenu {
+
+    } 
+    .headerMenu > .main-menu {
+        float: left;
+        font-size: 20px;
+    }
+    .headerMenu > .header-icon-bar{
+        float: left;
+        margin-left: 30px;
+    }
+    .headerMenu > .main-menu > a {
+        margin-left: 20px;
+    }
+    .headerMenu > .header-icon-bar > a {
+        margin-left: 10px;
+    }
