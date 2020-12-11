@@ -1,0 +1,16 @@
+footer.container {
+    padding-top: 90px;
+    background-color: #eef1f8;
+}
+
+    .row > .p{
+     padding: 10px 20px;
+ }
+
+    h4 {
+     margin: 0px 0px 40px;
+ }
+
+ .row > .footer.link {
+ width: 100%;
+     }
