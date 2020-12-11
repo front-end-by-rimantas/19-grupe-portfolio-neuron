@@ -1,7 +1,7 @@
 ![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
-![Security Status](https://img.shields.io/badge/Meat-Chicken-yellow)
-![Gluten Status](https://img.shields.io/badge/Structure-Neuron-9cf)
-![Eco Status](https://img.shields.io/badge/Sponsor-Belovas-orange)
+![Meat Type](https://img.shields.io/badge/Meat-Chicken-yellow)
+![Structure Type](https://img.shields.io/badge/Structure-Neuron-green)
+![Sponsor](https://img.shields.io/badge/Sponsor-Belovas-orange)
 
 
 # Portfolio
