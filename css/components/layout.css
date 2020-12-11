@@ -98,6 +98,9 @@ body {
         .container > .row > .col-sm-6 > .block {
             margin-bottom: 10px;
         }
+        .container > .row > .hero-right.col-6 > .hero-img1 > img {
+            position: absolute;
+        }
 }
 
 @media (max-width: 680px) {
@@ -119,5 +122,8 @@ body {
         .container > .row > .col-xs-10 { grid-column: auto / span 10; }
         .container > .row > .col-xs-11 { grid-column: auto / span 11; }
         .container > .row > .col-xs-12 { grid-column: auto / span 12; }
-        
+
+        .container > .row > .hero-right {
+            display: none
+        }
 }
