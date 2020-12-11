@@ -5,11 +5,13 @@
             font-size: 40px;
             line-height: 42px;
             margin-bottom: 14px;
+            color: white;
         }
         .hero-left > .hero-text {
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 30px;
+            color: white;
         }
         .hero-left > .hero-btns { 
 
