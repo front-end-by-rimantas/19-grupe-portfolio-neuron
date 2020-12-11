@@ -119,6 +119,12 @@ img.project {
     height: 470px;
     width: 373px;
 }
+.animation {
+    height: 470px;
+    width: 1200px;
+    overflow: hidden;
+    transition: all 2s;
+}
 /* news */
 /* partners */
 .container.partner {
