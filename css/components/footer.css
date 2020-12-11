@@ -1,6 +1,6 @@
 footer.container {
     padding-top: 90px;
-    background-color: #eef1f8;
+    background-image: url(/img/bg/footer-bg.jpg);
 }
 
 
@@ -9,8 +9,10 @@ footer.container {
         font-weight: 30;
         text-transform: uppercase;
     }
-    .row > .p {
+    p {
         padding: 10px 20px;
+        size: 10px;
+        
     }
 
     a {
