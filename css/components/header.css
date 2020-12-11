@@ -1,6 +1,6 @@
 /*********************preHEADER*******************/
 .container > .row > .preheader.col-12 {
-    padding: 15px;
+        padding: 15px;
 }
 .leftPreHeader {
 }
@@ -16,23 +16,19 @@
         float: right;
     }
     /*********************HEADER*******************/
-.container > .row > .header.col-12 {
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 3fr 7fr;
 }
     /*********HEADER LOGO********/
-    .header-logo {
+    .headerLEFT > .header-logo {
         
     }
     #neuron-white-logo {
         margin: 0;
     } 
     /************HEADER MENU***********/
-    .container > .row > .header > .headerMenu {
-        text-align: right;
+    .container > .row > .headerRight > .headerMenu {
+        float: right;
         display: inline-block;
-    } 
+    }
     .headerMenu > .main-menu {
         display: inline-block;
     }
