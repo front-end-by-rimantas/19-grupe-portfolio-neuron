@@ -1,0 +1,170 @@
+/* Create class .btn which includes:
+btn white -> transparent
+btn transparent -> white
+btn learn more
+btn play (about video section)
+btn send (news subsection)
+btn submit now
+All buttons must have hover effects */
+
+.btn {
+    display: block;
+    float: left;
+    padding: 10px 30px;
+    /* is ::root reikės bendrą spalvą priskirt */
+    background: #ffffff;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    
+}
+
+/* HERO BUTTONS */
+
+    .btn.hero-btn1 {   
+        border-radius: 30px;
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        color: #01a0f9;
+        /* -property -duration -timing-function -delay */
+        transition: all 0.4s ease 0s;
+        }
+
+        .btn.hero-btn1:hover {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+    .btn.hero-btn2 {
+        margin-left: 10px;
+        border-radius: 30px;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        /* -property -duration -timing-function -delay */
+        transition: all 0.4s ease 0s;
+    }
+
+        .btn.hero-btn2:hover {
+            background-color: #ffffff;
+            color: #01a0f9;
+        }
+
+
+/* OTHER */
+
+.btn.btn-oval-grad {
+    position: relative;
+    border-radius: 30px;
+
+    /* border-radius: 30px; */
+    background-image: linear-gradient(-41deg,#09c778, #019ef9);
+    z-index: 1;
+}
+
+    .btn.btn-oval-grad::before {
+        position: absolute;
+        border-radius: 30px;
+        content: ""; /* butinas, nes kitaip kaip iterpti */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-image: linear-gradient(41deg, #09c878, #019ef9);
+        z-index: -1;
+
+        /* padarome sublyksejima, keiciant vidinio seselio skaidruma */
+        box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+
+        /* Sio elemento opacity sluoksnis siuo atzvilgiu atsiduria po kitu sluoksiu, kurio z-index:1.
+        Bet su Before iskialeme ji i prieki, o tuo metu jis yra skaidrus. Keičiantis skaidrumui, jis pasirodo :) */
+        opacity: 0;
+
+        /* -property -duration -timing-function -delay */
+        transition: all 0.7s ease 0s;
+    }
+
+        .btn-oval-grad:hover::before {
+            opacity: 1; 
+            box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+
+        }
+
+
+
+/* "LOGIN NOW" */
+.btn.btn-full-rect {
+    padding: 10px 30px;
+    background: linear-gradient(41deg, #09c778, #01a0f9);
+
+
+}
+
+
+/* pusiau kvad ir circle
+
+prie Subscribe For Newsletter (DOwnload puslapis)
+SUBMIT (balto fono -> i gradienta)
+*/
+
+
+/* Dazniausios formos. Su gradientu,  border-radius: didelis
+
+Hero dalyje:
+LEARN MORE - be gradiento
+JOIN NOW - be gradiento
+
+Kiti:
+READ MORE
+CREAT ACCOUNT
+SUBMIT/Submit
+DOWNLOAD NOW
+POST COMMENT
+REQUEST A DEMO
+CHECK IT OUT
+CHECK OUT
+VIEW CART
+ADD TO CART
+UPDATE CART
+APPLY CUPON
+CONTINUE TO PAYMENT
+LET'S START A CHAT
+Proceed to checkout
+
+tik paspaudus keiciasi:
+Machine Learning
+Deep Learning
+Artificial Intelligence
+*/
+
+
+/* circle:
+
+Enter your email (su rodykle i N-E, fontaw. Yra dvieju tipu rodyles)
+Video (video fontawesome)
+*/
+
+
+/* spalvotas,  border-radius: mazas
+
+BUY NOW (skirtingos spalvos: Standartinis, Basic, Beginner, Trainer, Startup)
+*/
+
+
+/* staciakampio formos
+
+LOGIN NOW (su gradientu)
+CREATE AN ACCOUNT (baltas/persvieciamas -> su gradientu)
+DESCRIPTION (sugradientu, nieko nedaro uzhovirinus)
+REVIEWS (baltas su gradientiniu border)
+
+SUBMIT NOW ! (baltas -> hoverinasi teksto spalva i gradientine sp.)
+SUBMIT NOW ! (tamsus -> hoverinasi teksto spalva)
+*/
+
+
+        
+        

@@ -1,4 +1,5 @@
 .container > .row.hero{
+    background-color: #01a0f9;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -18,17 +19,17 @@
             line-height: 30px;
             margin-bottom: 30px;
         }
-        .hero-left > .hero-btns { 
+        /* .hero-left > .hero-btns { 
 
-        }
-            .hero-left > .hero-btns > .hero-btn1 {
+        } */
+            /* .hero-left > .hero-btns > .hero-btn1 { */
                 /*kaip suprantu btn imsim is kitos css failo, tai pakuriau klase prie kurios galima bus
             prideti default btn ir papildomai sustailinti*/
-            margin-right: 10px;
-            }
+            /* margin-right: 10px; */
+            /* }
             .hero-left > .hero-btns > .hero-btn2 {
                 
-            }
+            } */
     .row.hero > .hero-right {
         grid-column: 2/4;
     } 
