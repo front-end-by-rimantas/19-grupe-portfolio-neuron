@@ -45,6 +45,12 @@ p {
     margin: 0;
 }
 /* header */
+body > .bg {
+    background-image: url(../img/slider/h1-s1.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 140px;
+}
 /* hero */
 /* about */
 .block {
