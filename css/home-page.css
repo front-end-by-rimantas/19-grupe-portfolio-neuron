@@ -120,6 +120,18 @@ img.project {
     width: 373px;
 }
 /* news */
+img.envelope {
+    height: 200px; 
+    width: 300px; 
+    margin: 0;
+}
+.img {
+    padding: 30px;
+    align-content: center; 
+} 
+form.col-8 {
+    margin-left: 15px;
+}
 /* partners */
 .container.partner {
     background-image: url(../img/bg/partner-bg.jpg);
