@@ -40,6 +40,13 @@
         display: grid;
         grid-template-columns: 3fr 9fr;
     }
+    /*    top: 0;  *****Galivas variantas sticky padarimui headerio + su js papildomos klases priskirimas*****
+    width: 100%;
+    background-color: aqua;
+    padding: 10px 50px;
+    position: fixed;
+    left: 0px;
+    z-index: 999;/*
 
     /*********HEADER LOGO********/
     .headerLEFT > .header-logo {
@@ -51,6 +58,7 @@
     /************HEADER MENU***********/
     .container > .row .headerRight {
         text-align: right;
+        align-self: center;
     }
     .container > .row > .headerRight > .headerMenu {
     
