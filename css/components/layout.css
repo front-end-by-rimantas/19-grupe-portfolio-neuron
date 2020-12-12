@@ -92,6 +92,10 @@ body {
         .container > .row > .col-sm-11 { grid-column: auto / span 11; }
         .container > .row > .col-sm-12 { grid-column: auto / span 12; }
 
+        .container > .row > .preHEAD.Prehead-grid-7 { /*preHeaderio responsive*/
+            grid-template-columns: 7fr 5fr;
+        }
+
         .container > .row > .col-sm-6 > .leftblock { /*About section left cards*/
             margin-top: 0px;
         }
@@ -125,5 +129,8 @@ body {
 
         .container > .row > .hero-right {
             display: none
+        }
+        .container > .row > .preHEAD.Prehead-grid-7 {
+            display: none;
         }
 }
