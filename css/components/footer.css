@@ -15,7 +15,7 @@ footer.container {
         
     }
 
-    a {
+    .footer-link {
         display: block;
         text-decoration: none;
         color:grey;
