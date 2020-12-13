@@ -113,9 +113,11 @@ body > .bg {
     text-align: center;
     margin-top: 100px;
 }
-    .white.last {
-        margin-top: 10px;
-    }
+.last {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
 /* services */
 .center {
     text-align: center;
