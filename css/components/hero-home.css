@@ -1,23 +1,17 @@
-.container > .row.hero{
-    background-color: #01a0f9;
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    height: 47vh; /*uzdejau laikinai hv, kad pasizureti kaip atrodys centravimas palei nuotraukas*/
+.container > .row > .hero-left {
+    margin: auto;
 }
-   .row.hero > .hero-left {
-    align-self: center;
-    height: 80%;
-    }
         .hero-left > .hero-header {
             font-size: 40px;
             line-height: 42px;
             margin-bottom: 14px;
+            color: white;
         }
         .hero-left > .hero-text {
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 30px;
+            color: white;
         }
         /* .hero-left > .hero-btns { 
 
@@ -29,23 +23,31 @@
             /* }
             .hero-left > .hero-btns > .hero-btn2 {
                 
-            } */
-    .row.hero > .hero-right {
-        grid-column: 2/4;
-    } 
+            }*/
+            
         .hero-right > .hero-img1 {
             width: 50%;
             float: left;
             height: 100%;
+            position: relative;
         }
             .hero-right > .hero-img1 > img {
-
+                width: 100%;
+                margin: 0;
+                height: auto;
+                left: 0;
+                bottom: 0;
             }
         .hero-right > .hero-img2 {
             width: 50%;
             float: left;
             height: 100%;
+            position: relative;
         }
             .hero-right > .hero-img2 > img {
-
+                width: 100%;
+                height: auto;
+                position: absolute;
+                left: 0;
+                bottom: 0;
             }

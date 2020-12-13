@@ -10,18 +10,68 @@
 </head>
 
 <body>
+    <div class="bg">
     <!-- header begin -->
     <header class="container">
         <div class="row">
-            HEADER: logo + nav
+                <div class="leftPreHeader col-6">
+                    <div class="preheadercontacts">
+                        <i>pic</i>
+                        <a href="mailto:vardenis.pavardenis@gmail.com">info@AwesomeNeuron.com</a>
+                    </div>
+                    <div class="preheadercontacts">
+                        <i>pic</i>
+                        <a href="tel:+37060784616">(+370)60784616</a>
+                    </div>
+                </div>
+                <div class="rightPreHeader col-6">
+                    <nav class="preheadersocials">
+                        <a href="#">
+                            <i>FB</i>
+                        </a>
+                        <a href="#">
+                            <i>G+</i>
+                        </a>
+                        <a href="#">
+                            <i>Tw</i>
+                        </a>
+                        <a href="#">
+                            <i>IN</i>
+                        </a>
+                    </nav>
+                </div>
+        <div class="headerLEFT col-3">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img id="neuron-white-logo" src="./img/logo/logo-white.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <div class="headerRight col-9">
+            <div class="headerMenu">
+                <div class="main-menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="header-icon-bar">
+                    <a href="#"><i>Bag</i></a>
+                    <a href="#"><i>search</i></a>
+                </div>
+            </div>
+        </div>
         </div>
     </header>
     <!-- header end -->
 
     <!-- section HERO begin -->
     <section class="container">
-        <div class="row hero">
-            <div class="hero-left">
+        <div class="row">
+            <div class="hero-left col-6 col-xs-12">
                 <h1 class="hero-header">AI & Machine Learning Products Creators</h1>
                 <p class="hero-text">Innovative machine learning products and services <br>on a trusted platform.</p>
                 <div class="hero-btns">
@@ -29,16 +79,17 @@
                     <a href="#" class="btn hero-btn2">Join Now</a>
                 </div>
             </div>
-            <div class="hero-right">
+            <div class="hero-right col-6">
                 <div class="hero-img1">
-                    <img data-hero-image="robot" src="#" alt="robot">
+                    <img class="margin-0" data-hero-image="robot" src="./img/slider/sl1-ly1.png" alt="robot">
                 </div>
                 <div class="hero-img2">
-                    <img data-hero-image="2guys" src="#" alt="2guys">
+                    <img class="margin-0" data-hero-image="2guys" src="./img/slider/sl1-ly2.png" alt="2guys">
                 </div>
             </div>
         </div>
     </section>
+</div>
     <!-- section HERO end -->
 
     <!-- section ABOUT begin -->
@@ -144,10 +195,50 @@
     <!-- section COUNTER end -->
 
     <!-- section SERVICES begin -->
-    <section class="container">
-        <div class="row">
-            SERVICES
-        </div>
+    <section class="container grey">
+            <div class="row">
+                    <h2 class="col-12 center">Our Core Services</h2>     
+            </div>
+            <div class="row" id="our_services_block">
+                <div class="col-4 col-md-6 col-sm-9 col-xs-12">
+                    <div class="block">
+                    <h3>Personal assitants</h3> 
+                    <p> Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional</p>
+                    </div>
+                    </div>
+                <div class="col-4 col-md-6 col-sm-9 col-xs-12">
+                    <div class="block">
+                        <h3>Videos Surveillance</h3>
+                        <p> Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional</p>
+                    </div>
+                    </div>
+                <div class="col-4 col-md-6 col-sm-9 col-xs-12">
+                    <div class="block">
+                        <h3>Social Media Services</h3>
+                        <p> Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-sm-9 col-xs-12">
+                    <div class="block">
+                        <h3>Online Customer Support</h3>
+                        <p> Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-sm-9 col-xs-12">
+                    <div class="block">
+                        <h3>Search Engine Result Refining</h3>
+                        <p> Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-6 col-sm-9 col-xs-12">
+                    <div class="block">
+                        <h3>Online Fraud Detection</h3>
+                        <p> Capitalize on low hanging fruit to identify a ball park value added activity to beta test. Override the digital divide with additional</p>
+                    </div>
+                </div>
+            </div>
+        
+    
     </section>
     <!-- section SERVICES end -->
 
@@ -430,9 +521,46 @@
     <!-- footer begin -->
     <footer class="container">
         <div class="row">
-            FOOTER
+            <div class="col-3">
+                <img src="./img/logo/logo.png" alt="logo-footer">
+                <p>Lorem ipsum dolor sit amet, conse turini adipiscing elit, sed do eiusmod tempor in cididunt ut labore.</p>
+                <div class="social"></div>
+            </div>
+            <div class="col-3">
+                <div class="text-underline"></div>
+                <h4>Work hours</h4>
+                <p>10.00 AM - 6.00 PM , Monday - Saturday</p>
+                <p>Our Support and Sales team is available 24 * 7 to answer your queries</p>
+            </div>
+            <div class="col-3">
+                <div class="text-underline"></div>
+                <h4>Navigate</h4>
+                <a class="footer link" href="about.html">About US</a>
+                <a class="footer-link" href="features.html">Features</a>
+                <a class="footer-link" href="mobileapp.html">Mobile App</a>
+                <a class="footer-link" href="softwaredemo.html">Software Demo</a>
+                <a class="footer-link" href="blog.html">Blog</a>
+                <a class="footer-link" href="team.html">Team</a>
+                <a class="footer-link" href="ChatBot.html">ChatBot</a>
+            
+            </div>
+            <div class="col-3">
+                <div class="text-underline"></div>
+                <h4>Privacy & TOC</h4>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="Register.html">Register</a>
+                <a href="blog.html">Blog</a>
+                            
+            </div>
+               <div class="col-12 center">
+                   <p>Copyright 2019 FrontEndByRM</p>
+                </div> 
         </div>
     </footer>
+
+        
     <!-- footer end -->
 
     <script src="./js/main-home.js" type="module"></script>
