@@ -148,9 +148,15 @@ img.project {
     width: 373px;
 }
 .animation {
+    border: 1px hidden #fff;
     height: 470px;
     width: 1200px;
     overflow: hidden;
+}
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
     transition: all 2s;
 }
 /* news */
