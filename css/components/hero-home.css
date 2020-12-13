@@ -30,6 +30,7 @@
             float: left;
             height: 100%;
             position: relative;
+            
         }
             .hero-right > .hero-img1 > img {
                 width: 100%;
@@ -37,6 +38,9 @@
                 height: auto;
                 left: 0;
                 bottom: 0;
+                animation-name: robot;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
             }
         .hero-right > .hero-img2 {
             width: 50%;
@@ -51,3 +55,17 @@
                 left: 0;
                 bottom: 0;
             }
+    @keyframes robot {
+        0%{
+            transform: translatey(0px);
+        }
+        45% {
+            transform: translatey(-50px);
+        }
+        55% {
+            transform: translatey(-50px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
