@@ -6,20 +6,23 @@ btn play (about video section)
 btn send (news subsection)
 btn submit now
 All buttons must have hover effects */
-/**/
-.btn,.btn1 {
-    display: block;
+
+.btn {
+    display: inline-block;
     float: left;
     padding: 10px 30px;
     /* is ::root reikės bendrą spalvą priskirt */
     background: #ffffff;
     color: #ffffff;
-    font-size: 13px;
+    text-decoration: none;
+
+    font-size: 16px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     outline: none;
     border: 1px solid #ffffff;
+    cursor: pointer;
     
 }
 
@@ -445,6 +448,32 @@ TRAINER, STARTUP */
 
 }
 
+
+.btn.btn-rect {
+    padding: 1px 6px;
+    border: none;
+    background-color: #019ef9;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* .row .news {
+    position: relative;
+} */
+
+
+
+.btn.btn-circle {
+
+    padding: 10px;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
+}
 
 
 /* "LOGIN NOW" */
