@@ -16,6 +16,8 @@ ALL IMPORTS
 /* footer */
 /* chat */
 
+import { Counter } from "./Counter";
+
 /***************
 EXECUTION
 ****************/
@@ -24,6 +26,11 @@ EXECUTION
 /* about */
 /* about video */
 /* counter */
+function renderCounter(selector) {
+    const DOM = document.querySelector(selector);
+    const counter = new Counter;
+    counter.render(); 
+}
 /* services */
 /* projects */
 /* news */
