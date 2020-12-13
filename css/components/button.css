@@ -428,16 +428,48 @@ TRAINER, STARTUP */
 
 
 
-.btn.btn-circle {
+    .btn.btn-circle {
+        position: relative;
+        padding: 10px;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size:0;
+        z-index:1;
+        background: linear-gradient(-41deg, #09c778, #01a0f9);
+    }
 
-    padding: 10px;
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    .btn.btn-circle::before {
+        position: absolute;
+        border-radius: 50%;
+        content: ""; /* butinas, nes kitaip kaip iterpti */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
 
-    background: linear-gradient(-41deg, #09c778, #01a0f9);
-}
+        background-image: linear-gradient(41deg, #09c878, #019ef9);
+        z-index: -1;
+
+        /* padarome sublyksejima, keiciant vidinio seselio skaidruma */
+        box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+
+        /* Sio elemento opacity sluoksnis siuo atzvilgiu atsiduria po kitu sluoksiu, kurio z-index:1.
+        Bet su Before iskialeme ji i prieki, o tuo metu jis yra skaidrus. Keičiantis skaidrumui, jis pasirodo :) */
+        opacity: 0;
+
+        /* -property -duration -timing-function -delay */
+        transition: all 0.7s ease 0s;
+    }
+
+        .btn.btn-circle:hover::before {
+            opacity: 1; 
+            box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+
+        }
+
+
 
 
 /* "LOGIN NOW" */
@@ -462,18 +494,6 @@ TRAINER, STARTUP */
     position: relative;
 } */
 
-
-
-.btn.btn-circle {
-
-    padding: 10px;
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    background: linear-gradient(-41deg, #09c778, #01a0f9);
-}
 
 
 /* "LOGIN NOW" */
