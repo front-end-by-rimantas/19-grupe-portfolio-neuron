@@ -25,18 +25,24 @@ EXECUTION
 /* about */
 /* about video */
 /* counter */
-const speed = 500;
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
 
-document.querySelectorAll('#counter').forEach(counter => {
-    const counterNumber = +counter.getAttribute('countTo');
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
 
-    const updateCount = setInterval(() => {
-        const divConent = +counter.innerText;
-        const increaseBy = counterNumber / speed;
-        divConent < counterNumber ? 
-        counter.innerHTML += Math.ceil(divConent + increaseBy) :
-        clearInterval(updateCount);
-    }, 1)
+        const inc = target / speed;
+
+        if(count < target) {
+            counter.innerText = count + inc;
+            setTimeout(updateCount, 1);
+        } else {
+            count.innerText = target;
+        }
+    }
+    updateCount();
 });
 
 /* services */
