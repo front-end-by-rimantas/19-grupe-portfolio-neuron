@@ -92,11 +92,18 @@ body {
         .container > .row > .col-sm-11 { grid-column: auto / span 11; }
         .container > .row > .col-sm-12 { grid-column: auto / span 12; }
 
+        .container > .row > .preHEAD.Prehead-grid-7 { /*preHeaderio responsive*/
+            grid-template-columns: 7fr 5fr;
+        }
+
         .container > .row > .col-sm-6 > .leftblock { /*About section left cards*/
             margin-top: 0px;
         }
         .container > .row > .col-sm-6 > .block {
             margin-bottom: 10px;
+        }
+        .container > .row > .hero-right.col-6 > .hero-img1 > img {
+            position: absolute;
         }
 }
 
@@ -119,5 +126,11 @@ body {
         .container > .row > .col-xs-10 { grid-column: auto / span 10; }
         .container > .row > .col-xs-11 { grid-column: auto / span 11; }
         .container > .row > .col-xs-12 { grid-column: auto / span 12; }
-        
+
+        .container > .row > .hero-right {
+            display: none
+        }
+        .container > .row > .preHEAD.Prehead-grid-7 {
+            display: none;
+        }
 }

@@ -45,6 +45,12 @@ p {
     margin: 0;
 }
 /* header */
+body > .bg {
+    background-image: url(../img/slider/h1-s1.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 140px;
+}
 /* hero */
 /* about */
 .block {
@@ -111,6 +117,28 @@ p {
         margin-top: 10px;
     }
 /* services */
+.center {
+    text-align: center;
+    padding-top: 40px;
+}
+.grey {
+    background-color: #eff1f8;
+}
+.block {
+    background-color: white;
+}
+        .block:hover {
+            background: linear-gradient(122deg, rgba(4,160,251,1) 25%, rgba(10,197,121,1) 79%);
+            transition: 1s;
+        }
+
+        .block:hover > p {
+            color: #fff
+        }
+        .block:hover > h3 {
+            color: #fff
+        }
+
 /* projects */
 .center {
     text-align: center;
