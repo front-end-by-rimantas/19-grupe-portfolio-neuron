@@ -256,5 +256,8 @@ img {
 
 
 /* contact */
+.container.contact {
+    background-image: url(../img/bg/contact-bg.jpg);
+}
 /* footer */
 /* chat */
