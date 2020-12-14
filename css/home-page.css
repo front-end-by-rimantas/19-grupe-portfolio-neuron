@@ -107,6 +107,15 @@ body > .bg {
     background-repeat: no-repeat;
     width: 200px;
     height: 160px;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+}
+.insideShape {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .white {
     color: #fff;
