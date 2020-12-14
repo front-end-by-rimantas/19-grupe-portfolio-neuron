@@ -9,11 +9,8 @@ footer.container {
         font-weight: 30;
         text-transform: uppercase;
     }
-    p {
-
-        size: 10px;
-        color:grey;
-        
+    p.footer {
+        font-size: 15px;  
     }
 
     .footer-link {
