@@ -256,5 +256,19 @@ img {
 
 
 /* contact */
+.contact::placeholder,
+textarea::placeholder {
+    color: #fff;
+    font-size: 20px;
+}
+.container.contact {
+    background-image: url(../img/bg/contact-bg.jpg);
+}
+.left.column {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: -80px;
+}
 /* footer */
 /* chat */
