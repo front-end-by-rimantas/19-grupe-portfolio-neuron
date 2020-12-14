@@ -257,20 +257,8 @@ img {
 
 /* contact */
 /* footer */
- .footer-title {
-    content: "";
-    width: 50px;
-    height: 5px;
-    background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
-    margin-top: -50px;
-    margin-bottom: 50px;
-    left: 2px;
-    
-}
- .footer-navigate > .left-column {
- width: 60%;
-}
- .footer-navigate > .right-column {
- width: 40%;
-}
+ footer.container > .row p {
+     font-size: 16px;
+ }
+
 /* chat */
