@@ -9,9 +9,8 @@ footer.container {
         font-weight: 30;
         text-transform: uppercase;
     }
-    p {
-        padding: 10px 20px;
-        size: 10px;
+    p.footer {
+        font-size: 15px;
         
     }
 
