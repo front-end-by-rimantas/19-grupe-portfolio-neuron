@@ -16,6 +16,7 @@ import { aboutCardsRender } from './components/aboutCardsRender/aboutCardsRender
 /* blog */
 /* contact */
 /* footer */
+import { copyRightRender } from './components/copyRightRender/copyRightRender.js';
 /* chat */
 
 
@@ -25,7 +26,7 @@ EXECUTION
 /* header */
 /* hero */
 /* about */
-aboutCardsRender('.testclass1', '.testclass2', aboutCardsData)
+aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);
 
 /* about video */
 /* counter */
@@ -57,4 +58,5 @@ counters.forEach(counter => {
 /* blog */
 /* contact */
 /* footer */
+copyRightRender('.copyRight');
 /* chat */
