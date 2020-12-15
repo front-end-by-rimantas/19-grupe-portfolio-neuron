@@ -21,3 +21,10 @@ footer.container {
         padding: 5px;
 
         }
+        .copyRight > p > a {
+            text-decoration: none;
+            color: #666666;
+        }
+        .copyRight > p > a:hover {
+            color: blue;
+        }
