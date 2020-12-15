@@ -5,13 +5,12 @@ footer.container {
 
 
     h4 {
-        margin: 0px 0px 40px;
+        margin: 0px 0px 20px;
         font-weight: 30;
         text-transform: uppercase;
     }
     p.footer {
-        font-size: 15px;
-        
+        font-size: 15px;  
     }
 
     .footer-link {
@@ -20,4 +19,27 @@ footer.container {
         color:grey;
         padding: 5px;
 
+        }
+
+        .footer-img {
+            width: 100px;
+            height: 20px;
+            margin: 0px 0px 20px;
+        }
+
+        .footer-title {
+            content: "";
+            width: 50px;
+            height: 5px;
+            background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+            margin-top: -28px;
+            margin-bottom: 25px;
+            left: 2px;
+            
+        }
+         .footer-navigate > .left-column {
+         width: 60%;
+        }
+         .footer-navigate > .right-column {
+         width: 40%;
         }
