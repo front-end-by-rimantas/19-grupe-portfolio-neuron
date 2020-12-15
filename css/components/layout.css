@@ -99,8 +99,11 @@ body {
         .container > .row > .col-sm-6 > .leftblock { /*About section left cards*/
             margin-top: 0px;
         }
+        .container > .row.aboutGap {
+            gap: 40px;
+        }
         .container > .row > .col-sm-6 > .block {
-            margin-bottom: 10px;
+            margin-bottom: 40px;
         }
         .container > .row > .hero-right.col-6 > .hero-img1 > img {
             position: absolute;
@@ -132,5 +135,11 @@ body {
         }
         .container > .row > .preHEAD.Prehead-grid-7 {
             display: none;
+        }
+        .container > .row > .HEAD.col-xs-12 {
+            margin-top: 15px;
+        }
+        .container > .row.aboutGap {
+            gap: 0 10px;
         }
 }
