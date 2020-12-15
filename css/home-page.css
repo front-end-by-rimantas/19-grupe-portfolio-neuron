@@ -302,8 +302,5 @@ textarea::placeholder {
     margin-top: -80px;
 }
 /* footer */
- footer.container > .row p {
-     font-size: 16px;
- }
-
+ 
 /* chat */
