@@ -1,8 +1,15 @@
-footer.container {
-    padding-top: 90px;
-    background-image: url(../../img/bg/footer-bg.jpg);
+.bg.footer {
+    position: relative;
+    padding-top: 95px;
+    background: url(../../img/bg/footer-bg.jpg);
+    margin-bottom: 0;
+    height: auto;
 }
-i.fa {
+.footer.container {
+    padding-top: 90px;
+    padding-bottom: 0;
+}
+i.footer.fa {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -38,13 +45,19 @@ i.fa {
         }
 
         .footer-title {
+            position: relative;
+        }
+
+        .footer-title::after {
             content: "";
+            position: absolute;
             width: 50px;
             height: 5px;
             background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
-            margin-top: -28px;
-            margin-bottom: 25px;
-            left: 2px;
+            top: 10px;
+            bottom: 6px;
+            left: 1px;
+            z-index: -1;
         }
         .left-column {
         float: left;
@@ -54,6 +67,10 @@ i.fa {
         float: left;
         width: 40%;
         }
+        .f-bottom {
+            border-top: 1px solid #e3e5ea;
+        }
+        
         .copyRight > p > a {
             text-decoration: none;
             color: #666666;
