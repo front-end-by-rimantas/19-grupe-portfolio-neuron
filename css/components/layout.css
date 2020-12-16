@@ -157,4 +157,8 @@ body {
         .container > .row.aboutGap {
             gap: 0 10px;
         }
+        .shape {
+            margin-left: 180px;
+            margin-top: 40px;
+        }
 }
