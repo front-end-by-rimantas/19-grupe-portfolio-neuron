@@ -26,8 +26,7 @@ i.footer.fa {
 }
 
     h4 {
-        margin: 0px 0px 20px;
-        font-weight: 30;
+        margin: 0px 0px 30px;
         text-transform: uppercase;
     }
     p.footer {
@@ -73,6 +72,9 @@ i.footer.fa {
         }
         .f-bottom {
             border-top: 1px solid #e3e5ea;
+        }
+        img.footer {
+            margin-bottom: 30px;
         }
         
         .copyRight > p > a {
