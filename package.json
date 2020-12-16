@@ -21,5 +21,8 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "number-counter": "^1.0.3"
   }
 }

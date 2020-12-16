@@ -53,6 +53,8 @@ body > .bg {
 }
 /* hero */
 /* about */
+
+/* ne sioje vietoje irasyta */
 .block {
     padding: 20px;
     border-radius: 20px;
@@ -72,10 +74,13 @@ body > .bg {
     .leftblock {
         margin-top: -70px;
     }
-.learnMore > /*p {
-    font-size: 16px;
-}*/
-    
+
+
+.learnMore > .btn > a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* about video */
 .aboutVideo {
     margin: 50px 0;

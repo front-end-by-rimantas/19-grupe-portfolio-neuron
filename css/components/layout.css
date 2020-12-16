@@ -92,14 +92,28 @@ body {
         .container > .row > .col-sm-11 { grid-column: auto / span 11; }
         .container > .row > .col-sm-12 { grid-column: auto / span 12; }
 
+        .container > .row > .preHEAD.Prehead-grid-7 { /*preHeaderio responsive*/
+            grid-template-columns: 7fr 5fr;
+        }
+
         .container > .row > .col-sm-6 > .leftblock { /*About section left cards*/
             margin-top: 0px;
         }
+        .container > .row.aboutGap {
+            gap: 40px;
+        }
         .container > .row > .col-sm-6 > .block {
-            margin-bottom: 10px;
+            margin-bottom: 40px;
         }
         .container > .row > .hero-right.col-6 > .hero-img1 > img {
             position: absolute;
+        }
+        div.up {
+            grid-row: 1/2;
+            margin-bottom: 50px;
+        }
+        div.down {
+            grid-row: 2/3;
         }
 }
 
@@ -125,5 +139,22 @@ body {
 
         .container > .row > .hero-right {
             display: none
+        }
+        .container > .row > .preHEAD.Prehead-grid-7 {
+            display: none;
+        }
+
+        div.up {
+            grid-row: 1/2;
+            margin-bottom: 50px;
+        }
+        div.down {
+            grid-row: 2/3;
+
+        .container > .row > .HEAD.col-xs-12 {
+            margin-top: 15px;
+        }
+        .container > .row.aboutGap {
+            gap: 0 10px;
         }
 }

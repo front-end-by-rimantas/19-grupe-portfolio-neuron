@@ -5,41 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="./img/logo/Favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/home-page.css">
     <link rel="stylesheet" href="./css/components/font-awesome.min.css">
 </head>
-
 <body>
     <div class="bg">
     <!-- header begin -->
     <header class="container">
         <div class="row">
-                <div class="leftPreHeader col-6">
+            <div class="preHEAD col-12 Prehead-grid-7">
+                <div class="leftPreHeader">
                     <div class="preheadercontacts">
-                        <i>pic</i>
+                        <i class="fa fa-envelope-o" style="color: white;"></i>
                         <a href="mailto:vardenis.pavardenis@gmail.com">info@AwesomeNeuron.com</a>
                     </div>
                     <div class="preheadercontacts">
-                        <i>pic</i>
-                        <a href="tel:+37060784616">(+370)60784616</a>
+                        <i class="fa fa-phone" style="color: white;"></i>
+                        <a href="tel:+37060784616">(+370) 
+                            
+                            
+                            60784616</a>
                     </div>
                 </div>
-                <div class="rightPreHeader col-6">
+                <div class="rightPreHeader">
                     <nav class="preheadersocials">
                         <a href="#">
-                            <i>FB</i>
+                            <i class="fa fa-facebook"></i>
                         </a>
                         <a href="#">
-                            <i>G+</i>
+                            <i class="fa fa-google-plus"></i>
                         </a>
                         <a href="#">
-                            <i>Tw</i>
+                            <i class="fa fa-twitter"></i>
                         </a>
                         <a href="#">
-                            <i>IN</i>
+                            <i class="fa fa-linkedin"></i>
                         </a>
                     </nav>
                 </div>
+            </div>
+        <div class="HEAD col-12 col-xs-12">
         <div class="headerLEFT col-3">
             <div class="header-logo">
                 <a href="index.html">
@@ -64,6 +70,7 @@
                 </div>
             </div>
         </div>
+    </div>
         </div>
     </header>
     <!-- header end -->
@@ -94,30 +101,10 @@
 
     <!-- section ABOUT begin -->
     <section class="container">
-        <div class="row">
-            <div class="col-3 col-sm-6 col-xs-12">
-                <div class="block leftblock">
-                    <img src="#" alt="brain1">
-                    <h3>Advanced Programing</h3>
-                    <p class="margin-0">Find out what's working and what's not<br>Dig your data to find</p>
-                </div>
-                <div class="block">
-                    <img src="#" alt="chipset">
-                    <h3>AI Chippest</h3>
-                    <p class="margin-0">Find out what's working and what's not<br>Dig your data to find</p>
-                </div>
+        <div class="row aboutGap" id="testid">
+            <div class="col-3 col-sm-6 col-xs-12 testclass1">
             </div>
-            <div class="col-3 col-sm-6 col-xs-12">
-                <div class="block">
-                    <img src="#" alt="brain2">
-                    <h3>Cloud AI integration</h3>
-                    <p class="margin-0">Find out what's working and what's not<br>Dig your data to find</p>
-                </div>
-                <div class="block">
-                    <img src="#" alt="brain2">
-                    <h3>Robotic Arm</h3>
-                    <p class="margin-0">Find out what's working and what's not<br>Dig your data to find</p>
-                </div>
+            <div class="col-3 col-sm-6 col-xs-12 testclass2">
             </div>
             <div class="col-6 col-sm-12">
                 <div class="learnMore">
@@ -139,26 +126,21 @@
     <!-- section ABOUT VIDEO begin -->
     <section class="container">
         <div class="row noGap">
-            <div class="col-6 col-sm-12 ap">
+            <div class="col-6 col-sm-12 ap down">
                 <div class="aboutVideo">
-                    <h2>Power Your Creativity With Artificial Intelligence</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                     Blanditiis consectetur odit, cumque dignissimos consequatur earum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                     Ligendi ratione consectetur nihil temporibus. Libero eaque deserunt asperiores officiis optio laboriosam. 
-                     Fugiat, assumenda?</p>
-                     <!-- <nav> -->
+                    <h2>We Create The Most Realistic Artificial Intelligence</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti ae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem pora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p>
+                     <nav>
                      <div class="aboutbottom">
                          <a class="btn btn-oval-standart btn-hover-side" href="#">Learn More</a>
                          <div class="btn btn-video">
                             <i href="" class="icon fa fa-play-circle-o"></i> 
                             <a class="popup-video" href="#"></a>
                          </div>
-                         
-                    <!-- </nav> -->
                 </div>
             </div>
-            <div class="col-6 col-sm-12 col-md-6">
+            <div class="col-6 col-sm-12 col-md-6 up">
                 <div class="aboutvideoimgBox">
                     <img class="aboutvideoimg" src="./img/about/about-video-part.png" alt="">
                 </div>
@@ -168,30 +150,38 @@
     <!-- section ABOUT VIDEO end -->
 
     <!-- section COUNTER begin -->
-    <section class="container counter">
+    <section class="container count">
         <div class="row">
             <div class="col-3">
-                <div class="shape">
-                    <div class="white">6000 +</div>
-                    <div class="white last">Complete Projects</div>
+                <div class="shape col-3">
+                    <div class="insideShape">
+                    <div class="white counter" data-target="6000">0</div>
+                    <div class="last">Complete Projects</div>
+                </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="shape">
-                    <div class="white">400 +</div>
-                    <div class="white last">NLP Experts</div>
+                    <div class="insideShape">
+                    <div class="white counter" data-target="400">0</div>
+                    <div class="last">NLP Experts</div>
+                </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="shape">
-                    <div class="white">3500 +</div>
-                    <div class="white last">Satisfied Clients</div>
+                    <div class="insideShape">
+                    <div class="white counter" data-target="3500">0</div>
+                    <div class="last">Satisfied Clients</div>
+                </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="shape">
-                    <div class="white">8000 +</div>
-                    <div class="white last">Industries Served</div>
+                    <div class="insideShape">
+                    <div class="white counter" data-target="8000">0</div>
+                    <div class="last">Industries Served</div>
+                </div>
                 </div>
             </div>
         </div>
@@ -247,6 +237,7 @@
     <!-- section SERVICES end -->
 
     <!-- section PROJECTS begin -->
+    <div>
     <section class="container">
         <div class="row"> 
             <!-- kai bus sumerginti ankstesni pull requestai, susistailins -->
@@ -266,7 +257,7 @@
 
     <!-- section NEWS begin -->
     <section class="container">
-        <div class="row">
+        <div class="row block-news">
             <i class="col-4"></i> <!-- ka darysim su sitais, karpysim ar ieskosim ikonu? -->
             <form class="col-8">
                 <h2>Don't Miss Our News And Updates!</h2>
@@ -278,23 +269,24 @@
             </form>
         </div>
     </section>
+    </div>
     <!-- section NEWS end -->
 
     <!-- section PARTNERS begin -->
     <section class="container partner">
-        <div class="row partner">
+        <div class="row partner">            
             <div>
-                <a href="#"><img src="./img/partner/1.png" alt="Progeny"></a>
-                <a href="#"><img src="./img/partner/2.png" alt="Porello"></a>
-                <a href="#"><img src="./img/partner/3.png" alt="Pro-West"></a>
-                <a href="#"><img src="./img/partner/4.png" alt="Binary Stream"></a>
-                <a href="#"><img src="./img/partner/5.png" alt="pedestal"></a>
+                <a href="#"><img src="./img/partner/1p.png" alt="Progeny"></a>
+                <a href="#"><img src="./img/partner/2p.png" alt="Porello"></a>
+                <a href="#"><img src="./img/partner/3p.png" alt="Pro-West"></a>
+                <a href="#"><img src="./img/partner/4p.png" alt="Binary Stream"></a>
+                <a href="#"><img src="./img/partner/5p.png" alt="pedestal"></a>
             </div>
             <div>
-                <a href="#"><img src="./img/partner/1.png" alt="Progeny"></a>
-                <a href="#"><img src="./img/partner/2.png" alt="Porello"></a>
-                <a href="#"><img src="./img/partner/3.png" alt="Pro-West"></a>
-                <a href="#"><img src="./img/partner/4.png" alt="Binary Stream"></a>
+                <a href="#"><img src="./img/partner/1p.png" alt="Progeny"></a>
+                <a href="#"><img src="./img/partner/2p.png" alt="Porello"></a>
+                <a href="#"><img src="./img/partner/3p.png" alt="Pro-West"></a>
+                <a href="#"><img src="./img/partner/4p.png" alt="Binary Stream"></a>
             </div>
         </div>
     </section>
@@ -344,7 +336,7 @@
         <div class="row">
             <!-- .center paimtas is Our Lastest Projects, prie Project Begin section -->
             <div class="col-12 center">
-                <h2>Resent Blog Post</h2>
+                <h2>Recent Blog Post</h2>
             </div>
         </div>
 
@@ -486,24 +478,24 @@
     <!-- section BLOG end -->
 
     <!-- section CONTACT begin -->
-    <section class="container">
+    <section class="container contact">
         <div class="row">
-            <div class="right column col-5">
+            <div class="left column col-5">
                  <img src="#" alt="icon-contact">
-                 <h2 class="h2-contact">Contact with us</h2>
+                 <h2 class="h2-contact">Contact With Us</h2>
                 <h3>Visit Us</h3>
-                <p>530 Old Buffalo Street</p>
+                <p class="margin-0">530 Old Buffalo Street</p>
                 <p>Northwest #205, New York - 3087</p>
                 
                 <h3>Call Us</h3>
-                <p>+1 (123) -456-7890</p>
+                <p class="margin-0">+1 (123) -456-7890</p>
                 <p>+1 (123) -456-7890</p>
 
                 <h3>Email Us</h3>
                 <a href="mailto:infoname@gmail.com"></a>
                 <a href="http://vardenis.com"></a>
             </div>
-            <div class="left column col-7">
+            <div class="right column col-7">
                 <div class="form contact">
                     <input class="contact" type="text" placeholder="Name">
                     <input class="contact" type="email" placeholder="E-mail">
@@ -518,11 +510,10 @@
     <!-- section CONTACT end -->
 
     <!-- section CHAT begin -->
-    <section class="container">
+    <!-- <section class="container">
         <div class="row">
-            CHAT
         </div>
-    </section>
+    </section> -->
     <!-- section CHAT end -->
 
     <!-- footer begin -->
@@ -530,39 +521,44 @@
         <div class="row">
             <div class="col-3">
                 <img src="./img/logo/logo.png" alt="logo-footer">
-                <p>Lorem ipsum dolor sit amet, conse turini adipiscing elit, sed do eiusmod tempor in cididunt ut labore.</p>
+                <p class="footer">Lorem ipsum dolor sit amet, conse turini adipiscing elit, sed do eiusmod tempor in cididunt ut labore.</p>
                 <div class="social"></div>
             </div>
             <div class="col-3">
                 <div class="text-underline"></div>
                 <h4>Work hours</h4>
-                <p>10.00 AM - 6.00 PM , Monday - Saturday</p>
-                <p>Our Support and Sales team is available 24 * 7 to answer your queries</p>
+                <p class="footer">10.00 AM - 6.00 PM , Monday - Saturday</p>
+                <p class="footer">Our Support and Sales team is available 24 * 7 to answer your queries</p>
+
             </div>
             <div class="col-3">
-                <div class="text-underline"></div>
                 <h4>Navigate</h4>
-                <a class="footer link" href="about.html">About US</a>
-                <a class="footer-link" href="features.html">Features</a>
-                <a class="footer-link" href="mobileapp.html">Mobile App</a>
-                <a class="footer-link" href="softwaredemo.html">Software Demo</a>
-                <a class="footer-link" href="blog.html">Blog</a>
-                <a class="footer-link" href="team.html">Team</a>
-                <a class="footer-link" href="ChatBot.html">ChatBot</a>
-            
+                <div class="footer-title"></div>
+                <div class="footer-navigate"></div>
+                    <div class="left-column">
+                        <a class="footer-link" href="about.html">About US</a>
+                        <a class="footer-link" href="features.html">Features</a>
+                        <a class="footer-link" href="mobileapp.html">Mobile App</a>
+                        <a class="footer-link" href="softwaredemo.html">Software Demo</a>
+                    </div>
+                    <div class="right-column">
+                        <a class="footer-link" href="blog.html">Blog</a>
+                        <a class="footer-link" href="team.html">Team</a>
+                        <a class="footer-link" href="ChatBot.html">ChatBot</a>
+                    </div>
+                 
             </div>
             <div class="col-3">
-                <div class="text-underline"></div>
-                <h4>Privacy & TOC</h4>
-                <a href="privacy.html">Privacy</a>
-                <a href="contact.html">Contact</a>
-                <a href="login.html">Login</a>
-                <a href="Register.html">Register</a>
-                <a href="blog.html">Blog</a>
+                <h4 >Privacy & TOC</h4>
+                <div class="footer-title"></div>
+                <a class="footer-link" href="privacy.html">Privacy</a>
+                <a class="footer-link" href="contact.html">Contact</a>
+                <a class="footer-link" href="login.html">Login</a>
+                <a class="footer-link" href="Register.html">Register</a>
+                <a class="footer-link" href="blog.html">Blog</a>
                             
             </div>
-               <div class="col-12 center">
-                   <p>Copyright 2019 FrontEndByRM</p>
+               <div class="col-12 center copyRight">
                 </div> 
         </div>
     </footer>
