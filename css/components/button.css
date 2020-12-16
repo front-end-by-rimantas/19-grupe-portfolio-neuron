@@ -1,11 +1,80 @@
-/* Create class .btn which includes:
-btn white -> transparent
-btn transparent -> white
-btn learn more
-btn play (about video section)
-btn send (news subsection)
-btn submit now
-All buttons must have hover effects */
+
+
+/* trumpas naudojamu mygtuku klasiu pavadinimai */
+
+/* HERO BUTTONS */
+        /* btn hero-btn1 */
+        /* btn hero-btn2 */
+
+
+/* CIRCLE form */
+
+    /* stumdoma rodykle apskritimo viduje */
+    /* .btn.btn-circle > i.fa */
+
+    /* Home and About pages  */
+    /* Don't Miss Our News... */
+        /* btn btn-circle btn-position btn-hover-side*/
+
+
+/* OVAL form and with gradient */
+
+    /* first type:
+    LEARN MORE, READ MORE, CHECK IT OUT, Submit ChatBot'e),
+    CREAT ACCOUNT, DOWNLOAD, DOWNLOAD NOW, REQUEST A DEMO,
+    ADD TO CART, APPLY CUPON, UPDATE CART, Proceed to checkout,
+    CONTINUE TO PAYMENT, POST COMMENT
+    */
+
+        /* daugelio mygtuku, gardientu puses pasikeicia ir sumirksi   */
+        /* btn btn-oval-standart btn-hover-side */
+
+        /* second type: for Submit (COMING SOON page) */
+        /* btn btn-oval-sub1 btn-hover-side */
+
+
+/* (Pages->Download) */
+    /* pusiau kvadratinis-apvalus: Submit */
+    /* btn btn-rect-circle-sub1 btn-hover-side */
+
+
+/*  Differnt BUY NOW buttons (rectangle form):
+visible at first with gradient, BASIC, BEGINNER,
+TRAINER, STARTUP */
+
+    /* buttons types: */
+        /* btn btn-buy btn-buy-standart btn-hover-side */
+        /* btn btn-buy btn-buy-basic btn-hover-side */
+        /* btn btn-buy btn-buy-beginner btn-hover-side */
+        /* btn btn-buy btn-buy-trainer btn-hover-side */
+        /* btn btn-buy btn-buy-startup btn-hover-side */
+
+
+/* RECTANGLE form buttons*/
+
+    /* HOME 1 page */
+        /* SUBMIT NOW (WHITE button) */
+        /* btn btn-rect-sub1 */
+
+    /* Contact page */
+        /* SUBMIT NOW (BLACK button) */
+        /* btn btn-rect-sub2 */
+
+    /* Pages -> Login  */
+        /* LOGIN NOW */
+        /* btn btn-rect-log1 btn-hover-side */
+
+        /* CREATE AN ACCOUNT */
+        /* btn btn-rect-crAc btn-hover-side */
+
+    /* Shop->Single(Product page) */
+        /* button: DESCRIPTION , without Hover! */
+        /* btn btn-rect-justGrad btn-hover-side */
+
+        /* button: REVIEWS */
+        /* btn btn-rect-rev btn-hover-side */
+
+
 
 .btn {
     position: relative;
@@ -26,6 +95,35 @@ All buttons must have hover effects */
     cursor: pointer;
     
 }
+
+
+/******************************************/
+/* Svarbi kodo dalis!..., kuri beik visuose
+mygtukuose naudojama, tam, kad tolygiai per 
+nurodyta laika pasikeistu mygtuko fonas */
+
+.btn.btn-hover-side::before {
+    position: absolute;
+    content: ""; /* butinas, nes kitaip neiterps sio elemento */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: -1;
+
+    /* Sio elemento opacity sluoksnis siuo atzvilgiu atsiduria po kitu
+    sluoksiu, kurio z-index:1. Bet su Before iskialeme ji i prieki,
+    o tuo metu jis yra skaidrus. Keičiantis skaidrumui, jis pasirodo :)
+    Be opacity tolygus perejimas neveikia, butinas! */
+    opacity: 0;
+}
+
+    .btn.btn-hover-side:hover::before {
+        opacity: 1; 
+        }
+
+/******************************************/
 
 
 /* HERO BUTTONS */
@@ -66,6 +164,81 @@ All buttons must have hover effects */
 
 /* OTHER */
 
+
+/* CIRCLE form */
+
+/* Home and About pages  */
+/* Don't Miss Our News... */
+/* btn btn-circle btn-position btn-hover-side*/
+
+        /* rodykles stumdymo vieta, kuri naudojama mygtuke */
+        /* rodykles  - font awesome aprasymas */
+        .btn.btn-circle > i.fa {
+            position: absolute;
+            display: inline-block;
+            top:23%;
+            left:29%;
+
+        }
+
+
+    .btn.btn-circle {
+        padding: 10px;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        z-index:1;
+        transform: rotate(-45deg);
+        background-image:linear-gradient(-41deg, #09c778, #01a0f9);
+    }
+
+        .btn.btn-circle::before {
+            border-radius: 50%;
+            line-height: 38px;
+            font-size: 20px;
+            background-image: linear-gradient(41deg, rgba(9, 200, 120), rgba(1, 158, 249));
+            box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+            transition: all 0.7s ease 0s;
+        }
+
+            .btn.btn-circle:hover::before {
+                box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+            }
+
+
+/* HOME page: Video button */
+/* btn btn-video */
+
+    .aboutbottom > .btn.btn-video {
+        padding: 0;
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 10px;
+        font-size: 46px;
+        border: none;
+        
+    }
+
+    .icon.fa {
+        position:absolute;
+        left: -1px;
+        top:-3px;
+        /* uzdedamas gradientas ant teksto */
+        background: -webkit-linear-gradient(-41deg, #09c878, #01a0f9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+
+    
 /* OVAL form and with gradient */
 
     /* first type:
@@ -80,7 +253,6 @@ All buttons must have hover effects */
 /* btn btn-oval-standart btn-hover-side */
 
     .btn.btn-oval-standart {
-        position: relative;
         border-radius: 30px;
         border: none;
         background-image: linear-gradient(-41deg,#09c778, #019ef9);
@@ -105,7 +277,6 @@ All buttons must have hover effects */
     /* btn btn-oval-sub1 btn-hover-side */
 
     .btn.btn-oval-sub1 {
-        position: relative;
         border-radius: 30px;
         border: none;
         background-image: linear-gradient(-41deg,#09c778, #019ef9);
@@ -129,7 +300,6 @@ All buttons must have hover effects */
 /* btn btn-rect-circle-sub1 btn-hover-side */
 
     .btn.btn-rect-circle-sub1 {
-        position: relative;
         color: #666666;
         border-radius: 0 50px 50px 0;
         background-color: #ffffff;
@@ -164,7 +334,6 @@ TRAINER, STARTUP */
 /* btn btn-buy btn-buy-startup btn-hover-side */
 
     .btn.btn-buy {
-        position: relative;
         border-radius: 3px;
         /* border: 2px solid black; */
         background-color: #dd8507;
@@ -204,31 +373,14 @@ TRAINER, STARTUP */
         background-color: #6610f2;
     }
 
-        .btn.btn-hover-side::before {
-            position: absolute;
-            content: ""; /* butinas, nes kitaip neiterps sio elemento */
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-
-            z-index: -1;
-
-            /* Sio elemento opacity sluoksnis siuo atzvilgiu atsiduria po kitu
-            sluoksiu, kurio z-index:1. Bet su Before iskialeme ji i prieki,
-            o tuo metu jis yra skaidrus. Keičiantis skaidrumui, jis pasirodo :)
-            Be opacity tolygus perejimas neveikia, butinas! */
-            opacity: 0;
-        }
-
-            .btn.btn-hover-side:hover::before {
-                opacity: 1; 
-                }
 
 
-/* Rectangle form buttons*/
+/* RECTANGLE form buttons*/
 
-    /* SUBMIT NOW (WHITE button) */
+/* HOME 1 page */
+/* SUBMIT NOW (WHITE button) */
+/* btn btn-rect-sub1 */
+
     .btn.btn-rect-sub1 {
         padding: 1px 6px;
         border: none;
@@ -245,8 +397,10 @@ TRAINER, STARTUP */
             color: #20c997;
         }
 
+/* Contact page */
+/* SUBMIT NOW (BLACK button) */
+/* btn btn-rect-sub2 */
 
-    /* SUBMIT NOW (BLACK button) */
     .btn.btn-rect-sub2 {
         padding: 1px 6px;
         border: none;
@@ -264,95 +418,74 @@ TRAINER, STARTUP */
         }
 
 
-    /* LOGIN NOW */
-    .btn.btn-rect-log {
-        position: relative;
+/* Pages -> Login  */
+/* LOGIN NOW */
+/* btn btn-rect-log1 btn-hover-side */
+
+    .btn.btn-rect-log1 {
         width: 100%;
         height: 100%;
         margin:0;
+        border: none;
         background-image: linear-gradient(-41deg,#09c778, #019ef9);
         z-index: 1;
     }
 
-        .btn.btn-rect-log::before {
-            position: absolute;
-            content: ""; /* butinas, nes kitaip kaip iterpti */
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-
+        .btn.btn-rect-log1::before {
             background-image: linear-gradient(41deg, #09c878, #019ef9);
-            z-index: -1;
-
-            /* padarome sublyksejima, keiciant vidinio seselio skaidruma */
             box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
-
-            /* Sio elemento opacity sluoksnis siuo atzvilgiu atsiduria po kitu sluoksiu, kurio z-index:1.
-            Bet su Before iskialeme ji i prieki, o tuo metu jis yra skaidrus. Keičiantis skaidrumui, jis pasirodo :) */
-            opacity: 0;
-
-            /* -property -duration -timing-function -delay */
             transition: all 0.7s ease 0s;
         }
 
-            .btn.btn-rect-log:hover::before {
-                opacity: 1; 
+            .btn.btn-rect-log1:hover::before {
                 box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
-
             }
 
+/* Pages -> Login  */
+/* CREATE AN ACCOUNT */
+/* btn btn-rect-crAc btn-hover-side */
 
-    /* CREATE AN ACCOUNT */
     .btn.btn-rect-crAc {
-        position: relative;
-        border-radius: 4px;
+        border-radius: 3px;
         border: 1px solid #6c757d;
         width: 100%;
         height: 100%;
         margin:0;
+        color: #666666;
         background-color: #ffffff;
         z-index: 1;
         transition: all 0.7s ease 0s;
     }
 
         .btn.btn-rect-crAc::before {
-            position: absolute;
-            border-radius: 2px;
-            content: ""; /* butinas, nes kitaip kaip iterpti */
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-
+            border-radius: 3px;
+            border: 1px solid #17a3b800;
             background-image: linear-gradient(41deg, #09c878, #019ef9);
-            z-index: -1;
-
-            /* padarome sublyksejima, keiciant vidinio seselio skaidruma */
             box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
-
-            /* Sio elemento opacity sluoksnis siuo atzvilgiu atsiduria po kitu sluoksiu, kurio z-index:1.
-            Bet su Before iskialeme ji i prieki, o tuo metu jis yra skaidrus. Keičiantis skaidrumui, jis pasirodo :) */
-            opacity: 0;
-
-            /* -property -duration -timing-function -delay */
             transition: all 0.7s ease 0s;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
         }
 
             .btn.btn-rect-crAc:hover::before {
-                opacity: 1; 
                 box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
-
+                border: 1px solid #17a3b8;
             }
+
             .btn.btn-rect-crAc:hover {
-                border: 1px solid #17a2b8;
+                border: 1px solid #6c757d00;
+                color: #ffffff;
+
             }
 
 
+/* Shop->Single(Product page) */
+/* button: DESCRIPTION , without Hover! */
+/* btn btn-rect-justGrad btn-hover-side */
 
-
-/* button: DESCRIPTION (Shop Single/Product page), without Hover! */
-    .btn.btn-rect-grad {
+    .btn.btn-rect-justGrad {
         padding: 17px 43px;
         border: none;
         background-image: linear-gradient(-41deg, #09c878, #019ef9);
@@ -361,9 +494,11 @@ TRAINER, STARTUP */
         margin:0;
     }
 
-/* button: REVIEWS (Shop Single/Product page)*/
-    .btn.btn2-rect {
-        position: relative;
+/* Shop->Single(Product page) */
+/* button: REVIEWS */
+/* btn btn-rect-rev btn-hover-side */
+    
+    .btn.btn-rect-rev {
         color: #333333;
         padding: 17px 43px;
         border: 1px solid #019ef9 ;
@@ -375,207 +510,12 @@ TRAINER, STARTUP */
         transition: all 0.7s ease 0s;
     }
 
-        .btn.btn2-rect::before {
-            position: absolute;
-            content: ""; /* butinas, nes kitaip kaip iterpti */
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            /* border: none; */
-
+        .btn.btn-rect-rev::before {
             background-image: linear-gradient(-41deg, #09c878, #019ef9);
-            z-index: -1;
-            opacity: 0;
-
-            /* -property -duration -timing-function -delay */
             transition: all 0.7s ease 0s;
         }
 
-            .btn.btn2-rect:hover::before {
-                opacity: 1;
-                }
-
-            .btn.btn2-rect:hover {
+            .btn.btn-rect-rev:hover {
                 border: 1px solid #ffffff;
                 color: #ffffff;
             }
-
-
-
-
-/* PRADEDAM NUO CIA */
-
-    .btn.btn.btn-circle > .fa.fa-arrow-right {
-        position: absolute;
-        display: inline-block;
-        /* text-align: center; */
-        color: #ffffff;
-        font-size: 20px;
-        width: 25px;
-        line-height: 10px;
-        top:35%;
-        padding:0;
-        right:18%;
-        /* transform: translate(-50%, -50%); */
-
-        transform: rotate(-45deg);
-        /* bottom:0;
-        right: 0; */
-        /* vertical-align:middle; */
-    }
-
-    .btn.btn-circle {
-        /* content: ''; */
-        position: relative;
-        padding: 10px;
-        margin: 0;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        text-align: center;
-        vertical-align: center;
-        align-self:center;
-
-        line-height: 40px;
-    font-size: 20px;
-    text-align: center;
-        /* font-size:0; */
-        z-index:1;
-        /* background-color: hsl(0, 100%, 50%); */
-        /* opacity: 1; */
-
-        background-image:linear-gradient(-41deg, #09c778, #01a0f9);
-    }
-
-    .btn.btn-circle::before {
-        /* display: block; */
-        position: absolute;
-        border-radius: 50%;
-        content: "";
-        /* "\f061" */
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        line-height: 38px;
-    font-size: 20px;
-    /* color: rgb(0, 0, 0, 0.5); */
-    background-size: cover;
-    background-attachment:initial;
-        opacity: 0;
-
-        background-image: linear-gradient(41deg, rgba(9, 200, 120), rgba(1, 158, 249));
-        z-index: -1;
-        box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
-        transition: all 0.7s ease 0s;
-    }
-
-        .btn.btn-circle:hover::before {
-            opacity: 1; 
-            /* background-image: linear-gradient(41deg, rgb(9, 200, 120, 1), rgb(1, 158, 249, 1)); */
-
-            box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
-
-        }
-
-
-
-
-/* "LOGIN NOW" */
-.btn.btn-full-rect {
-    padding: 10px 30px;
-    background: linear-gradient(41deg, #09c778, #01a0f9);
-
-
-}
-
-
-.btn.btn-rect {
-    padding: 1px 6px;
-    border: none;
-    background-color: #019ef9;
-    width: 100%;
-    height: 100%;
-
-}
-
-/* .row .news {
-    position: relative;
-} */
-
-
-
-/* "LOGIN NOW" */
-.btn.btn-full-rect {
-    padding: 10px 30px;
-    background: linear-gradient(41deg, #09c778, #01a0f9);
-
-
-}
-
-
-/* pusiau kvad ir circle
-
-prie Subscribe For Newsletter (DOwnload puslapis)
-SUBMIT (balto fono -> i gradienta)
-*/
-
-
-/* Dazniausios formos. Su gradientu,  border-radius: didelis
-
-Hero dalyje:
-LEARN MORE - be gradiento
-JOIN NOW - be gradiento
-
-Kiti:
-READ MORE
-CREAT ACCOUNT
-SUBMIT/Submit
-DOWNLOAD NOW
-POST COMMENT
-REQUEST A DEMO
-CHECK IT OUT
-CHECK OUT
-VIEW CART
-ADD TO CART
-UPDATE CART
-APPLY CUPON
-CONTINUE TO PAYMENT
-LET'S START A CHAT
-Proceed to checkout
-
-tik paspaudus keiciasi:
-Machine Learning
-Deep Learning
-Artificial Intelligence
-*/
-
-
-/* circle:
-
-Enter your email (su rodykle i N-E, fontaw. Yra dvieju tipu rodyles)
-Video (video fontawesome)
-*/
-
-
-/* spalvotas,  border-radius: mazas
-
-BUY NOW (skirtingos spalvos: Standartinis, Basic, Beginner, Trainer, Startup)
-*/
-
-
-/* staciakampio formos
-
-LOGIN NOW (su gradientu)
-CREATE AN ACCOUNT (baltas/persvieciamas -> su gradientu)
-DESCRIPTION (sugradientu, nieko nedaro uzhovirinus)
-REVIEWS (baltas su gradientiniu border)
-
-SUBMIT NOW ! (baltas -> hoverinasi teksto spalva i gradientine sp.)
-SUBMIT NOW ! (tamsus -> hoverinasi teksto spalva)
-*/
-
-
-        
-        
