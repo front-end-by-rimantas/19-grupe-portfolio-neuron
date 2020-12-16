@@ -1,0 +1,81 @@
+/*********************preHEADER*******************/
+.container > .row > .preHEAD {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(4,148, 227,.7);
+}
+    
+.leftPreHeader {
+    text-decoration: none;
+            color: white;
+}
+    .leftPreHeader > .preheadercontacts {
+    display:inline-block;
+    margin-right: 10px;
+    }
+        .leftPreHeader > .preheadercontacts i {
+            color: white;
+            vertical-align: baseline;
+            margin-right: 5px;
+        }
+        .leftPreHeader > .preheadercontacts a {
+            text-decoration: none;
+            color: white;
+        }
+
+.rightPreHeader{
+
+    }
+    .rightPreHeader > .preheadersocials {
+        float: right;
+    }
+    .container > .row > .preHEAD >.rightPreHeader > .preheadersocials > a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: white;
+    }
+    /*********************HEADER*******************/
+    .container > .row > .HEAD {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+    }
+    /*    top: 0;  *****Galivas variantas sticky padarimui headerio + su js papildomos klases priskirimas*****
+    width: 100%;
+    background-color: aqua;
+    padding: 10px 50px;
+    position: fixed;
+    left: 0px;
+    z-index: 999;/*
+
+    /*********HEADER LOGO********/
+    .headerLEFT > .header-logo {
+        
+    }
+    #neuron-white-logo {
+        margin: 0;
+    } 
+    /************HEADER MENU***********/
+    .container > .row .headerRight {
+        text-align: right;
+        align-self: center;
+    }
+    .container > .row > .headerRight > .headerMenu {
+    
+        display: inline-block;
+    }
+    .headerMenu > .main-menu {
+        display: inline-block;
+    }
+    
+    .headerMenu > .main-menu > a {
+        margin-left: 20px;
+    }
+  /*************************************************/
+    .headerMenu > .header-icon-bar > a {
+        margin-left: 10px;
+    }
+    .headerMenu > .header-icon-bar{
+        display: inline-block;
+        margin-left: 10px;
+    }

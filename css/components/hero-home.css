@@ -1,0 +1,71 @@
+.container > .row > .hero-left {
+    margin: auto;
+}
+        .hero-left > .hero-header {
+            font-size: 40px;
+            line-height: 42px;
+            margin-bottom: 14px;
+            color: white;
+        }
+        .hero-left > .hero-text {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            color: white;
+            padding: 0;
+        }
+        .hero-left > .hero-btns { 
+
+        }
+            .hero-left > .hero-btns > .hero-btn1 {
+                /*kaip suprantu btn imsim is kitos css failo, tai pakuriau klase prie kurios galima bus
+            prideti default btn ir papildomai sustailinti*/
+            margin-right: 10px;
+            }
+            .hero-left > .hero-btns > .hero-btn2 {
+                
+            }
+        .hero-right > .hero-img1 {
+            width: 50%;
+            float: left;
+            height: 100%;
+            position: relative;
+            
+        }
+            .hero-right > .hero-img1 > img {
+                width: 100%;
+                margin: 0;
+                height: auto;
+                left: 0;
+                bottom: 0;
+                animation-name: robot;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+        .hero-right > .hero-img2 {
+            width: 50%;
+            float: left;
+            height: 100%;
+            position: relative;
+        }
+            .hero-right > .hero-img2 > img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+    @keyframes robot {
+        0%{
+            transform: translatey(0px);
+        }
+        45% {
+            transform: translatey(-50px);
+        }
+        55% {
+            transform: translatey(-50px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }

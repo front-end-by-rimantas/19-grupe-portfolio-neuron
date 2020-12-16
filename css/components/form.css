@@ -1,0 +1,40 @@
+input.news {
+    width: 95%;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(1, 160, 249, 0.2);
+}
+
+.form.contact {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+}
+
+input.contact {
+    display: inline-block;
+    float: left;
+    width: 45%;
+    line-height: 43px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+input {
+    margin: 0 20px 30px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.form > textarea {
+    display: inline-block;
+    float: left;
+    height: 160px;
+    width: 636px;
+    padding: 10px;
+    margin-bottom: 30px;
+    resize: none;
+    line-height: 43px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+}

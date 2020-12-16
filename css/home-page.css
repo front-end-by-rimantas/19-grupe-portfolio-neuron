@@ -20,18 +20,290 @@ CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 */
 
 /* main style */
+h2, h3 {
+    color: #333333;
+    line-height: 1.3;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 26px;
+}
+.margin-0 {
+    margin: 0;
+}
 /* header */
+body > .bg {
+    background-image: url(../img/slider/h1-s1.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 140px;
+}
 /* hero */
-/* features */
-/* app promo */
-/* app promo 2 */
-/* how works */
-/* gallery */
-/* testimonials */
-/* pricing */
-/* faq */
-/* team */
-/* app store */
-/* subscribe */
+/* about */
+.block {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #00000030;
+    margin-bottom: 40px;
+}
+    .block > img {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .block > h3 {
+    }
+    .block > p {
+       /* font-size: 16px;*/
+    }
+    .leftblock {
+        margin-top: -70px;
+    }
+.learnMore > /*p {
+    font-size: 16px;
+}*/
+    
+/* about video */
+.aboutVideo {
+    margin: 50px 0;
+}
+.aboutvideo > .aboutbottom {
+
+}
+    .aboutvideo > .aboutbottom > /* > .btnvideo*/ {
+
+    }
+.aboutvideoimgBox {
+
+}
+    .aboutvideoimgBox > .aboutvideoimg {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .container > .row.noGap{ /*testinis dalykas - tam kad padidinti paveiksliuko dydi*/
+        gap: 1px;
+    }
+/* counter */
+.container.count {
+    background: linear-gradient(0deg, #01a0f9, #09c778);
+}
+.shape {
+    background-image: url(../img/counter/count-shape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 160px;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+}
+.insideShape {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.white {
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.white::after {
+    content: '+';
+    color: #fff;
+}
+.last {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* services */
+.center {
+    text-align: center;
+    padding-top: 40px;
+}
+.grey {
+    background-color: #eff1f8;
+}
+.block {
+    background-color: white;
+}
+        .block:hover {
+            background: linear-gradient(122deg, rgba(4,160,251,1) 25%, rgba(10,197,121,1) 79%);
+            transition: 1s;
+        }
+
+        .block:hover > p {
+            color: #fff
+        }
+        .block:hover > h3 {
+            color: #fff
+        }
+
+/* projects */
+.center {
+    text-align: center;
+}
+img.project {
+    height: 470px;
+    width: 373px;
+}
+/* news */
+.block-news {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00000030 ;
+    padding: 50px 50px;
+    margin: -150px 0;
+    position: relative;
+    bottom: -150px;
+}
+
+/* partners */
+.container.partner {
+    background-image: url(../img/bg/partner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;
+    height: 400px;
+}
+.row.partner {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+    padding-top: 60px;
+   
+}
+img {
+    height: 30px;
+    /* width: 100%; */
+    /* margin: 0 0 60px 20px; */
+}
+/* how */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
+}
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
+}
+
+
+/* blog */
+
+.blog-card {
+    padding: 0;
+    border-radius: 0;
+    float: left;
+    box-shadow: 0 0 20px #00000030;
+}
+
+
+.blog-card > .blog-card-top img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+    .blog-card > .blog-card-bottom {
+        padding: 30px 25px;
+    }
+
+        .blog-card > .blog-card-bottom > .blog-info > li {
+            display: inline-block;
+            /* float: left; nenaudojame, nes antraste pradeda lipti*/
+            /* sudarome tarpus tarp info bloku */
+            padding: 0 10px 0 0;
+        }
+
+        /* user/author fontawesome */
+        .fa-calendar-check-o::before{
+            /* reiks prirasyti nuoroda*/
+            content: "fontaw.";
+        }
+
+        /* user/author fontawesome */
+        .fa-user-o::before{
+            /* reiks prirasyti nuoroda*/
+            content: "fontaw.";
+        }
+
+        .blog-card > .blog-card-bottom > .blog-info > li > span {
+            color: #30B2FA;
+            /* teksto dydi, stiliu ir r svori derinti su paragrafu ara priskirti bendra */
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .blog-card > .blog-card-bottom .blog-describ {
+            margin: 10px 0 0 0;
+        }
+
+
+            .blog-card > .blog-card-bottom > .blog-describ > h3 > a {
+                /* nuima teksto pazymejima */
+                text-decoration: none;
+                /* antrasciu teksto spalva, dydis, stilius yra bendras, reiks pakeisti... */
+                color: #343a40;
+                /* #09C778; */
+
+            }
+
+            .blog-card > .blog-card-bottom > .blog-describ > h3 > a:hover {
+                /* toks ispudis, kad  uzvedus rodykle ant antrastes spalva keiciasi po trupi */
+                color:#09C778;
+                /* filter: blur(0.5px); */
+                /* text-shadow: 0 0 40px #fff; */
+                transition: color 1s;
+            }
+
+            .blog-card > .blog-card-bottom > .blog-info {
+                /* priekiniu tasku nuemimas nuo listo */
+                list-style: outside none none;
+            }
+
+
 /* contact */
+.contact::placeholder,
+textarea::placeholder {
+    color: #fff;
+    font-size: 20px;
+}
+.container.contact {
+    background-image: url(../img/bg/contact-bg.jpg);
+}
+.left.column {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: -80px;
+}
 /* footer */
+ footer.container > .row p {
+     font-size: 16px;
+ }
+
+/* chat */
