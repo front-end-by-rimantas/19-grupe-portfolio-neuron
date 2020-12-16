@@ -85,16 +85,17 @@
         min-width: 160px;
         box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.06);
         padding: 10px 0;
-        /*z-index: 1;*/
+        z-index: 1;
         margin-top: 20px;
-        height: 0;
+        transform-origin: 0 0 0;
+        transform: scaleY(0);
     }
     .headerMenu > .main-menu > .dropdown:hover .dropdown-cont{
         display: block;
-        transition: all 1s ease-in 0s;
         visibility: visible;
         opacity: 1;
-        height: 150px;
+        transform: scaleY(1);
+        transition: all 1s 0s;
       }
       .headerMenu > .main-menu > .dropdown > .dropdown-cont > a {
           text-decoration: none;
@@ -104,7 +105,7 @@
           padding: 10px 20px;
           font-weight: 600;
           color: black;
-          transition: all 1s ease-in 0s;
+          transition: all 0.5s 0s;
       }
       .headerMenu > .main-menu > .dropdown > .dropdown-cont > a:hover {
           color: blue;
