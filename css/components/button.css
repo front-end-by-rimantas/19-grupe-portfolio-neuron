@@ -231,7 +231,7 @@ nurodyta laika pasikeistu mygtuko fonas */
         left: -1px;
         top:-3px;
         /* uzdedamas gradientas ant teksto */
-        background: -webkit-linear-gradient(-41deg, #09c878, #01a0f9);
+        background: -webkit-linear-gradient(-41deg,#01a0f9, #09c878);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
