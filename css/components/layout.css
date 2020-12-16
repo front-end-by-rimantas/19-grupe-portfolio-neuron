@@ -115,6 +115,9 @@ body {
         div.down {
             grid-row: 2/3;
         }
+        .margin {
+            margin-bottom: 40px;
+        }
 }
 
 @media (max-width: 680px) {
@@ -156,5 +159,8 @@ body {
         }
         .container > .row.aboutGap {
             gap: 0 10px;
+        }
+        .margin {
+            margin-bottom: 40px;
         }
 }
