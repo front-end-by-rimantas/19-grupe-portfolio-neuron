@@ -1,7 +1,10 @@
 .bg.footer {
     position: relative;
-    padding-top: 95px;
+    background-color: #eff1f7;
     background: url(../../img/bg/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: transparent;
     margin-bottom: 0;
     height: auto;
 }
@@ -9,6 +12,7 @@
     padding-top: 90px;
     padding-bottom: 0;
 }
+
 i.footer.fa {
     width: 40px;
     height: 40px;
@@ -44,11 +48,11 @@ i.footer.fa {
             margin: 0px 0px 20px;
         }
 
-        .footer-title {
+        .underline-title {
             position: relative;
         }
 
-        .footer-title::after {
+        .underline-title::after {
             content: "";
             position: absolute;
             width: 50px;

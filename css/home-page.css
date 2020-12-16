@@ -75,7 +75,21 @@ body > .bg {
 .learnMore > /*p {
     font-size: 16px;
 }*/
-    
+.underline-title.h2 {
+    position: relative;
+}
+
+.underline-title.h2::after {
+    content: "";
+    position: absolute;
+    margin-left: 2px;
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+    top: 30px;
+    bottom: 6px;
+    z-index: -1;
+}
 /* about video */
 .aboutVideo {
     margin: 50px 0;
@@ -142,6 +156,7 @@ body > .bg {
 }
 .grey {
     background-color: #eff1f8;
+    background: transparent;
 }
 .block {
     background-color: white;
@@ -157,7 +172,21 @@ body > .bg {
         .block:hover > h3 {
             color: #fff
         }
-
+        .underline-title.services {
+            position: relative;
+        }
+        
+        .underline-title.services::after {
+            content: "";
+            position: absolute;
+            margin-left: 530px;
+            width: 150px;
+            height: 10px;
+            background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+            top: 70px;
+            bottom: 6px;
+            z-index: -1;
+        }
 /* projects */
 .center {
     text-align: center;
@@ -176,7 +205,20 @@ img.project {
     position: relative;
     bottom: -150px;
 }
+.underline-title.news {
+    position: relative;
+}
 
+.underline-title.news::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+    top: 35px;
+    bottom: 6px;
+    z-index: 1;
+}
 /* partners */
 .container.partner {
     background-image: url(../img/bg/partner-bg.jpg);
@@ -284,7 +326,21 @@ img {
                 /* priekiniu tasku nuemimas nuo listo */
                 list-style: outside none none;
             }
-
+            .underline-title.blog {
+                position: relative;
+            }
+            
+            .underline-title.blog::after {
+                content: "";
+                position: absolute;
+                margin-left: 530px;
+                width: 150px;
+                height: 10px;
+                background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+                top: 30px;
+                bottom: 6px;
+                z-index: -1;
+            }
 
 /* contact */
 .contact::placeholder,
@@ -300,6 +356,20 @@ textarea::placeholder {
     border-radius: 5px;
     padding: 50px;
     margin-top: -80px;
+}
+.underline-title.h2-contact {
+    position: relative;
+}
+
+.underline-title.h2-contact::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+    top: 30px;
+    bottom: 6px;
+    z-index: 1;
 }
 /* footer */
  
