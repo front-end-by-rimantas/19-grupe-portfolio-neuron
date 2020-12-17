@@ -50,12 +50,12 @@ i.footer.fa {
             margin: 0px 0px 20px;
         }
 
-        .underline-title {
+        footer.underline-title {
             position: absolute;
             z-index: 1;
         }
 
-        .underline-title::after {
+        footer.underline-title::after {
             content: "";
             position: absolute;
             width: 70px;

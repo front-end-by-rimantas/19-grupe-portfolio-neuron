@@ -373,6 +373,7 @@ textarea::placeholder {
 .underline-title.h2-contact {
     position: absolute;
     z-index: 1;
+    margin-top: -60px;
 }
 
 .underline-title.h2-contact::after {
