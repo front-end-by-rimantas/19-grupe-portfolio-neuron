@@ -14,17 +14,18 @@
             color: white;
             padding: 0;
         }
-        .hero-left > .hero-btns { 
+        /* .hero-left > .hero-btns { 
 
-        }
-            .hero-left > .hero-btns > .hero-btn1 {
+        } */
+            /* .hero-left > .hero-btns > .hero-btn1 { */
                 /*kaip suprantu btn imsim is kitos css failo, tai pakuriau klase prie kurios galima bus
             prideti default btn ir papildomai sustailinti*/
-            margin-right: 10px;
-            }
+            /* margin-right: 10px; */
+            /* }
             .hero-left > .hero-btns > .hero-btn2 {
                 
-            }
+            }*/
+            
         .hero-right > .hero-img1 {
             width: 50%;
             float: left;
