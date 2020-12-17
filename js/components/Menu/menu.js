@@ -3,9 +3,9 @@
 window.onscroll = function() {stickyMenu()};
 
 // find the menu
-var menu = document.getElementById("menu");
+const menu = document.getElementById("menu");
 
-var sticky = menu.offsetTop;
+const sticky = menu.offsetTop;
 
 
 //Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
