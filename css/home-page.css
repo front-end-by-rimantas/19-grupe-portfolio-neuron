@@ -273,9 +273,13 @@ img {
 
 
 /* blog */
+.container.blog {
+    padding-bottom: 175px;
+}
 
 .blog-card {
     padding: 0;
+    padding-bottom: 20px;
     border-radius: 0;
     float: left;
     box-shadow: 0 0 20px #00000030;
