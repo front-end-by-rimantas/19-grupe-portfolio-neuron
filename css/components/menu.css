@@ -1,4 +1,12 @@
-#menu {
-    overflow: hidden;
-    /* background-image: url(../../img/bg/contact-bg.jpg); */
+
+
+.sticky {
+    position: fixed;
+    /* padding: 10px 0; */
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-image: url(../../img/bg/contact-bg.jpg);
+    box-shadow: 0 0 5px grey;
 }
+
