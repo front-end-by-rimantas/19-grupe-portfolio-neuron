@@ -53,6 +53,8 @@ body > .bg {
 }
 /* hero */
 /* about */
+
+/* ne sioje vietoje irasyta */
 .block {
     padding: 20px;
     border-radius: 20px;
@@ -72,10 +74,13 @@ body > .bg {
     .leftblock {
         margin-top: -70px;
     }
-.learnMore > /*p {
-    font-size: 16px;
-}*/
-    
+
+
+.learnMore > .btn > a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* about video */
 .aboutVideo {
     margin: 50px 0;
@@ -83,7 +88,7 @@ body > .bg {
 .aboutvideo > .aboutbottom {
 
 }
-    .aboutvideo > .aboutbottom > /* > .btnvideo*/ {
+    .aboutvideo > .aboutbottom {
 
     }
 .aboutvideoimgBox {
@@ -167,15 +172,15 @@ img.project {
     width: 373px;
 }
 /* news */
-.block-news {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 20px #00000030 ;
-    padding: 50px 50px;
-    margin: -150px 0;
-    position: relative;
-    bottom: -150px;
-}
+.block-news {	
+    background-color: #fff;	
+    border-radius: 15px;	
+    box-shadow: 0 0 20px #00000030 ;	
+    padding: 50px 50px;	
+    margin: -150px 0;	
+    position: relative;	
+    bottom: -150px;	
+}	
 
 /* partners */
 .container.partner {
@@ -286,24 +291,23 @@ img {
             }
 
 
-/* contact */
-.contact::placeholder,
-textarea::placeholder {
-    color: #fff;
-    font-size: 20px;
-}
-.container.contact {
-    background-image: url(../img/bg/contact-bg.jpg);
-}
-.left.column {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 50px;
-    margin-top: -80px;
-}
-/* footer */
- footer.container > .row p {
-     font-size: 16px;
- }
+/* contact */.contact::placeholder,	
+textarea::placeholder {	
+    color: #fff;	
+    font-size: 20px;	
+}	
+.container.contact {	
+    background-image: url(../img/bg/contact-bg.jpg);	
+}	
+.left.column {	
+    background-color: #fff;	
+    border-radius: 5px;	
+    padding: 50px;	
+    margin-top: -80px;	
+}	
+/* footer */	/* footer */
+ footer.container > .row p {	
+     font-size: 16px;	
+ }	
 
 /* chat */
