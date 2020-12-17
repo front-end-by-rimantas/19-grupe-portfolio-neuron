@@ -59,7 +59,6 @@
     .container > .row .headerRight {
         text-align: right;
         align-self: center;
-        line-height: 40px;
     }
     .container > .row > .headerRight > .headerMenu{
         display: inline-block;
@@ -112,6 +111,7 @@
         margin-top: 10px;
         transform-origin: 0 0 0;
         transform: scaleY(0);
+        line-height: 40px;
     }
     
     
@@ -127,7 +127,7 @@
           width: 100%;
           display: block;
           text-align: left;
-          padding: 10px 20px;
+          padding: 0px 20px;
           font-weight: 600;
           color: black;
           transition: all 0.5s 0s;
@@ -135,16 +135,6 @@
       .headerMenu > .main-menu > .dropdown > .dropdown-cont > a:hover {
           color: blue;
       }
-
-
-  /*************************************************/
-    .headerMenu > .header-icon-bar > a {
-        margin-left: 10px;
-    }
-    .headerMenu > .header-icon-bar{
-        display: inline-block;
-        margin-left: 10px;
-    }
 /*************************************PAGES SECTION BUTTON*******************************/
 
 .headerMenu > .main-menu > .dropdown > .dropdown-cont2 {
@@ -158,6 +148,7 @@
     margin-top: 10px;
     transform-origin: 0 0 0;
     transform: scaleY(0);
+    line-height: 40px;
     /*****Centravimas******/ 
     margin-left: -260px;
 }
@@ -179,7 +170,7 @@
     width: 100%;
     display: block;
     text-align: left;
-    padding: 10px 20px;
+    padding: 0px 20px;
     font-weight: 600;
     color: black;
     transition: all 0.5s 0s;
@@ -187,3 +178,64 @@
 .headerMenu > .main-menu > .dropdown > .dropdown-cont2 > .pages > a:hover {
     color: blue;
 }
+/********************** SHOP + SEARCH***************************/
+.headerMenu > .header-icon-bar > .shopCart {
+    display: inline-block;
+    margin: 0 10px;
+}
+.headerMenu > .header-icon-bar{
+    display: inline-block;
+    margin-left: 10px;
+}
+    .miniCart {
+        position: absolute;
+        padding: 30px 20px;
+        background-color: white;
+        right: 100px;
+        width: 270px;
+        transition: all 1s ease 0s;
+    }
+        .miniCart > .firstProduct {
+            display: inline-block;
+            float: left;
+            width: 100%;
+            border-bottom: 1px solid grey;
+        }
+        .miniCart > .firstProduct > a {
+            display: inline-block;
+            float: left;
+            color: black;
+        }
+        .miniCart > .firstProduct > .productInfo {
+            display: inline-block;
+            padding: 0px 30px;
+        }
+        .miniCart > .firstProduct > a > .x-button {
+            border: 1px solid;
+            width: 18px;
+            height: 18px;
+            line-height: 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            text-align: center;
+        }
+            .miniCart > .firstProduct > .productInfo > a {
+                text-decoration: none;
+                font-size: 17px;
+                text-align: left;
+                color: #01a0f9;
+            }
+            .miniCart > .firstProduct > .productInfo > .quantity {
+                margin-top: 10px;
+                margin-bottom: 15px;
+                text-align: left;
+                font-size: 18px;
+        }
+
+            .miniCart > .firstProduct > .productIMG {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+            }
+            
+        
