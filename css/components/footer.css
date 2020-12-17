@@ -4,7 +4,7 @@
     background: url(../../img/bg/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background: transparent;
+    /* background: transparent; */
     margin-bottom: 0;
     height: auto;
 }
@@ -32,6 +32,9 @@ i.footer.fa {
     p.footer {
         font-size: 15px;  
     }
+    p.footer.top {
+        margin-top: 30px;
+    }
 .footer-navigate {
     display: inline-block;
 }
@@ -48,7 +51,8 @@ i.footer.fa {
         }
 
         .underline-title {
-            position: relative;
+            position: absolute;
+            z-index: 1;
         }
 
         .underline-title::after {
@@ -65,10 +69,12 @@ i.footer.fa {
         .left-column {
         float: left;
         width: 60%;
+        margin-top: 30px;
         }
         .right-column {
         float: left;
         width: 40%;
+        margin-top: 30px;
         }
         .f-bottom {
             border-top: 1px solid #e3e5ea;

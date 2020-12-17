@@ -362,7 +362,8 @@ textarea::placeholder {
     margin-top: -80px;
 }
 .underline-title.h2-contact {
-    position: relative;
+    position: absolute;
+    z-index: 1;
 }
 
 .underline-title.h2-contact::after {
@@ -373,7 +374,6 @@ textarea::placeholder {
     background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
     top: 30px;
     bottom: 6px;
-    z-index: 1;
 }
 /* footer */
  
