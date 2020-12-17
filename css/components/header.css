@@ -76,7 +76,7 @@
         color: white;
     }
     .headerMenu > .main-menu > a:hover {
-        color: grey;
+        color: #cccccc;
         transition: all 0.5s ease 0s;
     }
     .headerMenu > .main-menu > .dropdown {
@@ -95,7 +95,7 @@
         transition:all 0.5s ease 0;
     }
     .headerMenu > .main-menu > .dropdown > a:hover {
-        color: grey;
+        color: #cccccc;
         transition: all 0.5s ease 0s;
     }
     .headerMenu > .main-menu > .dropdown > .dropdown-cont {
@@ -129,11 +129,11 @@
           text-align: left;
           padding: 0px 20px;
           font-weight: 600;
-          color: black;
+          color: #333333;
           transition: all 0.5s 0s;
       }
       .headerMenu > .main-menu > .dropdown > .dropdown-cont > a:hover {
-          color: blue;
+          color:#01a0f9;
       }
 /*************************************PAGES SECTION BUTTON*******************************/
 
@@ -172,11 +172,11 @@
     text-align: left;
     padding: 0px 20px;
     font-weight: 600;
-    color: black;
+    color: #333333;
     transition: all 0.5s 0s;
 } 
 .headerMenu > .main-menu > .dropdown > .dropdown-cont2 > .pages > a:hover {
-    color: blue;
+    color: #01a0f9;
 }
 /********************** SHOP + SEARCH***************************/
 .headerMenu > .header-icon-bar > .shopCart {
@@ -223,14 +223,14 @@
             display: inline-block;
             float: left;
             width: 100%;
-            border-bottom: 1px solid grey;
+            border-bottom: 1px solid rgba(170, 170, 170, 0.25);
             padding-top: 15px;
             text-align: center;
         }
         .miniCart > .firstProduct > a {
             display: inline-block;
             float: left;
-            color: grey;
+            color: #666666;
             margin-top: 2px;
         }
         .miniCart > .firstProduct > .productInfo {
@@ -263,6 +263,10 @@
                 width: 40px;
                 height: 40px;
                 float: right;
+            }
+            .miniCart > .firstProduct > .productIMG > a > img {
+                width: 40px;
+                height: 40px;
             }
             .cartTotal > .subtotal {
                 text-align: center;
