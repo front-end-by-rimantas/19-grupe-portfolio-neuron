@@ -59,6 +59,7 @@
     .container > .row .headerRight {
         text-align: right;
         align-self: center;
+        line-height: 40px;
     }
     .container > .row > .headerRight > .headerMenu{
         display: inline-block;
@@ -68,13 +69,35 @@
     }
     
     .headerMenu > .main-menu > a {
-        margin-left: 20px;
+        margin-left: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+    }
+    .headerMenu > .main-menu > a:hover {
+        color: grey;
+        transition: all 0.5s ease 0s;
     }
     .headerMenu > .main-menu > .dropdown {
         position: relative;
         display: inline-block;
-        height: 40px;
+        height: 50px;
         cursor: pointer;
+    } 
+    .headerMenu > .main-menu > .dropdown > a{
+        margin-left: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        transition:all 0.5s ease 0;
+    }
+    .headerMenu > .main-menu > .dropdown > a:hover {
+        color: grey;
+        transition: all 0.5s ease 0s;
     }
     .headerMenu > .main-menu > .dropdown > .dropdown-cont {
         visibility: hidden;
@@ -86,10 +109,12 @@
         box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.06);
         padding: 10px 0;
         z-index: 1;
-        margin-top: 20px;
+        margin-top: 10px;
         transform-origin: 0 0 0;
         transform: scaleY(0);
     }
+    
+    
     .headerMenu > .main-menu > .dropdown:hover .dropdown-cont{
         display: block;
         visibility: visible;
@@ -120,3 +145,45 @@
         display: inline-block;
         margin-left: 10px;
     }
+/*************************************PAGES SECTION BUTTON*******************************/
+
+.headerMenu > .main-menu > .dropdown > .dropdown-cont2 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.06);
+    padding: 10px 0;
+    z-index: 1;
+    margin-top: 10px;
+    transform-origin: 0 0 0;
+    transform: scaleY(0);
+    /*****Centravimas******/ 
+    margin-left: -260px;
+}
+.headerMenu > .main-menu > .dropdown:hover .dropdown-cont2{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 1s 0s;
+    width: 560px;
+    text-align: center;
+  }
+  .pages {
+      width: 33%;
+      float: left;
+  }
+.headerMenu > .main-menu > .dropdown > .dropdown-cont2 > .pages > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: black;
+    transition: all 0.5s 0s;
+} 
+.headerMenu > .main-menu > .dropdown > .dropdown-cont2 > .pages > a:hover {
+    color: blue;
+}
