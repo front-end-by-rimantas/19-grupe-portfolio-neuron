@@ -79,10 +79,7 @@ body > .bg {
         margin-top: -70px;
     }
 
-.learnMore > /*p {
-    font-size: 16px;
-}*/
-.underline-title.h2 {
+.learnMore > .underline-title.h2 {
     position: relative;
 }
 
@@ -124,6 +121,10 @@ body > .bg {
     .container > .row.noGap{ /*testinis dalykas - tam kad padidinti paveiksliuko dydi*/
         gap: 1px;
     }
+    .aboutVideo > .underline-title.h2 {
+        position: relative;
+    }
+    
 /* counter */
 .container.count {
     background: linear-gradient(0deg, #01a0f9, #09c778);
