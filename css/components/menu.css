@@ -1,0 +1,17 @@
+
+
+.sticky {
+    display: inline-block;
+    position: fixed;
+    padding: 25px 60px;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    /* left: 0; */
+    left: 0;
+    z-index: 5;
+    background-image: url(../../img/bg/contact-bg.jpg);
+    box-shadow: 0 0 5px grey;
+}
+
+
