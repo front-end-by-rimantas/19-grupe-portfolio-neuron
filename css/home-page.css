@@ -10,6 +10,7 @@
 @import './components/gallery.css';
 @import './components/header.css';
 @import './components/hero-home.css';
+@import './components/menu.css';
 @import './components/pricing.css';
 @import './components/testimonials.css';
 
@@ -197,7 +198,8 @@ body > .bg {
         .underline-title.services::after {
             content: "";
             position: absolute;
-            margin-left: 530px;
+            margin-left: 50%;
+            transform: translateX(-50%);
             width: 150px;
             height: 10px;
             background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
@@ -355,7 +357,8 @@ img {
             .underline-title.blog::after {
                 content: "";
                 position: absolute;
-                margin-left: 530px;
+                margin-left: 50%;
+                transform: translateX(-50%);
                 width: 150px;
                 height: 10px;
                 background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
@@ -372,6 +375,7 @@ textarea::placeholder {
 }
 .container.contact {
     background-image: url(../img/bg/contact-bg.jpg);
+    z-index: -5;
 }
 .left.column {
     background-color: #fff;
@@ -379,12 +383,6 @@ textarea::placeholder {
     padding: 50px;
     margin-top: -80px;
 }
-.underline-title.h2-contact {
-    position: absolute;
-    z-index: 1;
-    margin-top: -60px;
-}
-
 .underline-title.h2-contact::after {
     content: "";
     position: absolute;
@@ -393,6 +391,7 @@ textarea::placeholder {
     background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
     top: 30px;
     bottom: 6px;
+    z-index: -1;
 }
 /* footer */
  

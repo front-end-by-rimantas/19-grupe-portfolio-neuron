@@ -60,8 +60,9 @@
         text-align: right;
         align-self: center;
     }
-    .container > .row > .headerRight > .headerMenu{
+    .container > .row > .headerRight > .headerMenu {
         display: inline-block;
+        padding: 15px 0;
     }
     .headerMenu > .main-menu {
         display: inline-block;
