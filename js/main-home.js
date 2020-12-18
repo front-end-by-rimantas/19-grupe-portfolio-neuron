@@ -14,6 +14,8 @@ import { aboutCardsRender } from './components/aboutCardsRender/aboutCardsRender
 /* partners */
 /* how */
 /* blog */
+import { blogRender } from "./components/blogRender/blogRender.js";
+import { blogData } from './data/blogData.js';
 /* contact */
 /* footer */
 import { copyRightRender } from './components/copyRightRender/copyRightRender.js';
@@ -56,6 +58,7 @@ counters.forEach(counter => {
 /* partners */
 /* how */
 /* blog */
+blogRender('#our-blog-block', blogData);
 /* contact */
 /* footer */
 copyRightRender('.copyRight');
