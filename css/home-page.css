@@ -189,7 +189,8 @@ body > .bg {
         .underline-title.services::after {
             content: "";
             position: absolute;
-            margin-left: 530px;
+            margin-left: 50%;
+            transform: translateX(-50%);
             width: 150px;
             height: 10px;
             background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
@@ -342,7 +343,8 @@ img {
             .underline-title.blog::after {
                 content: "";
                 position: absolute;
-                margin-left: 530px;
+                margin-left: 50%;
+                transform: translateX(-50%);
                 width: 150px;
                 height: 10px;
                 background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
