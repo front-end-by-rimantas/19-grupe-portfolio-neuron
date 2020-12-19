@@ -98,23 +98,42 @@ body > .bg {
         gap: 1px;
     }
 /* counter */
-.container.counter {
+.container.count {
     background: linear-gradient(0deg, #01a0f9, #09c778);
 }
 .shape {
     background-image: url(../img/counter/count-shape.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 160px;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+}
+.insideShape {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .white {
     color: #fff;
     text-align: center;
     margin-top: 100px;
+    font-size: 35px;
+    font-weight: 600;
 }
-    .white.last {
+.white::after {
+    content: '+';
+    color: #fff;
+}
+    .last {
+        color: #fff;
+        text-align: center;
         margin-top: 10px;
+        font-size: 18px;
+        font-weight: 600;
     }
 /* services */
 .center {
