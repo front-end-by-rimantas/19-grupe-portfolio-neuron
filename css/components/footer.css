@@ -4,14 +4,13 @@
     background: url(../../img/bg/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background: transparent; */
     margin-bottom: 0;
     height: auto;
 }
 .footer.container {
-    padding-top: 90px;	    padding-top: 90px;
-    background-image: url(/img/bg/footer-bg.jpg);	    padding-bottom: 0;
-}	}
+    padding-top: 90px;	   	    
+    padding-bottom: 0;
+}
 
 
 i.footer.fa {
