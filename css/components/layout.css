@@ -108,6 +108,13 @@ body {
         .container > .row > .hero-right.col-6 > .hero-img1 > img {
             position: absolute;
         }
+        div.up {
+            grid-row: 1/2;
+            margin-bottom: 50px;
+        }
+        div.down {
+            grid-row: 2/3;
+        }
 }
 
 @media (max-width: 680px) {
@@ -141,5 +148,12 @@ body {
         }
         .container > .row.aboutGap {
             gap: 0 10px;
+        }
+        div.up {
+            grid-row: 1/2;
+            margin-bottom: 50px;
+        }
+        div.down {
+            grid-row: 2/3;
         }
 }
