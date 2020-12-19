@@ -1,0 +1,521 @@
+
+
+/* trumpas naudojamu mygtuku klasiu pavadinimai */
+
+/* HERO BUTTONS */
+        /* btn hero-btn1 */
+        /* btn hero-btn2 */
+
+
+/* CIRCLE form */
+
+    /* stumdoma rodykle apskritimo viduje */
+    /* .btn.btn-circle > i.fa */
+
+    /* Home and About pages  */
+    /* Don't Miss Our News... */
+        /* btn btn-circle btn-position btn-hover-side*/
+
+
+/* OVAL form and with gradient */
+
+    /* first type:
+    LEARN MORE, READ MORE, CHECK IT OUT, Submit ChatBot'e),
+    CREAT ACCOUNT, DOWNLOAD, DOWNLOAD NOW, REQUEST A DEMO,
+    ADD TO CART, APPLY CUPON, UPDATE CART, Proceed to checkout,
+    CONTINUE TO PAYMENT, POST COMMENT
+    */
+
+        /* daugelio mygtuku, gardientu puses pasikeicia ir sumirksi   */
+        /* btn btn-oval-standart btn-hover-side */
+
+        /* second type: for Submit (COMING SOON page) */
+        /* btn btn-oval-sub1 btn-hover-side */
+
+
+/* (Pages->Download) */
+    /* pusiau kvadratinis-apvalus: Submit */
+    /* btn btn-rect-circle-sub1 btn-hover-side */
+
+
+/*  Differnt BUY NOW buttons (rectangle form):
+visible at first with gradient, BASIC, BEGINNER,
+TRAINER, STARTUP */
+
+    /* buttons types: */
+        /* btn btn-buy btn-buy-standart btn-hover-side */
+        /* btn btn-buy btn-buy-basic btn-hover-side */
+        /* btn btn-buy btn-buy-beginner btn-hover-side */
+        /* btn btn-buy btn-buy-trainer btn-hover-side */
+        /* btn btn-buy btn-buy-startup btn-hover-side */
+
+
+/* RECTANGLE form buttons*/
+
+    /* HOME 1 page */
+        /* SUBMIT NOW (WHITE button) */
+        /* btn btn-rect-sub1 */
+
+    /* Contact page */
+        /* SUBMIT NOW (BLACK button) */
+        /* btn btn-rect-sub2 */
+
+    /* Pages -> Login  */
+        /* LOGIN NOW */
+        /* btn btn-rect-log1 btn-hover-side */
+
+        /* CREATE AN ACCOUNT */
+        /* btn btn-rect-crAc btn-hover-side */
+
+    /* Shop->Single(Product page) */
+        /* button: DESCRIPTION , without Hover! */
+        /* btn btn-rect-justGrad btn-hover-side */
+
+        /* button: REVIEWS */
+        /* btn btn-rect-rev btn-hover-side */
+
+
+
+        .btn {
+            position: relative;
+            display: inline-block;
+            float: left;
+            padding: 10px 30px;
+            /* is ::root reikės bendrą spalvą priskirt */
+            background: #ffffff;
+            color: #ffffff;
+            text-decoration: none;
+        
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            outline: none;
+            border: 1px solid #ffffff;
+            cursor: pointer;
+        
+        }
+        
+        
+        /******************************************/
+        /* Svarbi kodo dalis!..., kuri beik visuose
+        mygtukuose naudojama, tam, kad tolygiai per 
+        nurodyta laika pasikeistu mygtuko fonas */
+        
+        .btn.btn-hover-side::before {
+            position: absolute;
+            content: ""; /* butinas, nes kitaip neiterps sio elemento */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        
+            z-index: -1;
+        
+            /* Sio elemento opacity sluoksnis siuo atzvilgiu atsiduria po kitu
+            sluoksiu, kurio z-index:1. Bet su Before iskialeme ji i prieki,
+            o tuo metu jis yra skaidrus. Keičiantis skaidrumui, jis pasirodo :)
+            Be opacity tolygus perejimas neveikia, butinas! */
+            opacity: 0;
+        }
+        
+            .btn.btn-hover-side:hover::before {
+                opacity: 1; 
+                }
+        
+        /******************************************/
+        
+        
+        /* HERO BUTTONS */
+        
+        /* btn hero-btn1 */
+        
+            .btn.hero-btn1 {   
+                border-radius: 30px;
+                border: 1px solid #ffffff;
+                background-color: #ffffff;
+                color: #01a0f9;
+                /* -property -duration -timing-function -delay */
+                transition: all 0.4s ease 0s;
+                }
+        
+                .btn.hero-btn1:hover {
+                    color: #ffffff;
+                    background-color: transparent;
+                }
+        
+        /* btn hero-btn2 */
+        
+            .btn.hero-btn2 {
+                margin-left: 10px;
+                border-radius: 30px;
+                border: 1px solid #ffffff;
+                background-color: transparent;
+                /* -property -duration -timing-function -delay */
+                transition: all 0.4s ease 0s;
+            }
+        
+                .btn.hero-btn2:hover {
+                    background-color: #ffffff;
+                    color: #01a0f9;
+                }
+        
+        
+        
+        /* OTHER */
+        
+        
+        /* CIRCLE form */
+        
+        /* Home and About pages  */
+        /* Don't Miss Our News... */
+        /* btn btn-circle btn-position btn-hover-side*/
+        
+                /* rodykles stumdymo vieta, kuri naudojama mygtuke */
+                /* rodykles  - font awesome aprasymas */
+                .btn.btn-circle > i.fa {
+                    position: absolute;
+                    display: inline-block;
+                    top:23%;
+                    left:29%;
+        
+                }
+        
+        
+            .btn.btn-circle {
+                padding: 10px;
+                margin: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                font-size: 20px;
+                text-align: center;
+                z-index:1;
+                transform: rotate(-45deg);
+                background-image:linear-gradient(-41deg, #09c778, #01a0f9);
+            }
+        
+                .btn.btn-circle::before {
+                    border-radius: 50%;
+                    line-height: 38px;
+                    font-size: 20px;
+                    background-image: linear-gradient(41deg, rgba(9, 200, 120), rgba(1, 158, 249));
+                    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+                    transition: all 0.7s ease 0s;
+                }
+        
+                    .btn.btn-circle:hover::before {
+                        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+                    }
+        
+        
+        /* HOME page: Video button */
+        /* btn btn-video */
+        
+            .aboutbottom > .btn.btn-video {
+                padding: 0;
+                margin-left: 20px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 10px;
+                font-size: 46px;
+                border: none;
+        
+            }
+        
+            .icon.fa {
+                position:absolute;
+                left: -1px;
+                top:-3px;
+                /* uzdedamas gradientas ant teksto */
+                background: -webkit-linear-gradient(-41deg,#01a0f9, #09c878);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        
+        
+        
+        
+        /* OVAL form and with gradient */
+        
+            /* first type:
+            LEARN MORE, READ MORE, CHECK IT OUT, Submit ChatBot'e),
+            CREAT ACCOUNT, DOWNLOAD, DOWNLOAD NOW, REQUEST A DEMO,
+            ADD TO CART, APPLY CUPON, UPDATE CART, Proceed to checkout,
+            CONTINUE TO PAYMENT, POST COMMENT
+            */
+        
+        
+        /* button classes   */
+        /* btn btn-oval-standart btn-hover-side */
+        
+            .btn.btn-oval-standart {
+                border-radius: 30px;
+                border: none;
+                background-image: linear-gradient(-41deg,#09c778, #019ef9);
+                z-index: 1;
+            }
+        
+                .btn.btn.btn-oval-standart::before {
+                    border-radius: 30px;
+                    background-image: linear-gradient(41deg, #09c878, #019ef9);
+                    /* padarome sublyksejima, keiciant vidinio seselio skaidruma */
+                    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+                    /* -property -duration -timing-function -delay */
+                    transition: all 0.7s ease 0s;
+                }
+        
+                    .btn.btn.btn-oval-standart:hover::before {
+                        box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.0) inset;
+                    }
+        
+        
+            /* second type: for Submit (COMING SOON page) */
+            /* btn btn-oval-sub1 btn-hover-side */
+        
+            .btn.btn-oval-sub1 {
+                border-radius: 30px;
+                border: none;
+                background-image: linear-gradient(-41deg,#09c778, #019ef9);
+                z-index: 1;
+            }
+        
+                .btn.btn-oval-sub1::before {
+                    border-radius: 30px;
+                    background-color: #01a0f9;
+                    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+                    transition: all 0.7s ease 0s;
+                }
+        
+                    .btn.btn-oval-sub1:hover::before {
+                        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+                    }
+        
+        
+        /* (Pages->Download) */
+        /* half rect-circle: Submit */
+        /* btn btn-rect-circle-sub1 btn-hover-side */
+        
+            .btn.btn-rect-circle-sub1 {
+                color: #666666;
+                border-radius: 0 50px 50px 0;
+                background-color: #ffffff;
+                z-index: 1;
+            }
+        
+                .btn.btn-rect-circle-sub1::before {
+                    color: #666666;
+                    border-radius: 0 50px 50px 0;
+                    background-image: linear-gradient(-41deg, #09c878, #019ef9);
+                    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+                    opacity: 0;
+                    transition: all 0.7s ease 0s;
+                }
+        
+                    .btn.btn-rect-circle-sub1:hover::before {
+                        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+        
+                    }
+        
+        
+        
+        /*  Differnt BUY NOW buttons (rectangle form):
+        visible at first with gradient, BASIC, BEGINNER,
+        TRAINER, STARTUP */
+        
+        /* buttons types: */
+        /* btn btn-buy btn-buy-standart btn-hover-side */
+        /* btn btn-buy btn-buy-basic btn-hover-side */
+        /* btn btn-buy btn-buy-beginner btn-hover-side */
+        /* btn btn-buy btn-buy-trainer btn-hover-side */
+        /* btn btn-buy btn-buy-startup btn-hover-side */
+        
+            .btn.btn-buy {
+                border-radius: 3px;
+                /* border: 2px solid black; */
+                background-color: #dd8507;
+                z-index: 1;
+                border:none;
+            }
+        
+                .btn.btn-buy::before {
+                    border-radius: 3px;
+                    background-image: linear-gradient(41deg, #09c878, #019ef9);
+                    transition: all 0.7s ease 0s;
+                }
+        
+            .btn.btn-buy-standart {
+                background-image: linear-gradient(-41deg, #09c878, #019ef9);
+            }
+                .btn.btn-buy-standart::before {
+                    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+                }
+                    .btn.btn-buy-standart:hover::before {
+                        box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.0) inset;
+                    }
+        
+            .btn.btn-buy-basic {
+                background-color: #007bff;
+            }
+        
+            .btn.btn-buy-beginner {
+                background-color: #dd8507;
+            }
+        
+            .btn.btn-buy-trainer {
+                background-color: #09c778;
+            }
+        
+            .btn.btn-buy-startup {
+                background-color: #6610f2;
+            }
+        
+        
+        
+        /* RECTANGLE form buttons*/
+        
+        /* HOME 1 page */
+        /* SUBMIT NOW (WHITE button) */
+        /* btn btn-rect-sub1 */
+        
+            .btn.btn-rect-sub1 {
+                padding: 1px 6px;
+                border: none;
+                border-radius: 5px;
+                background-color: #ffffff;
+                width: 100%;
+                height: 100%;
+                margin:0;
+                color: #333333;
+                transition: all 0.4s ease 0s;
+            }
+        
+                .btn.btn-rect-sub1:hover {
+                    color: #20c997;
+                }
+        
+        /* Contact page */
+        /* SUBMIT NOW (BLACK button) */
+        /* btn btn-rect-sub2 */
+        
+            .btn.btn-rect-sub2 {
+                padding: 1px 6px;
+                border: none;
+                border-radius: 3px;
+                background-color: #333333;
+                width: 100%;
+                height: 100%;
+                margin:0;
+                color: #ffffff;
+                transition: all 0.4s ease 0s;
+            }
+        
+                .btn.btn-rect-sub2:hover {
+                    color: #28a745;
+                }
+        
+        
+        /* Pages -> Login  */
+        /* LOGIN NOW */
+        /* btn btn-rect-log1 btn-hover-side */
+        
+            .btn.btn-rect-log1 {
+                width: 100%;
+                height: 100%;
+                margin:0;
+                border: none;
+                background-image: linear-gradient(-41deg,#09c778, #019ef9);
+                z-index: 1;
+            }
+        
+                .btn.btn-rect-log1::before {
+                    background-image: linear-gradient(41deg, #09c878, #019ef9);
+                    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+                    transition: all 0.7s ease 0s;
+                }
+        
+                    .btn.btn-rect-log1:hover::before {
+                        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+                    }
+        
+        /* Pages -> Login  */
+        /* CREATE AN ACCOUNT */
+        /* btn btn-rect-crAc btn-hover-side */
+        
+            .btn.btn-rect-crAc {
+                border-radius: 3px;
+                border: 1px solid #6c757d;
+                width: 100%;
+                height: 100%;
+                margin:0;
+                color: #666666;
+                background-color: #ffffff;
+                z-index: 1;
+                transition: all 0.7s ease 0s;
+            }
+        
+                .btn.btn-rect-crAc::before {
+                    border-radius: 3px;
+                    border: 1px solid #17a3b800;
+                    background-image: linear-gradient(41deg, #09c878, #019ef9);
+                    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.7) inset;
+                    transition: all 0.7s ease 0s;
+                    top: -1px;
+                    bottom: -1px;
+                    left: -1px;
+                    right: -1px;
+                }
+        
+                    .btn.btn-rect-crAc:hover::before {
+                        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.0) inset;
+                        border: 1px solid #17a3b8;
+                    }
+        
+                    .btn.btn-rect-crAc:hover {
+                        border: 1px solid #6c757d00;
+                        color: #ffffff;
+        
+                    }
+        
+        
+        /* Shop->Single(Product page) */
+        /* button: DESCRIPTION , without Hover! */
+        /* btn btn-rect-justGrad btn-hover-side */
+        
+            .btn.btn-rect-justGrad {
+                padding: 17px 43px;
+                border: none;
+                background-image: linear-gradient(-41deg, #09c878, #019ef9);
+                width: 100%;
+                height: 100%;
+                margin:0;
+            }
+        
+        /* Shop->Single(Product page) */
+        /* button: REVIEWS */
+        /* btn btn-rect-rev btn-hover-side */
+        
+            .btn.btn-rect-rev {
+                color: #333333;
+                padding: 17px 43px;
+                border: 1px solid #019ef9 ;
+                background-color: #ffffff;
+                width: 100%;
+                height: 100%;
+                margin:0;
+                z-index: 1;
+                transition: all 0.7s ease 0s;
+            }
+        
+                .btn.btn-rect-rev::before {
+                    background-image: linear-gradient(-41deg, #09c878, #019ef9);
+                    transition: all 0.7s ease 0s;
+                }
+        
+                    .btn.btn-rect-rev:hover {
+                        border: 1px solid #ffffff;
+                        color: #ffffff;
+                    }

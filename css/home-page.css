@@ -91,6 +91,10 @@ body > .bg {
     bottom: 6px;
     z-index: -1;
 }
+.learnMore > .btn > a {
+    text-decoration: none;
+    color: #fff;
+}
     
 /* about video */
 .aboutVideo {
