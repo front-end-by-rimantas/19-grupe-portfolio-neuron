@@ -43,3 +43,10 @@ footer.container {
          .footer-navigate > .right-column {
          width: 40%;
          }
+         .copyRight > p > a {
+            text-decoration: none;
+            color: #666666;
+        }
+        .copyRight > p > a:hover {
+            color: blue;
+         }
