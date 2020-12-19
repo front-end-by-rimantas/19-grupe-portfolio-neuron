@@ -2,6 +2,7 @@
 ALL IMPORTS
 ****************/
 /* header */
+import { stickyMenu } from './components/Menu/menu.js';
 /* hero */
 /* about */
 import { aboutCardsData } from './data/aboutCardsData.js';
@@ -23,6 +24,7 @@ import { copyRightRender } from './components/copyRightRender/copyRightRender.js
 EXECUTION
 ****************/
 /* header */
+stickyMenu();
 /* hero */
 /* about */
 aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);

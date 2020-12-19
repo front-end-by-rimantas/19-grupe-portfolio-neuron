@@ -144,7 +144,7 @@ body {
             display: none;
         }
         .container > .row > .HEAD.col-xs-12 {
-            margin-top: 15px;
+            
         }
         .container > .row.aboutGap {
             gap: 0 10px;

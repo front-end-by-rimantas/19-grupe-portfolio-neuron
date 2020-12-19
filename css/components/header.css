@@ -54,6 +54,8 @@
     }
     #neuron-white-logo {
         margin: 0;
+        width: auto;
+        height: auto;
     } 
     /************HEADER MENU***********/
     .container > .row .headerRight {
@@ -62,6 +64,7 @@
     }
     .container > .row > .headerRight > .headerMenu{
         display: inline-block;
+        padding: 15px 0;
     }
     .headerMenu > .main-menu {
         display: inline-block;
