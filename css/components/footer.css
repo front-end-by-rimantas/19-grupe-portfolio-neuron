@@ -1,17 +1,43 @@
-footer.container {
-    padding-top: 90px;
-    background-image: url(/img/bg/footer-bg.jpg);
+.bg.footer {
+    position: relative;
+    background-color: #eff1f7;
+    background: url(../../img/bg/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: transparent; */
+    margin-bottom: 0;
+    height: auto;
+}
+.footer.container {
+    padding-top: 90px;	    padding-top: 90px;
+    background-image: url(/img/bg/footer-bg.jpg);	    padding-bottom: 0;
+}	}
+
+
+i.footer.fa {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(-41deg, #09c778, #01a0f9);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
-
     h4 {
-        margin: 0px 0px 20px;
-        font-weight: 30;
+        margin: 0px 0px 30px;
         text-transform: uppercase;
     }
     p.footer {
        font-size: 15px;
-        
+    }
+    p.footer.top {
+        margin-top: 30px;
+    }
+    .footer-navigate {
+        display: inline-block;
     }
 
     .footer-link {
@@ -27,22 +53,39 @@ footer.container {
             margin: 0px 0px 20px;
         }
 
-        .footer-title {
+        .underline-title {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .underline-title::after {
             content: "";
-            width: 50px;
+            position: absolute;
+            width: 70px;
             height: 5px;
             background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
-            margin-top: -28px;
-            margin-bottom: 25px;
-            left: 2px;
-
+            top: 15px;
+            bottom: 6px;
+            left: 1px;
+            z-index: -1;
         }
+
          .footer-navigate > .left-column {
-         width: 60%;
+            float: left;
+            width: 60%;
+            margin-top: 30px;
         }
          .footer-navigate > .right-column {
-         width: 40%;
+            float: left;
+            width: 40%;
+            margin-top: 30px;
          }
+        .f-bottom {
+            border-top: 1px solid #e3e5ea;
+        }
+        img.footer {
+            margin-bottom: 30px;
+        }
          .copyRight > p > a {
             text-decoration: none;
             color: #666666;
