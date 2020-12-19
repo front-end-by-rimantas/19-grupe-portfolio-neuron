@@ -182,6 +182,9 @@ body {
         .footer-navigate .right-column {
             width: 100%;
         }
+        .footer-navigate .right-column {
+            margin-top: 0;
+        }
         p.footer {
             width: 30%;
         }
