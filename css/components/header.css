@@ -61,21 +61,229 @@
         align-self: center;
     }
     .container > .row > .headerRight > .headerMenu {
-    
         display: inline-block;
+        padding: 15px 0;
     }
     .headerMenu > .main-menu {
         display: inline-block;
     }
     
     .headerMenu > .main-menu > a {
-        margin-left: 20px;
-    }
-  /*************************************************/
-    .headerMenu > .header-icon-bar > a {
         margin-left: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
     }
-    .headerMenu > .header-icon-bar{
+    .headerMenu > .main-menu > a:hover {
+        color: #cccccc;
+        transition: all 0.5s ease 0s;
+    }
+    .headerMenu > .main-menu > .dropdown {
+        position: relative;
         display: inline-block;
+        height: 50px;
+        cursor: pointer;
+    } 
+    .headerMenu > .main-menu > .dropdown > a{
         margin-left: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        transition:all 0.5s ease 0;
     }
+    .headerMenu > .main-menu > .dropdown > a:hover {
+        color: #cccccc;
+        transition: all 0.5s ease 0s;
+    }
+    .headerMenu > .main-menu > .dropdown > .dropdown-cont {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        background-color: white;
+        width: 220px;
+        min-width: 160px;
+        box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.06);
+        padding: 10px 0;
+        z-index: 1;
+        margin-top: 10px;
+        transform-origin: 0 0 0;
+        transform: scaleY(0);
+        line-height: 40px;
+    }
+    
+    
+    .headerMenu > .main-menu > .dropdown:hover .dropdown-cont{
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
+        transition: all 1s 0s;
+      }
+      .headerMenu > .main-menu > .dropdown > .dropdown-cont > a {
+          text-decoration: none;
+          width: 100%;
+          display: block;
+          text-align: left;
+          padding: 0px 20px;
+          font-weight: 600;
+          color: #333333;
+          transition: all 0.5s 0s;
+      }
+      .headerMenu > .main-menu > .dropdown > .dropdown-cont > a:hover {
+          color:#01a0f9;
+      }
+/*************************************PAGES SECTION BUTTON*******************************/
+
+.headerMenu > .main-menu > .dropdown > .dropdown-cont2 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.06);
+    padding: 10px 0;
+    z-index: 1;
+    margin-top: 10px;
+    transform-origin: 0 0 0;
+    transform: scaleY(0);
+    line-height: 40px;
+    /*****Centravimas******/ 
+    margin-left: -260px;
+}
+.headerMenu > .main-menu > .dropdown:hover .dropdown-cont2{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 1s 0s;
+    width: 560px;
+    text-align: center;
+  }
+  .pages {
+      width: 33%;
+      float: left;
+  }
+.headerMenu > .main-menu > .dropdown > .dropdown-cont2 > .pages > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 0px 20px;
+    font-weight: 600;
+    color: #333333;
+    transition: all 0.5s 0s;
+} 
+.headerMenu > .main-menu > .dropdown > .dropdown-cont2 > .pages > a:hover {
+    color: #01a0f9;
+}
+/********************** SHOP + SEARCH***************************/
+.headerMenu > .header-icon-bar > .shopCart {
+    display: inline-block;
+    margin: 0 10px;
+    height: 50px;
+}
+.headerMenu > .header-icon-bar > .shopCart > a {
+    color: white;
+}
+.headerMenu > .header-icon-bar > .shopCart > a:hover {
+    color: black;
+    transition: all 0.5s ease 0s;
+}
+.headerMenu > .header-icon-bar > a {
+    color: white;
+}
+.headerMenu > .header-icon-bar > a:hover {
+    color: black;
+    transition: all 0.5s ease 0s;
+}
+.headerMenu > .header-icon-bar{
+    display: inline-block;
+    margin-left: 10px;
+}
+    .miniCart {
+        position: absolute;
+        padding: 15px 20px;
+        background-color: white;
+        width: 270px;
+        z-index: 1;
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(-225px, 70px);
+        overflow: hidden;
+    }
+        .shopCart:hover .miniCart {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s ease-in-out 0s;
+        transform: translate(-225px, 10px);
+        }
+        .miniCart > .firstProduct {
+            display: inline-block;
+            float: left;
+            width: 100%;
+            border-bottom: 1px solid rgba(170, 170, 170, 0.25);
+            padding-top: 15px;
+            text-align: center;
+        }
+        .miniCart > .firstProduct > a {
+            display: inline-block;
+            float: left;
+            color: #666666;
+            margin-top: 2px;
+        }
+        .miniCart > .firstProduct > .productInfo {
+            display: inline-block;
+            padding: 0px 30px;
+        }
+        .miniCart > .firstProduct > a > .x-button {
+            border: 1px solid;
+            width: 18px;
+            height: 18px;
+            line-height: 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            text-align: center;
+        }
+            .miniCart > .firstProduct > .productInfo > a {
+                text-decoration: none;
+                font-size: 17px;
+                text-align: left;
+                color: #01a0f9;
+            }
+            .miniCart > .firstProduct > .productInfo > .quantity {
+                margin-top: 10px;
+                margin-bottom: 15px;
+                font-size: 18px;
+        }
+
+            .miniCart > .firstProduct > .productIMG {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                float: right;
+            }
+            .miniCart > .firstProduct > .productIMG > a > img {
+                width: 40px;
+                height: 40px;
+            }
+            .cartTotal > .subtotal {
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+                .cartTotal > .CartButtons {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                }
+                .cartTotal > .CartButtons > button {
+                    text-align: center;
+                }
+            
+        
