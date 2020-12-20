@@ -259,18 +259,37 @@ img {
     /* margin: 0 0 60px 20px; */
 }
 /* how */
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin-bottom: 20px;
+
+.works {
+    text-align: center;
+}
+
+.works > .circle {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px;
     background: linear-gradient(-41deg, #09c778, #01a0f9);
 }
-.dot {
+
+.works > h3 {
+    margin-top: 15px;
+}
+.works > .dot {
+    display: inline-block;
     width: 30px;
     height: 30px;
     border-radius: 15px;
     background: linear-gradient(-41deg, #09c778, #01a0f9);
+    margin-top: 30px;
+}
+
+@media (max-width: 1080px) {
+    .works > .dot {
+        display: none;
+    }
 }
 
 
