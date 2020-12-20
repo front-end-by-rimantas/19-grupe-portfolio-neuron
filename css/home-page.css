@@ -249,7 +249,7 @@ img.project {
 }
 .row.partner {
     display: grid;
-    grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+    /* grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr; */
     padding-top: 60px;
    
 }
@@ -279,7 +279,23 @@ img {
     padding-bottom: 175px;
 }
 
+.card {
+    display: inline-block;
+    width: 100%;
+}
+.view {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+.list {
+    display: inline-block;
+    width: 100%;
+}
+
 .blog-card {
+    display: inline-block;
     padding: 0;
     padding-bottom: 20px;
     border-radius: 0;

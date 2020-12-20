@@ -1,10 +1,8 @@
-import { blogData } from "../../data/blogData";
-
 function blogRender(selector, blogData) {
     const DOM = document.querySelector(selector);
     let HTML = '';
-    const count = blogData.data.length;
-    for (let i = 0; i < blogData.maxLimit; i++) {
+    const count = blogData.maxLimit || blogData.data.length;
+    for (let i = 0; i < count; i++) {
         const card = blogData.data[i];
         HTML += `<div class="col-4 col-sm-6 col-xs-12">
         <div class="blog-card">

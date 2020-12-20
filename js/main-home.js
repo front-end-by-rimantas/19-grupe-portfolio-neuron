@@ -15,6 +15,7 @@ import { aboutCardsRender } from './components/aboutCardsRender/aboutCardsRender
 /* partners */
 /* how */
 /* blog */
+import { Card } from "./components/Card/Card.js";
 import { blogRender } from "./components/blogRender/blogRender.js";
 import { blogData } from './data/blogData.js';
 /* contact */
@@ -60,7 +61,14 @@ counters.forEach(counter => {
 /* partners */
 /* how */
 /* blog */
-blogRender('#our-blog-block', blogData);
+// blogRender('#our-blog-block', blogData);
+new Card({
+    selector: '#our-blog-block', 
+    data: blogData,
+    maxItems: 7,
+    cloneCount: 2,
+    visibilityStrategy: 'last',
+});
 /* contact */
 /* footer */
 copyRightRender('.copyRight');
