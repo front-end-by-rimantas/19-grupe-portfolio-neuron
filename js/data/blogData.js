@@ -1,4 +1,7 @@
-const blogData = [
+const blogData = {
+    imgFolder: 'blog',
+    maxLimit: 3,
+    data: [
     {
         img: '1b.jpg',
         icon1: 'fa fa-calendar-check-o',
@@ -32,6 +35,7 @@ const blogData = [
         title: 'Man in Red Plaid Shirt Talking on Phone Terrace',
         desc: 'The Tutorial covers examples of identification And Rew Garfield and verifies if a picture',
     },
-];
+],
+};
 
 export { blogData }

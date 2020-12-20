@@ -1,12 +1,16 @@
-function blogRender(selector, data) {
+import { blogData } from "../../data/blogData";
+
+function blogRender(selector, blogData) {
     const DOM = document.querySelector(selector);
     let HTML = '';
-    for (let card of data) {
+    const count = blogData.data.length;
+    for (let i = 0; i < blogData.maxLimit; i++) {
+        const card = blogData.data[i];
         HTML += `<div class="col-4 col-sm-6 col-xs-12">
         <div class="blog-card">
             <div class="blog-card-top">
                 <a href="#">
-                    <img src="./img/blog/${card.img}" alt="picture_blog_1b">
+                    <img src="./img/${blogData.imgFolder}/${card.img}" alt="picture_blog_1b">
                 </a>
             </div>
             <div class="blog-card-bottom">
