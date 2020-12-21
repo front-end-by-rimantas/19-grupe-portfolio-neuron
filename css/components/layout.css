@@ -70,7 +70,17 @@ body {
         
         /*.container > .row > .col-md-6 > .aboutvideoimgBox > .aboutvideoimg {
             margin: 50px 0; Galimas future responsive variantas*/
-        }
+            .container.contact.big {
+                height: 1177px;
+                padding-bottom: 0;
+            }
+            .left.column.col-5 {
+                margin-top: 60px;
+            }
+            .right.column.col-7 {
+                margin-top: 0;
+            }
+}
 
 @media (max-width: 860px) {
     .container {
@@ -130,6 +140,19 @@ body {
         }
         p.footer.top {
             width: 30%;
+        }
+        .container.contact.big {
+            height: 1450px;
+            padding-bottom: 0;
+        }
+        .form > input.contact {
+            width: 100%;
+        }
+        .form > input.contact:nth-of-type(2n) {
+            margin-left: 0;
+        }
+        .right.column.col-7 {
+            margin-bottom: 40px;
         }
 }
 
