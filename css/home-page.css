@@ -262,8 +262,11 @@ img {
 /* how */
 
 .works {
+    position:relative;
+    display: inline-block;
     text-align: center;
 }
+
 
     /* taskuotas apskritimas */
     .works > .circle {
@@ -275,6 +278,29 @@ img {
         border-radius: 50%;
         border: 1px dashed  #01a0f9;
     }
+
+        /* bus pulsuojanti dalis, nes tik tokiu
+        atveju uzvedus ant img toliau vyktu pulsavimas */
+        .works > .circle::before {
+            position: absolute;
+            display: inline-block;
+            content:'';
+            top:0;
+            left: 0;
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            background: linear-gradient(-41deg, #09c778, #01a0f9);
+            opacity: 0;
+        }
+
+            /* hover'inant pradeda vykti animacija vardu 'circle-pulse',
+            animacija pavaizduota zemiau */
+            .works > .circle:hover::before {
+                animation-timing-function: ease-out;
+                animation: circle-pulse 1.6s infinite;
+            }
+
 
         /* poveiksliuko apskritimas su fonu */
         .works > .circle > img {
@@ -315,11 +341,28 @@ img {
             height: 30px;
             width: 30px;
             border-radius: 50%;
-            margin: 4px;
-            left: 0px;
-            /* top: 4px; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background: linear-gradient(-41deg, #09c778, #01a0f9);
         }
+
+
+/* pulsavimo animacijos aprasymas */
+@keyframes circle-pulse {
+    0%{
+        opacity:0.9;
+    }
+    100%{
+        top: -16px;
+        left: -16px;
+        height: 212px;
+        width: 212px;
+        opacity: 0;
+        /* kitaip nusistums i sona */
+        
+    }
+}
 
 
 /* mazesniame ekrane isimami mazesnieji apskrtimai */
