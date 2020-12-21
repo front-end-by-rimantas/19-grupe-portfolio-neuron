@@ -378,7 +378,7 @@ input[value] {
     width: 100vw;
     height: 630px;
     overflow: hidden;
-    z-index: -5;
+    /* z-index: -5; */
 }
 .left.column {
     background-color: #fff;
