@@ -227,8 +227,11 @@ img.project {
 }
 .underline-title.news {
     position: relative;
+    padding-right: 350px;
 }
-
+.col-8 > input::placeholder {
+    font-size: 20px;
+}
 .underline-title.news::after {
     content: "";
     position: absolute;
@@ -239,6 +242,10 @@ img.project {
     bottom: 6px;
     z-index: 1;
 }
+.fa-envelope-open-o::before {
+    font-size: 200px;
+    margin-left: 50px;
+}
 /* partners */
 .container.partner {
     background-image: url(../img/bg/partner-bg.jpg);
@@ -246,20 +253,18 @@ img.project {
     background-position: bottom center;
     width: 100%;
     height: 530px;
+    max-width: 100vw;
+    overflow: hidden;
 }
 .row.partner {
     padding-top: 300px;
     display: inline-block;
     text-align: center;
 }
-.partner > div {
-    margin-bottom: 40px;
-}
 .partner > div > a {
     line-height: 60px;
-    margin-right: 70px;
-    padding-top: 60px;
-   
+    margin-right: 5%;
+    margin-bottom: 60px;
 }
 img {
     height: 30px;
