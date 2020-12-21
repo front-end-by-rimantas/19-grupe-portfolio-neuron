@@ -178,6 +178,9 @@ body > .bg {
     background-color: #eff1f8;
     background: transparent;
 }
+ .container.grey > .block .icon-services {
+        color: linear-gradient(122deg, rgba(4,160,251,1) 25%, rgba(10,197,121,1) 79%);
+}
 .block {
     background-color: white;
 }
