@@ -258,34 +258,71 @@ img {
     /* width: 100%; */
     /* margin: 0 0 60px 20px; */
 }
+
 /* how */
 
 .works {
     text-align: center;
 }
 
-.works > .circle {
-    text-align: center;
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 15px;
-    background: linear-gradient(-41deg, #09c778, #01a0f9);
-}
+    /* taskuotas apskritimas */
+    .works > .circle {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        width: 182px;
+        height: 182px;
+        border-radius: 50%;
+        border: 1px dashed  #01a0f9;
+    }
 
-.works > h3 {
-    margin-top: 15px;
-}
-.works > .dot {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background: linear-gradient(-41deg, #09c778, #01a0f9);
-    margin-top: 30px;
-}
+        /* poveiksliuko apskritimas su fonu */
+        .works > .circle > img {
+            /* svarbu pailikti relative, be relative ir absolute
+            keisis circle fonas pusluojant uzsides virs paveiksliuko,
+            su absolute reiktu img per nauja reguliuoti*/
+            position: relative;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(-41deg, #09c778, #01a0f9);
+            margin: 15px;
+        }
 
+    /* nuo bendro nuimtas margin del velesnio geresnio derinimo */
+    .works > h3 {
+        margin-top: 15px;
+    }
+
+    /* mazesiu apskritimo sukurimas */
+    /* taskuotas apskritimas */
+    .works > .dot {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px dashed  #01a0f9;
+    }
+
+        /* viduje esantis apskritimas su fonu */
+        .works > .dot::before {
+            text-align: center;
+            position: absolute;
+            content:'';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 4px;
+            left: 0px;
+            /* top: 4px; */
+            background: linear-gradient(-41deg, #09c778, #01a0f9);
+        }
+
+
+/* mazesniame ekrane isimami mazesnieji apskrtimai */
 @media (max-width: 1080px) {
     .works > .dot {
         display: none;
