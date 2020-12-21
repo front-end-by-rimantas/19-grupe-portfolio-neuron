@@ -29,7 +29,7 @@ input {
     display: inline-block;
     float: left;
     height: 160px;
-    width: 636px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 30px;
     resize: none;

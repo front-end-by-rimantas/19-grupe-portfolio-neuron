@@ -109,6 +109,15 @@
                                 </div>
                                 <a href="#">Contact</a>
                             </div>
+                            <div class="topnav" id="myTopnav"> 
+                                <a class="active" href="#">&#9776; Menu</a>
+                                <div class="submenu">
+                                <a href="#">Home</a>
+                                <a href="#">Home</a>
+                                <a href="#">Home</a>
+                                <a href="#">Home</a>
+                            </div>
+                            </div>
                             <div class="header-icon-bar">
                                 <div class="shopCart">
                                     <a href="#"><i class="fa fa-shopping-bag"></i></a>
@@ -661,6 +670,15 @@
     <!-- footer end -->
 
     <script src="./js/main-home.js" type="module"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }</script>
 </body>
 
 </html>
