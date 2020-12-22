@@ -4,6 +4,9 @@ input.news {
     border: none;
     border-bottom: 1px solid rgba(1, 160, 249, 0.2);
 }
+input.news:focus {
+    outline: none;
+}
 
 .form.contact {
     display: inline-block;
