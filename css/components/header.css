@@ -331,7 +331,7 @@
 }
 @media (max-width: 960px) {
     .headerMenu > .main-menu  { display: none; }
-    .headerMenu > .select { display: inline-block; }
+    .headerMenu > .topnav { display: inline-block; }
   }
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
