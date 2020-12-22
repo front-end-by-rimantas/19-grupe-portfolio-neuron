@@ -45,6 +45,10 @@ body {
         .container > .row > .col-lg-10 { grid-column: auto / span 10; }
         .container > .row > .col-lg-11 { grid-column: auto / span 11; }
         .container > .row > .col-lg-12 { grid-column: auto / span 12; }
+    
+    .partner > div > div > a {
+        margin-right: 3%;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -81,6 +85,17 @@ body {
                 margin-top: 0;
             }
         
+            .block-news > form {
+                grid-row: 2/3;
+            }
+            h2.underline-title.news {
+                padding-right: 300px;
+                margin-top: 30px;
+            }
+            .partner > div > div > a {
+                margin-right: 0;
+            }
+
 }
 
 @media (max-width: 840px) {
@@ -158,6 +173,24 @@ body {
         .right.column.col-7 {
             margin-bottom: 40px;
         }
+        h2.underline-title.news {
+            padding-right: 180px;
+            margin-top: 30px;
+        }
+        .container > .block-news {
+            margin-top: 100px;
+            bottom: 120px;
+        }
+        .container.partner.small {
+            height: 350px;
+        }
+        .partner > .row.partner {
+            padding-top: 100px;
+            text-align: justify;
+        }
+        .partner > div > div > a {
+            margin-right: 10%;
+        }
 }
 
 @media (max-width: 620px) {
@@ -217,5 +250,17 @@ body {
         p.footer.top {
             width: 30%;
         }
-        
+      
+
+        h2.underline-title.news {
+            padding-right: 50px;
+            margin-top: 30px;
+        }
+        .partner > .row.partner {
+            text-align: justify;
+        }
+        .partner > div > div > a {
+            margin-right: 2px;
+        }
+
 }
