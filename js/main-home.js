@@ -25,13 +25,6 @@ import { copyRightRender } from './components/copyRightRender/copyRightRender.js
 EXECUTION
 ****************/
 /* header */
-function openSearch() {
-    document.getElementById("myOverlay").style.display = "block";
-  }
-  
-  function closeSearch() {
-    document.getElementById("myOverlay").style.display = "none";
-  }
  stickyMenu();
 /* hero */
 /* about */

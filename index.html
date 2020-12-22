@@ -149,13 +149,13 @@
                                     </div>
                                 </div>
                             </div>
-                                <a class="fa fa-search openBtn" onclick="openSearch()"></a>
-                            </div>
+                            <a class="fa fa-search openBtn" onclick="openSearch()"></a>
+                            </div>                            
                             <div id="myOverlay" class="overlay">
                                 <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                                  <div class="overlay-content">
+                                <div class="overlay-content">
                                     <input type="text" placeholder="Searching..." name="search">
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -672,8 +672,17 @@
 
 
     <!-- footer end -->
-
+    
     <script src="./js/main-home.js" type="module"></script>
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+      >
 </body>
 
 </html>
