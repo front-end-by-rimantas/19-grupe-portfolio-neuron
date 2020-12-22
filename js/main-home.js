@@ -25,7 +25,16 @@ import { copyRightRender } from './components/copyRightRender/copyRightRender.js
 EXECUTION
 ****************/
 /* header */
-stickyMenu();
+function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+openSearch();
+closeSearch();
+ stickyMenu();
 /* hero */
 /* about */
 aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);
