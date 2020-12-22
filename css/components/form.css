@@ -1,8 +1,11 @@
 input.news {
-    width: 95%;
+    width: 89%;
     line-height: 40px;
     border: none;
     border-bottom: 1px solid rgba(1, 160, 249, 0.2);
+}
+input.news:focus {
+    outline: none;
 }
 
 .form.contact {
@@ -14,17 +17,21 @@ input.news {
 input.contact {
     display: inline-block;
     float: left;
-    width: 45%;
+    width: 47%;
     line-height: 43px;
     background: rgba(255, 255, 255, 0.3);
 }
+input.contact:nth-of-type(2n) {
+    margin-left: 6%;
+}
 
 input {
-    margin: 0 20px 30px 0;
+    margin: 0 0 30px 0;
     padding: 10px;
     border: none;
     border-radius: 5px;
 }
+
 .form > textarea {
     display: inline-block;
     float: left;
