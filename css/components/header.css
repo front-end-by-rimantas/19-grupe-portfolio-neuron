@@ -37,8 +37,7 @@
     }
     /*********************HEADER*******************/
     .container > .row > .HEAD {
-        display: grid;
-        grid-template-columns: 3fr 9fr;
+        display: inline-block;
     }
     /*    top: 0;  *****Galivas variantas sticky padarimui headerio + su js papildomos klases priskirimas*****
     width: 100%;
@@ -49,20 +48,21 @@
     z-index: 999;/*
 
     /*********HEADER LOGO********/
-    .headerLEFT > .header-logo {
-        
+    .header-logo {
+        display: inline-block;
+        float: left;
     }
     #neuron-white-logo {
         margin: 0;
     } 
     /************HEADER MENU***********/
-    .container > .row .headerRight {
-        text-align: right;
-        align-self: center;
-    }
-    .container > .row > .headerRight > .headerMenu {
+
+    .headerMenu {
         display: inline-block;
         padding: 15px 0;
+        text-align: right;
+        align-self: center;
+        width: 100%;
     }
     .headerMenu > .main-menu {
         display: inline-block;
@@ -301,13 +301,14 @@
     font-weight: 500;
     text-decoration: none;
     color: white;
+    padding-right: 60px;
 }
 .submenu {
     visibility: hidden;
     opacity: 0;
     position: absolute;
     background-color: white;
-    width: 220px;
+    width: 100%;
     min-width: 160px;
     box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.06);
     padding: 10px 0;
@@ -332,6 +333,35 @@
 @media (max-width: 960px) {
     .headerMenu > .main-menu  { display: none; }
     .headerMenu > .topnav { display: inline-block; }
+    .headerMenu {
+        text-align: right;
+    position: relative;
+    }
+    .headerMenu > .topnav {
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    }
+    .headerMenu > .header-icon-bar {
+        display: inline-block;
+        margin-left: 10px;
+        text-align: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 15px; 
+    }
+    .header-logo {
+        float: left;
+        display: inline-block;
+        margin-top: -10px;
+    }
+    .container > .row > .HEAD {
+        display: inline-block;
+        width: 100%;
+    }
   }
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
