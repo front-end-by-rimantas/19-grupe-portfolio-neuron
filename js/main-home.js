@@ -32,8 +32,6 @@ function openSearch() {
   function closeSearch() {
     document.getElementById("myOverlay").style.display = "none";
   }
-openSearch();
-closeSearch();
  stickyMenu();
 /* hero */
 /* about */
