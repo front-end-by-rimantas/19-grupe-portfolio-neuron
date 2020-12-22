@@ -409,8 +409,23 @@ img {
     }
 }
 
-/* mazesniame ekrane isimami mazesnieji apskrtimai */
 @media (max-width: 1080px) {
+    /* bruksniuotos rodykles ilgio ir padeties keitimas */
+    .works::before {
+        width: 69%;
+        left: 77%;
+
+    }
+    /* rodykles padeties keitimas */
+    .works::after {
+        left: 61%;
+    }
+}
+
+
+
+/* mazesniame ekrane isimami mazesnieji apskrtimai */
+@media (max-width: 860px) {
     .works::before, .works::after {
         display: none;
     }
