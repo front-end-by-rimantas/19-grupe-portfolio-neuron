@@ -9,6 +9,7 @@ import { aboutCardsData } from './data/aboutCardsData.js';
 import { aboutCardsRender } from './components/aboutCardsRender/aboutCardsRender.js';
 /* about video */
 /* counter */
+import { counterAnimation } from "./components/counter/counterAnimation.js";
 import { counterOnScroll } from "./components/counter/counterOnScroll.js";
 /* services */
 /* projects */
