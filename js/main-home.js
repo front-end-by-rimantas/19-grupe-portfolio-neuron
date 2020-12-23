@@ -28,7 +28,7 @@ import { copyRightRender } from './components/copyRightRender/copyRightRender.js
 EXECUTION
 ****************/
 /* header */
-stickyMenu();
+ stickyMenu();
 /* hero */
 /* about */
 aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);
