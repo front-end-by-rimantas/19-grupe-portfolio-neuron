@@ -469,3 +469,72 @@
       text-align: left;
     }
   }
+ /********************** SEARCH FULLSCREAN ***************************/
+ .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    cursor: pointer;
+    color: white;
+    color: #01a0f9;
+    margin-top: 20px;
+    font-size: 45px;
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 1;
+    outline: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  
+  .overlay .closebtn:hover { 
+    color:rgb(255, 255, 255);
+    background-color: #01a0f9;
+  }
+  
+  .overlay input[type=text] {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: none;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  ::placeholder {
+    color: rgb(255, 255, 255);
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+            
+        
