@@ -39,14 +39,6 @@
     .container > .row > .HEAD {
         display: inline-block;
     }
-    /*    top: 0;  *****Galivas variantas sticky padarimui headerio + su js papildomos klases priskirimas*****
-    width: 100%;
-    background-color: aqua;
-    padding: 10px 50px;
-    position: fixed;
-    left: 0px;
-    z-index: 999;/*
-
     /*********HEADER LOGO********/
     .header-logo {
         display: inline-block;
@@ -315,14 +307,14 @@
     transform-origin: 0 0 0;
     transform: scaleY(0);
     line-height: 40px;
-}
+} /*
 .topnav:hover .submenu{
     display: block;
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
     transition: all 0.5s 0s;
-}
+} */
 .submenu > a {
     display: inline-block;
     width: 100%;
@@ -354,6 +346,7 @@
     color: white;
     padding-left: 15px;
 }
+/**********************************************/
 .submenuSUB {
         visibility: hidden;
         opacity: 0;
@@ -367,27 +360,33 @@
         transform-origin: 0 0 0;
         transform: scaleY(0);
         line-height: 40px;
-}
+}/*
 .topnavSUB:hover .submenuSUB{
     display: block;
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
     transition: all 0.5s 0s;
+}*/
+.show{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 0.5s 0s;
+    box-shadow: 0 0 20px rgba(0,0,0,.15)
 }
 .submenuSUB > a{
     text-align: left;
     display: block;
     width: 100%; 
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(4,148, 227,.7);
     text-decoration: none;
     font-size: 14px;
-    text-transform: capitalize;
     padding: 0 15px;
-        text-transform: uppercase;
-        font-weight: 500;
-        text-decoration: none;
-        color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: white;
 }
 .submenuSUB > a:last-of-type {
     background-color: #f6f3ed;
@@ -420,6 +419,10 @@
         text-align: right;
     position: relative;
     }
+    /******nuimu sticky ant responsive, pagal originala******/
+    /*.container > .row > .HEAD.sticky {
+        display: none;
+    } */
     .headerMenu > .topnav {
     text-align: right;
     display: block;
