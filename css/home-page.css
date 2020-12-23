@@ -557,14 +557,14 @@ input[value] {
     background-repeat: no-repeat;
     width: 100vw;
     height: 630px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* z-index: -5; */
 }
 .left.column {
     background-color: #fff;
     border-radius: 5px;
     padding: 50px;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 .right.column {
     margin-top: 60px;
