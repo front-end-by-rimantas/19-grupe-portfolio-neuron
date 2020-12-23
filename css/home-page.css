@@ -176,7 +176,7 @@ body > .bg {
 }
 .grey {
     background-color: #eff1f8;
-    background: transparent;
+    /* background: transparent; */
 }
 .block {
     background-color: white;
@@ -392,7 +392,6 @@ img {
             background: linear-gradient(-41deg, #09c778, #01a0f9);
         }
 
-
 /* pulsavimo animacijos aprasymas */
 @keyframes circle-pulse {
     0%{
@@ -467,7 +466,8 @@ img {
 }
 
     .blog-card > .blog-card-bottom {
-        padding: 30px 25px;
+        padding: 30px 25px 60px;
+        background-color: white;
     }
 
         .blog-card > .blog-card-bottom > .blog-info > li {
@@ -539,6 +539,9 @@ img {
                 z-index: -1;
             }
 
+.blog-color {
+     background-color: #eff1f8;
+ }
 /* contact */
 .contact::placeholder,
 textarea::placeholder {
@@ -555,14 +558,14 @@ input[value] {
     background-repeat: no-repeat;
     width: 100vw;
     height: 630px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* z-index: -5; */
 }
 .left.column {
     background-color: #fff;
     border-radius: 5px;
     padding: 50px;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 .right.column {
     margin-top: 60px;
