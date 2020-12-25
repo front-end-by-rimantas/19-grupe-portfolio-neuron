@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div class="wrapper" id="wrap">
+        <span class="loader"><img class="loader-image" src="./img/preloader/load.png" alt="fun"></span>
+    </div>
     <div class="bg">
         <!-- header begin -->
         <header class="container">
@@ -149,7 +152,13 @@
                                     </div>
                                 </div>
                             </div>
-                                <a href="#"><i class="fa fa-search"></i></a>
+                            <a class="fa fa-search openBtn" onclick="openSearch()"></a>
+                            </div>                            
+                            <div id="myOverlay" class="overlay">
+                                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                <div class="overlay-content">
+                                    <input type="text" placeholder="Searching..." name="search">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -180,7 +189,6 @@
         </section>
     </div>
     <!-- section HERO end -->
-
     <!-- section ABOUT begin -->
     <section class="container">
         <div class="row aboutGap" id="testid">
@@ -345,13 +353,15 @@
     <!-- section NEWS begin -->
     <section class="container">
         <div class="row block-news">
-            <i class="col-4"></i> <!-- ka darysim su sitais, karpysim ar ieskosim ikonu? -->
-            <form class="col-8">
+            <div class="col-4">
+                <i class="fa fa-envelope-open-o"></i>
+            </div>
+            <form class="col-8 col-md-12">
                 <h2 class="underline-title news">Don't Miss Our News And Updates!</h2>
                 <input class="news" type="email" placeholder="Enter Your Email" required>
                 <!-- fiksuosime ar mygtukas paspaudziamas per renderinima -->
                 <div class="btn btn-circle btn-hover-side">
-                    <i href="" class="fa fa-arrow-right" aria-hidden="true"></i>
+                    <i href="" class="fa fa-arrow-right"></i>
                 </div>
             </form>
         </div>
@@ -360,7 +370,7 @@
     <!-- section NEWS end -->
 
     <!-- section PARTNERS begin -->
-    <section class="container partner">
+    <section class="container partner small">
         <div class="row partner">
             <div>
                 <a href="#"><img src="./img/partner/1p.png" alt="Progeny"></a>
@@ -368,8 +378,6 @@
                 <a href="#"><img src="./img/partner/3p.png" alt="Pro-West"></a>
                 <a href="#"><img src="./img/partner/4p.png" alt="Binary Stream"></a>
                 <a href="#"><img src="./img/partner/5p.png" alt="pedestal"></a>
-            </div>
-            <div>
                 <a href="#"><img src="./img/partner/1p.png" alt="Progeny"></a>
                 <a href="#"><img src="./img/partner/2p.png" alt="Porello"></a>
                 <a href="#"><img src="./img/partner/3p.png" alt="Pro-West"></a>
@@ -382,42 +390,47 @@
     <!-- section HOW begin -->
     <section class="container">
         <div class="row">
-            <h2 class="col-12 center underline-title services">How We Work</h2>
-            <div class="col-3">
-                <div class="circle center">
-                    <img src="#" alt="Brain">
+            <div class="col-12 center">
+                <h2 class="underline-title blog">How We Work</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="works col-3 col-sm-6 col-xs-12">
+                <div class="circle">
+                    <img src="./img/icon/machine-learning-HWW-DGen-white-small-02.png" alt="Brain">
                 </div>
                 <h3>Data Generated</h3>
                 <div class="dot"></div>
             </div>
-            <div class="col-3">
-                <div class="circle center">
-                    <img src="#" alt="Gear">
+            <div class="works col-3 col-sm-6 col-xs-12">
+                <div class="circle">
+                    <img src="./img/icon/machine-learning-HWW-DSto-white-small-02.png" alt="Gear">
                 </div>
                 <h3>Data Stored</h3>
                 <div class="dot"></div>
             </div>
-            <div class="col-3">
-                <div class="circle center">
-                    <img src="#" alt="Human">
+            <div class="works col-3 col-sm-6 col-xs-12">
+                <div class="circle">
+                    <img src="./img/icon/machine-learning-HWW-DProc-white-small-02.png" alt="Human">
                 </div>
                 <h3>Data Processing</h3>
                 <div class="dot"></div>
             </div>
-            <div class="col-3">
-                <div class="circle center">
-                    <img src="#" alt="Two faces">
+            <div class="works last-works col-3 col-sm-6 col-xs-12">
+                <div class="circle">
+                    <img src="./img/icon/machine-learning-HWW-AIns-white-small-02.png" alt="Two faces">
                 </div>
                 <h3>Actionable Insights</h3>
                 <div class="dot"></div>
             </div>
-
         </div>
+
     </section>
     <!-- section HOW end -->
 
     <!-- section BLOG begin -->
-    <section class="container">
+    <section class="container blog-color">
 
         <!-- section pavadinimas -->
         <div class="row">
@@ -569,7 +582,7 @@
 
     <!-- section CONTACT begin -->
     <section class="container contact big">
-        <div class="row">
+        <div class="row"> 
             <div class="left column col-5 col-md-12">
                  <img src="./img/contact/maps.png" alt="icon-contact" class="contact-large">
                  <h2 class="h2-contact underline-title">Contact With Us</h2>
@@ -661,8 +674,17 @@
 
 
     <!-- footer end -->
-
+    
     <script src="./js/main-home.js" type="module"></script>
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+      >
 </body>
 
 </html>

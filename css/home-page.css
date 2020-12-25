@@ -1,5 +1,6 @@
 /* reset/main */
 @import './components/reset.css';
+@import './components/preload.css';
 @import './components/layout.css';
 /* 3rd party components */
 /* your components */
@@ -175,7 +176,7 @@ body > .bg {
 }
 .grey {
     background-color: #eff1f8;
-    background: transparent;
+    /* background: transparent; */
 }
 .block {
     background-color: white;
@@ -227,8 +228,11 @@ img.project {
 }
 .underline-title.news {
     position: relative;
+    padding-right: 350px;
 }
-
+.col-8 > input::placeholder {
+    font-size: 20px;
+}
 .underline-title.news::after {
     content: "";
     position: absolute;
@@ -239,36 +243,209 @@ img.project {
     bottom: 6px;
     z-index: 1;
 }
+.fa-envelope-open-o::before {
+    font-size: 200px;
+    margin-left: 50px;
+}
 /* partners */
 .container.partner {
     background-image: url(../img/bg/partner-bg.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
     width: 100%;
-    height: 400px;
+    height: 530px;
+    max-width: 100vw;
+    overflow: hidden;
 }
 .row.partner {
-    padding-top: 60px;
-   
+    padding-top: 300px;
+    display: inline-block;
+    text-align: center;
+}
+.partner > div > a {
+    line-height: 60px;
+    margin-right: 5%;
+    margin-bottom: 60px;
 }
 img {
     height: 30px;
     /* width: 100%; */
     /* margin: 0 0 60px 20px; */
 }
+
 /* how */
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    background: linear-gradient(-41deg, #09c778, #01a0f9);
+
+.works {
+    position:relative;
+    display: inline-block;
+    text-align: center;
 }
-.dot {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background: linear-gradient(-41deg, #09c778, #01a0f9);
+
+    /* bruksniuotos linijos istatymas */
+    .works::before {
+        position: absolute;
+        display: inline-block;
+        content:'';
+        height: 0px;
+        width: 84%;
+        border: 1px dashed #01a0f9;
+        bottom: 20px;
+        left: 70%; 
+    }
+
+    /* rodykles istatymas */
+    .works::after {
+        position: absolute;
+        display: inline-block;
+        content:'';
+        height: 26px;
+        width: 26px;
+        background-image: url(../img/icon/works-arrow-01.png);
+        background-repeat: no-repeat;
+        background-color: #09c778;
+        background-size: 100% 100%;
+        bottom: 8px;
+        left: 58%;
+    }
+
+        .works.last-works::before, .works.last-works::after {
+            display: none;
+        }
+
+
+    /* taskuotas apskritimas */
+    .works > .circle {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        width: 182px;
+        height: 182px;
+        border-radius: 50%;
+        border: 1px dashed  #01a0f9;
+    }
+
+        /* bus pulsuojanti dalis, nes tik tokiu
+        atveju uzvedus ant img toliau vyktu pulsavimas */
+        .works > .circle::before {
+            position: absolute;
+            display: inline-block;
+            content:'';
+            top:0;
+            left: 0;
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            background: linear-gradient(-41deg, #09c778, #01a0f9);
+            opacity: 0;
+        }
+
+            /* hover'inant pradeda vykti animacija vardu 'circle-pulse',
+            animacija pavaizduota zemiau */
+            .works > .circle:hover::before {
+                animation-timing-function: ease-out;
+                animation: circle-pulse 1.6s infinite;
+            }
+
+
+        /* poveiksliuko apskritimas su fonu */
+        .works > .circle > img {
+            /* svarbu pailikti relative, be relative ir absolute
+            keisis circle fonas pusluojant uzsides virs paveiksliuko,
+            su absolute reiktu img per nauja reguliuoti*/
+            position: relative;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(-41deg, #09c778, #01a0f9);
+            margin: 15px;
+        }
+
+    /* nuo bendro nuimtas margin del velesnio geresnio derinimo */
+    .works > h3 {
+        margin-top: 15px;
+    }
+
+    /* mazesiu apskritimo sukurimas */
+    /* taskuotas apskritimas */
+    .works > .dot {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px dashed  #01a0f9;
+    }
+
+        /* viduje esantis apskritimas su fonu */
+        .works > .dot::before {
+            text-align: center;
+            position: absolute;
+            content:'';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(-41deg, #09c778, #01a0f9);
+        }
+
+/* pulsavimo animacijos aprasymas */
+@keyframes circle-pulse {
+    0%{
+        opacity:0.9;
+    }
+    100%{
+        top: -16px;
+        left: -16px;
+        height: 212px;
+        width: 212px;
+        opacity: 0;
+        /* kitaip nusistums i sona */
+        
+    }
+}
+
+
+@media (max-width: 1300px) {
+    /* bruksniuotos rodykles ilgio ir padeties keitimas */
+    .works::before {
+        width: 80%;
+        left: 74%;
+
+    }
+    /* rodykles padeties keitimas */
+    .works::after {
+        left: 60%;
+    }
+}
+
+@media (max-width: 1080px) {
+    /* bruksniuotos rodykles ilgio ir padeties keitimas */
+    .works::before {
+        width: 69%;
+        left: 77%;
+
+    }
+    /* rodykles padeties keitimas */
+    .works::after {
+        left: 61%;
+    }
+}
+
+
+
+/* mazesniame ekrane isimami mazesnieji apskrtimai */
+@media (max-width: 860px) {
+    .works::before, .works::after {
+        display: none;
+    }
+    
+    .works > .dot {
+        display: none;
+    }
 }
 
 
@@ -289,7 +466,8 @@ img {
 }
 
     .blog-card > .blog-card-bottom {
-        padding: 30px 25px;
+        padding: 30px 25px 60px;
+        background-color: white;
     }
 
         .blog-card > .blog-card-bottom > .blog-info > li {
@@ -361,6 +539,9 @@ img {
                 z-index: -1;
             }
 
+.blog-color {
+     background-color: #eff1f8;
+ }
 /* contact */
 .contact::placeholder,
 textarea::placeholder {
@@ -377,14 +558,14 @@ input[value] {
     background-repeat: no-repeat;
     width: 100vw;
     height: 630px;
-    overflow: hidden;
-    z-index: -5;
+    /* overflow: hidden; */
+    /* z-index: -5; */
 }
 .left.column {
     background-color: #fff;
     border-radius: 5px;
     padding: 50px;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 .right.column {
     margin-top: 60px;
