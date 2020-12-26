@@ -443,9 +443,53 @@
         <!-- korteliu blokas -->
         <!-- "our-blog-block" - adresas generavimui su js -->
         <div class="row">
-            <div id="our-blog-block" class="col-12"></div>
+            <div class="col-12">
+            <div id="our-blog-block">
+                <div class="view">
+                    <div class="list">
+                        <div class="card">
+                            <div class="col-4 col-sm-6 col-xs-12 list" style="width: 300%;">
+                            <div class="blog-card" style="width: 10%;">
+                                <div class="blog-card-top">
+                                    <a href="#">
+                                        <img src="./img/blog/1b.jpg" alt="picture_blog_1b">
+                                    </a>
+                                </div>
+                                <div class="blog-card-bottom">
+                                    <ul class="blog-info">
+                                        <li>
+                                            <i class="fa fa-calendar-check-o"></i>
+                                            ${card.date}
+                                        </li>
+                                        <li>
+                                            <i class="fa-calendar-check-o"></i>
+                                            ${card.name}
+                                        </li>
+                                        <li>
+                                            <span>${card.number}</span>
+                                            ${card.type}
+                                        </li>
+                                    </ul>
+                                    <div class="blog-describ">
+                                        <h3>
+                                            <a href="#">${card.title}</a>
+                                        </h3>
+                                        <p>${card.desc}
+                                        </p>
+                                        <div class="btn-row">
+                                            <a href="" class="btn btn-oval-standart btn-hover-side">READ MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
-        
+
     </section>
     <!-- section BLOG end -->
 

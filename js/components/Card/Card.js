@@ -25,7 +25,6 @@ class Card {
         for (let i = 0; i < count; i++) {
             const card = this.data.data[i];
             HTML += `<div class="card">
-            <div class="view">
             <div class="col-4 col-sm-6 col-xs-12 list" style="width: 300%;">
             <div class="blog-card" style="width: 10%;">
                 <div class="blog-card-top">
@@ -60,7 +59,6 @@ class Card {
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         </div>`
         }

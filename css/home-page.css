@@ -453,11 +453,6 @@ img {
 .container.blog {
     padding-bottom: 175px;
 }
-
-.card {
-    display: inline-block;
-    width: 100%;
-}
 .view {
     display: inline-block;
     float: left;
@@ -468,7 +463,10 @@ img {
     display: inline-block;
     width: 100%;
 }
-
+.card {
+    display: inline-block;
+    width: 100%;
+}
 .blog-card {
     display: inline-block;
     padding: 0;

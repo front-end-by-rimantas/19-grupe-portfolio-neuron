@@ -50,13 +50,13 @@ counterOnScroll();
 /* how */
 /* blog */
 // blogRender('#our-blog-block', blogData);
-new Card({
-    selector: '#our-blog-block', 
-    data: blogData,
-    maxItems: 7,
-    cloneCount: 2,
-    visibilityStrategy: 'last',
-});
+// new Card({
+//     selector: '#our-blog-block', 
+//     data: blogData,
+//     maxItems: 7,
+//     cloneCount: 2,
+//     visibilityStrategy: 'last',
+// });
 /* contact */
 /* footer */
 copyRightRender('.copyRight');
