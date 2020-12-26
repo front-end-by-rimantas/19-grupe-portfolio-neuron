@@ -453,6 +453,10 @@ img {
 .container.blog {
     padding-bottom: 175px;
 }
+.slider-item {
+    display: inline-block;
+    width: 100%;
+}
 .view {
     display: inline-block;
     float: left;
