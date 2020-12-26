@@ -20,7 +20,9 @@
 CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 ***********************************************
 */
-
+.margin-top {
+    margin-top: -60px;
+}
 /* main style */
 h2, h3 {
     color: #333333;
@@ -69,7 +71,7 @@ body > .bg {
     margin-bottom: 40px;
 }
     .block > img {
-        height: 40px;
+        height: 50px;
         margin-bottom: 20px;
     }
     .block > h3 {
