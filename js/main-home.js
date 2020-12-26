@@ -13,6 +13,8 @@ import { counterAnimation } from "./components/counter/counterAnimation.js";
 import { counterOnScroll } from "./components/counter/counterOnScroll.js";
 /* services */
 /* projects */
+import { Project } from "./components/projects/ProjectsRender.js";
+import { projectData } from "./data/projectData.js";
 /* news */
 /* partners */
 /* how */
@@ -42,6 +44,14 @@ aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);
 counterOnScroll();
 /* services */
 /* projects */
+//Default parametru priskirimas
+const projectParams = {
+    selector: '#project-block',
+    data: projectData,
+    maxProjects: 8,
+    // Galimi kiti papildomi variantai, kaip rodykles, max elements ir so on...
+}
+const projects = new Project(projectParams);
 /* news */
 /* partners */
 /* how */

@@ -212,9 +212,22 @@ body > .bg {
 .center {
     text-align: center;
 }
+.view-project {
+    display: inline-block;
+    width: 100%;
+}
+.view-project > .proj {
+    display: inline-block;
+    height: auto;
+    width: 30%;
+    float: left;
+    margin: 0 10px;
+}
 img.project {
     height: auto;
     width: 100%;
+    float: left;
+    margin: 0 10px;
 }
 /* news */
 .block-news {
@@ -556,7 +569,7 @@ input[value] {
     background-image: url(../img/bg/contact-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+  /*width: 100vw;*/
     height: 630px;
     /* overflow: hidden; */
     /* z-index: -5; */
