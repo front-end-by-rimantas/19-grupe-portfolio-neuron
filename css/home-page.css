@@ -467,13 +467,16 @@ img {
     width: 100%;
     transition: all 1s;
 }
+.list.teleport {
+    transition: none;
+}
 .blog-card {
     display: inline-block;
     width: 100%;
     padding: 0 20px 20px 0;
     border-radius: 0;
     float: left;
-    /* box-shadow: 0 0 20px #00000030; */
+    box-shadow: 0 0 20px #00000030;
 }
 
 .blog-card > .blog-card-top img {

@@ -56,6 +56,7 @@ new Card({
     maxItems: 7,
     cloneCount: 2,
     visibilityStrategy: 'last',
+    itemsPerView: 3,
 });
 /* contact */
 /* footer */

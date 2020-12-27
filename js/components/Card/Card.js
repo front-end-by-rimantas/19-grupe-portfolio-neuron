@@ -5,17 +5,16 @@ class Card {
         this.maxItems = params.maxItems || 3;
         this.cloneCount = params.cloneCount || 4;
         this.visibilityStrategy = params.visibilityStrategy || 'random';
+        this.itemsPerView = params.itemsPerView || 3;
+
+        this.animationDuration = 1000;
+        this.isAnimating = false;
 
         this.init();
     }
 
     init() {
         this.render();
-        this.reload();
-    }
-
-    reload() {
-
     }
 
     generateBlogCards() {
@@ -25,7 +24,7 @@ class Card {
         
         // const count = this.data.maxLimit || this.data.data.length;
         for (let card of dataCopy) {
-            HTML += `<div class="blog-card" style="width: ${itemWidth/3}%;">
+            HTML += `<div class="blog-card" style="width: ${itemWidth/this.itemsPerView}%;">
             <div class="blog-card-top">
                 <a href="#">
                     <img src="./img/${this.data.imgFolder}/${card.img}" alt="picture_blog_1b">
@@ -64,7 +63,7 @@ class Card {
 
     render() {
         const listWidth = (this.data.data.length + 2 * this.cloneCount) * 100;
-        const itemWidth = 100 / (this.data.data.length + 2 * this.cloneCount);
+        // const itemWidth = 100 / (this.data.data.length + 2 * this.cloneCount);
         const DOM = document.querySelector(this.selector);
         let HTML = '';
         HTML += `<div class="view">
@@ -73,6 +72,27 @@ class Card {
                     </div>
                     </div>`
         DOM.innerHTML = HTML;
+    }
+
+    teleport() {
+        setTimeout(() => {
+            this.isAnimating = false;
+
+            if(marginLeft === 166%) {
+                const listDOM = document.querySelector('.list');
+                listDOM.classList.add('teleport');
+                listDOM.style.marginLeft = -66 + '%';
+                setTimeout(() => {
+                    listDOM.classList.remove('teleport');
+                }, 50);
+                
+            }
+
+        }, this.animationDuration);
+    }
+
+    autoSlide() {
+
     }
 }
 
