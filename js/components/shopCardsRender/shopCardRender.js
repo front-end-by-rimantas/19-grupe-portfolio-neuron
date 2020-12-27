@@ -1,3 +1,4 @@
+import { isValidShopCard } from "./isValidShopCard.js";
 /**
  * Funkcija kuri generuoja korteliu turini SHOP kortelems
  * @param {string} selector CSS like selektorius, kaip rasti norima vieta turinio generavimui
