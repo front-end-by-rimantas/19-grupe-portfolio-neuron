@@ -21,7 +21,9 @@ import { counterOnScroll } from "./components/counter/counterOnScroll.js";
 /* footer */
 import { copyRightRender } from './components/copyRightRender/copyRightRender.js';
 /* chat */
-
+// shop
+import { shopCardData } from "./data/shopCardsData.js";
+import { shopCardsRender } from "./components/shopCardsRender/shopCardRender.js";
 
 /***************
 EXECUTION
@@ -50,3 +52,5 @@ counterOnScroll();
 /* footer */
 copyRightRender('.copyRight');
 /* chat */
+/* shop */
+shopCardsRender('#shop-card-block', shopCardData);
