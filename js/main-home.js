@@ -48,10 +48,10 @@ counterOnScroll();
 const projectParams = {
     selector: '#project-block',
     data: projectData,
-    maxProjects: 8,
+    maxProjects: 7,
     // Galimi kiti papildomi variantai, kaip rodykles, max elements ir so on...
 }
-const projects = new Project(projectParams);
+new Project(projectParams);
 /* news */
 /* partners */
 /* how */

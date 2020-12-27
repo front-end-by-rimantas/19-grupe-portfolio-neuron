@@ -212,22 +212,40 @@ body > .bg {
 .center {
     text-align: center;
 }
+.projWrap {
+    overflow: hidden;
+    display: inline-block;
+}
 .view-project {
     display: inline-block;
     width: 100%;
+    /*margin-left: -69%;*/
+    transition: all 1s ease 0s;
 }
 .view-project > .proj {
     display: inline-block;
-    height: auto;
     width: 30%;
     float: left;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 img.project {
+    display: inline-block;
     height: auto;
     width: 100%;
     float: left;
-    margin: 0 10px;
+    margin: 0 -4px;
+}
+.trans {
+    margin-left: -33%;
+    transition: all 1s ease 0s;
+}
+.active {
+
+}
+@media (max-width: 1080px){
+    .view-project > .proj {
+        margin: 0 15px;
+    }
 }
 /* news */
 .block-news {
