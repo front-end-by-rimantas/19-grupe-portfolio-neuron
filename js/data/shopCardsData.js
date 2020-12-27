@@ -25,6 +25,6 @@ const shopCardData = [
         price: '25 USD',
     },
 
-];
+]
 
 export { shopCardData }

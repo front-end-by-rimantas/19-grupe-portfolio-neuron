@@ -11,7 +11,7 @@ function aboutCardsRender(selector1, selector2, aboutCardsData) {
     const DOM2 = document.querySelector(selector2);
     let HTML1 = '';
     let HTML2 = '';
-    console.log(DOM1, DOM2)
+    // console.log(DOM1, DOM2)
     const aboutCount = aboutCardsData.data.length;  //
     for(let i = 0; i < aboutCount/2; i++) {
         const aboutCard = aboutCardsData.data[i]; // 
@@ -20,18 +20,18 @@ function aboutCardsRender(selector1, selector2, aboutCardsData) {
                     <h3>${aboutCard.title}</h3>
                     <p class="margin-0">${aboutCard.text}</p>
                 </div>`
-    }
-    for(let i = aboutCount/2; i < aboutCount; i++) {
-        const aboutCard = aboutCardsData.data[i];
-        HTML2 += `
-                    <div class="block">
-                    <img src="${aboutCard.img}" alt="brain1">
-                    <h3>${aboutCard.title}</h3>
-                    <p class="margin-0">${aboutCard.text}</p>
+            }
+            for(let i = aboutCount/2; i < aboutCount; i++) {
+                const aboutCard = aboutCardsData.data[i];
+                HTML2 += `
+                <div class="block">
+                <img src="${aboutCard.img}" alt="brain1">
+                <h3>${aboutCard.title}</h3>
+                <p class="margin-0">${aboutCard.text}</p>
                 
                 </div>`
-    }
-    DOM1.innerHTML = HTML1;
-    DOM2.innerHTML = HTML2;
-}
+            }
+            DOM1.innerHTML = HTML1;
+            DOM2.innerHTML = HTML2;
+        }
 export { aboutCardsRender }
