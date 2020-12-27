@@ -465,16 +465,15 @@ img {
 .list {
     display: inline-block;
     width: 100%;
+    transition: all 1s;
 }
 .blog-card {
     display: inline-block;
     width: 100%;
-    padding: 0;
-    padding-bottom: 20px;
+    padding: 0 20px 20px 0;
     border-radius: 0;
     float: left;
-    box-shadow: 0 0 20px #00000030;
-    margin-right: 20px;
+    /* box-shadow: 0 0 20px #00000030; */
 }
 
 .blog-card > .blog-card-top img {

@@ -3,7 +3,7 @@ class Card {
         this.selector = params.selector;
         this.data = params.data;
         this.maxItems = params.maxItems || 3;
-        this.cloneCount = params.cloneCount || 2;
+        this.cloneCount = params.cloneCount || 4;
         this.visibilityStrategy = params.visibilityStrategy || 'random';
 
         this.init();
@@ -20,10 +20,12 @@ class Card {
 
     generateBlogCards() {
         let HTML = '';
-        const count = this.data.maxLimit || this.data.data.length;
-        for (let i = 0; i < count; i++) {
-            const card = this.data.data[i];
-            HTML += `<div class="blog-card" style="width: 20%;">
+        const itemWidth = 100 / (this.data.data.length + 2 * this.cloneCount);
+        const dataCopy = [this.data.data[1], this.data.data[2], ...this.data.data, this.data.data[1], this.data.data[2]];
+        
+        // const count = this.data.maxLimit || this.data.data.length;
+        for (let card of dataCopy) {
+            HTML += `<div class="blog-card" style="width: ${itemWidth/3}%;">
             <div class="blog-card-top">
                 <a href="#">
                     <img src="./img/${this.data.imgFolder}/${card.img}" alt="picture_blog_1b">
@@ -61,10 +63,12 @@ class Card {
 }
 
     render() {
+        const listWidth = (this.data.data.length + 2 * this.cloneCount) * 100;
+        const itemWidth = 100 / (this.data.data.length + 2 * this.cloneCount);
         const DOM = document.querySelector(this.selector);
         let HTML = '';
         HTML += `<div class="view">
-            <div class="list" style="width: 500%;">
+            <div class="list" style="width: ${listWidth}%; margin-left: -66%;">
                 ${this.generateBlogCards()}
                     </div>
                     </div>`
