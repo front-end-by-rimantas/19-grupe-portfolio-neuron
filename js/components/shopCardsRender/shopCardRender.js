@@ -10,6 +10,10 @@ function shopCardsRender(selector3, shopCardData) {
      
     //logic
     const DOM = document.querySelector(selector3);
+
+    if (!DOM) {
+        console.error('ERROR: object failure')
+    }
     let HTML = '';
     console.log(DOM)
 

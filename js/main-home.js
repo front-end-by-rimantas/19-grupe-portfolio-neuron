@@ -53,4 +53,4 @@ counterOnScroll();
 copyRightRender('.copyRight');
 /* chat */
 /* shop */
-shopCardsRender('.shop-card-block', shopCardData);
+shopCardsRender('.shopCard', shopCardData);
