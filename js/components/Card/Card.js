@@ -15,6 +15,7 @@ class Card {
 
     init() {
         this.render();
+        // this.slide();
         this.autoSlide();
     }
 
@@ -92,16 +93,31 @@ class Card {
     //     }, this.animationDuration);
     // }
 
-    autoSlide() {
-        console.log(document.querySelectorAll('.blog-card'));
+    slide() {
         const blogDOMs = document.querySelectorAll('.blog-card');
+        const initialPosition = -66;
+        const inc = 33;
         if (!this.isAnimating) {
             setInterval(() => {
-                blogDOMs[2].style.marginLeft = -33 + "%";
+                blogDOMs[2].style.marginLeft = (initialPosition + inc) + "%";
+                initialPosition = blogDOMs[2].style.marginLeft;
             }, 5000);
-            
-        }
     }
+}
+
+    autoSlide() {
+        setInterval(() => {
+        const count = 5;
+        let i = 2;
+        for (i; i <= count; i++) {
+        const blogDOMs = document.querySelectorAll('.blog-card');
+        const initialPosition = -66;
+        const inc = 33;
+            blogDOMs[i].style.marginLeft = (initialPosition + inc) + "%";
+        }
+    }, 10000);
+
+}
 }
 
 export { Card }
