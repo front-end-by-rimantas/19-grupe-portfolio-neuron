@@ -452,14 +452,35 @@ img {
 
 
 /* blog */
-
+.container.blog {
+    padding-bottom: 175px;
+}
+.slider-item {
+    display: inline-block;
+    width: 100%;
+}
+.view {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.list {
+    display: inline-block;
+    width: 100%;
+    transition: all 1s;
+}
+.list.teleport {
+    transition: none;
+}
 .blog-card {
-    padding: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px 20px 0;
     border-radius: 0;
     float: left;
-    box-shadow: 0 0 20px #00000030;
+    /* box-shadow: 0 0 20px #00000030; */
+    transition: all 10s;
 }
-
 
 .blog-card > .blog-card-top img {
     height: 100%;
