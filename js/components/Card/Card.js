@@ -15,6 +15,7 @@ class Card {
 
     init() {
         this.render();
+        this.autoSlide();
     }
 
     generateBlogCards() {
@@ -74,25 +75,32 @@ class Card {
         DOM.innerHTML = HTML;
     }
 
-    teleport() {
-        setTimeout(() => {
-            this.isAnimating = false;
+    // teleport() {
+    //     setTimeout(() => {
+    //         this.isAnimating = false;
 
-            if(marginLeft === 166%) {
-                const listDOM = document.querySelector('.list');
-                listDOM.classList.add('teleport');
-                listDOM.style.marginLeft = -66 + '%';
-                setTimeout(() => {
-                    listDOM.classList.remove('teleport');
-                }, 50);
+    //         if (marginLeft === 166%) {
+    //             const listDOM = document.querySelector('.list');
+    //             listDOM.classList.add('teleport');
+    //             listDOM.style.marginLeft = -66 + '%';
+    //             setTimeout(() => {
+    //                 listDOM.classList.remove('teleport');
+    //             }, 50);
                 
-            }
+    //         }
 
-        }, this.animationDuration);
-    }
+    //     }, this.animationDuration);
+    // }
 
     autoSlide() {
-
+        console.log(document.querySelectorAll('.blog-card'));
+        const blogDOMs = document.querySelectorAll('.blog-card');
+        if (!this.isAnimating) {
+            setInterval(() => {
+                blogDOMs[2].style.marginLeft = -33 + "%";
+            }, 5000);
+            
+        }
     }
 }
 
