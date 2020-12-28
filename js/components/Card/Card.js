@@ -69,7 +69,7 @@ class Card {
         const DOM = document.querySelector(this.selector);
         let HTML = '';
         HTML += `<div class="view">
-            <div class="list" style="width: ${listWidth}%; margin-left: -66%;">
+            <div class="list" style="width: ${listWidth}%; margin-left: 0;">
                 ${this.generateBlogCards()}
                     </div>
                     </div>`
@@ -106,16 +106,44 @@ class Card {
 }
 
     autoSlide() {
-        setInterval(() => {
-        const count = 5;
-        let i = 2;
-        for (i; i <= count; i++) {
+    //     setInterval(() => {
+    //     const count = 5;
+    //     let i = 2;
+    //     for (i; i <= count; i++) {
+    //     const blogDOMs = document.querySelectorAll('.blog-card');
+    //     const initialPosition = -66;
+    //     const inc = 33;
+    //         blogDOMs[i].style.marginLeft = (initialPosition + inc) + "%";
+    //     }
+    // }, 10000);
+
+    setInterval(() => {
         const blogDOMs = document.querySelectorAll('.blog-card');
         const initialPosition = -66;
         const inc = 33;
-            blogDOMs[i].style.marginLeft = (initialPosition + inc) + "%";
-        }
-    }, 10000);
+            blogDOMs[0].style.marginLeft = (initialPosition + inc) + "%";
+    }, 3000);
+
+    setInterval(() => {
+        const blogDOMs = document.querySelectorAll('.blog-card');
+        const initialPosition = -66;
+        const inc = 33;
+            blogDOMs[1].style.marginLeft = (initialPosition + inc) + "%";
+    }, 6000);
+
+    setInterval(() => {
+        const blogDOMs = document.querySelectorAll('.blog-card');
+        const initialPosition = -66;
+        const inc = 33;
+            blogDOMs[2].style.marginLeft = (initialPosition + inc) + "%";
+    }, 9000);
+
+    setInterval(() => {
+        const blogDOMs = document.querySelectorAll('.blog-card');
+        const initialPosition = -66;
+        const inc = 33;
+            blogDOMs[3].style.marginLeft = (initialPosition + inc) + "%";
+    }, 12000);
 
 }
 }

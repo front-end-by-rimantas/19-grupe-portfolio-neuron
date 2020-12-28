@@ -477,6 +477,7 @@ img {
     border-radius: 0;
     float: left;
     /* box-shadow: 0 0 20px #00000030; */
+    transition: all 10s;
 }
 
 .blog-card > .blog-card-top img {
