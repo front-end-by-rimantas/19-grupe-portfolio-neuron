@@ -24,8 +24,12 @@ import { copyRightRender } from './components/copyRightRender/copyRightRender.js
 /***************
 EXECUTION
 ****************/
+const test = document.getElementById("wrap");
+window.onload = function() {
+    test.classList.add("wraptest")
+}
 /* header */
-stickyMenu();
+ stickyMenu();
 /* hero */
 /* about */
 aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);
