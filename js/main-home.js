@@ -58,6 +58,10 @@ new Card({
     visibilityStrategy: 'last',
     itemsPerView: 3,
 });
+const mediaQuery = window.matchMedia('max-width: 680px');
+if (mediaQuery.matches) {
+    
+}
 /* contact */
 /* footer */
 copyRightRender('.copyRight');

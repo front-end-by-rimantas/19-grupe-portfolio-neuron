@@ -15,7 +15,6 @@ class Card {
 
     init() {
         this.render();
-        // this.slide();
         this.autoSlide();
     }
 
@@ -118,6 +117,7 @@ class Card {
     // }, 10000);
 
     setInterval(() => {
+    setInterval(() => {
         const blogDOMs = document.querySelectorAll('.blog-card');
         const initialPosition = -66;
         const inc = 33;
@@ -144,6 +144,7 @@ class Card {
         const inc = 33;
             blogDOMs[3].style.marginLeft = (initialPosition + inc) + "%";
     }, 12000);
+}, 10000);
 
 }
 }
