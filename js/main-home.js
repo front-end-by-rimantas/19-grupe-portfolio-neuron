@@ -12,6 +12,8 @@ import { aboutCardsRender } from './components/aboutCardsRender/aboutCardsRender
 import { counterAnimation } from "./components/counter/counterAnimation.js";
 import { counterOnScroll } from "./components/counter/counterOnScroll.js";
 /* services */
+import { servicesCardsData } from './data/servicesCardsData.js';
+import { servicesCardRender } from './components/servicesCardRender/servicesCardRender.js';
 /* projects */
 import { Project } from "./components/projects/ProjectsRender.js";
 import { projectData } from "./data/projectData.js";
@@ -43,6 +45,7 @@ aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);
 // counterAnimation();
 counterOnScroll();
 /* services */
+servicesCardRender('#serviceRender', servicesCardsData);
 /* projects */
 //Default parametru priskirimas
 const projectParams = {
