@@ -1,5 +1,6 @@
 /* reset/main */
 @import './components/reset.css';
+@import './components/preload.css';
 @import './components/layout.css';
 /* 3rd party components */
 /* your components */
@@ -20,7 +21,9 @@
 CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 ***********************************************
 */
-
+.margin-top {
+    margin-top: -60px;
+}
 /* main style */
 h2, h3 {
     color: #333333;
@@ -69,7 +72,7 @@ body > .bg {
     margin-bottom: 40px;
 }
     .block > img {
-        height: 40px;
+        height: 50px;
         margin-bottom: 20px;
     }
     .block > h3 {
@@ -176,7 +179,7 @@ body > .bg {
 }
 .grey {
     background-color: #eff1f8;
-    background: transparent;
+    /* background: transparent; */
 }
  .container.grey > .block .icon-services {
         color: linear-gradient(122deg, rgba(4,160,251,1) 25%, rgba(10,197,121,1) 79%);
@@ -395,7 +398,6 @@ img {
             background: linear-gradient(-41deg, #09c778, #01a0f9);
         }
 
-
 /* pulsavimo animacijos aprasymas */
 @keyframes circle-pulse {
     0%{
@@ -454,14 +456,35 @@ img {
 
 
 /* blog */
-
+.container.blog {
+    padding-bottom: 175px;
+}
+.slider-item {
+    display: inline-block;
+    width: 100%;
+}
+.view {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.list {
+    display: inline-block;
+    width: 100%;
+    transition: all 1s;
+}
+.list.teleport {
+    transition: none;
+}
 .blog-card {
-    padding: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px 20px 0;
     border-radius: 0;
     float: left;
-    box-shadow: 0 0 20px #00000030;
+    /* box-shadow: 0 0 20px #00000030; */
+    transition: all 10s;
 }
-
 
 .blog-card > .blog-card-top img {
     height: 100%;
@@ -470,7 +493,8 @@ img {
 }
 
     .blog-card > .blog-card-bottom {
-        padding: 30px 25px;
+        padding: 30px 25px 60px;
+        background-color: white;
     }
 
         .blog-card > .blog-card-bottom > .blog-info > li {
@@ -542,6 +566,9 @@ img {
                 z-index: -1;
             }
 
+.blog-color {
+     background-color: #eff1f8;
+ }
 /* contact */
 .contact::placeholder,
 textarea::placeholder {
@@ -558,14 +585,14 @@ input[value] {
     background-repeat: no-repeat;
     width: 100vw;
     height: 630px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* z-index: -5; */
 }
 .left.column {
     background-color: #fff;
     border-radius: 5px;
     padding: 50px;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 .right.column {
     margin-top: 60px;

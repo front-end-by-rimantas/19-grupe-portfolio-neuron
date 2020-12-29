@@ -29,7 +29,7 @@ Design: [Awesome Neuron](http://demo.auburnforest.com/html/neuron/demo/index.htm
 
 [Rokas](https://github.com/JackeviciusR)
 
-[Žimantas](https://github.com/Zymantasdan)
+[Žymantas](https://github.com/Zymantasdan)
 
 [Andrejus](https://github.com/andrejusnec)
 

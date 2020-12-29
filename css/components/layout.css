@@ -122,7 +122,7 @@ body {
             grid-template-columns: 7fr 5fr;
         }
 
-        .container > .row > .col-sm-6 > .leftblock { /*About section left cards*/
+        .container > .row > .margin-top{ /*About section left cards*/
             margin-top: 0px;
         }
         .container > .row.aboutGap {
