@@ -52,6 +52,14 @@
      color: white;
      text-decoration: none;
 }
+    .shop-link a {
+        display: inline-block;
+        grid-column: 6 / 7;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+    }
     .ashop::after {
         content: ' // ';
         size: 20px;
