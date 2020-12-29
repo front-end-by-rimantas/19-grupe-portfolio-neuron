@@ -31,7 +31,7 @@ function aboutCardsRender(selector1, selector2, aboutCardsData) {
                 
                 </div>`
             }
-            DOM1.innerHTML = HTML1;
-            DOM2.innerHTML = HTML2;
+            // DOM1.innerHTML = HTML1;
+            // DOM2.innerHTML = HTML2;
         }
 export { aboutCardsRender }
