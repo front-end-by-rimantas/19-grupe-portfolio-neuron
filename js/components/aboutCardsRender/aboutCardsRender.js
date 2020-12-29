@@ -15,13 +15,8 @@ function aboutCardsRender(selector1, selector2, aboutCardsData) {
     const aboutCount = aboutCardsData.data.length;  //
     for(let i = 0; i < aboutCount/2; i++) {
         const aboutCard = aboutCardsData.data[i]; // 
-        HTML1 = `<div class="block leftblock">
-                <img src="#" alt="brain1">
-                <h3>${aboutCard.title}</h3>
-                <p class="margin-0">${aboutCard.text}</p>
-                </div>`
         HTML1 += `<div class="block">
-                    <img src="#" alt="brain1">
+                    <img src="${aboutCard.img}" alt="brain1">
                     <h3>${aboutCard.title}</h3>
                     <p class="margin-0">${aboutCard.text}</p>
                 </div>`
@@ -30,7 +25,7 @@ function aboutCardsRender(selector1, selector2, aboutCardsData) {
         const aboutCard = aboutCardsData.data[i];
         HTML2 += `
                     <div class="block">
-                    <img src="#" alt="brain1">
+                    <img src="${aboutCard.img}" alt="brain1">
                     <h3>${aboutCard.title}</h3>
                     <p class="margin-0">${aboutCard.text}</p>
                 
