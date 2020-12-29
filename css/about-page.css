@@ -1,0 +1,109 @@
+/* reset/main */
+@import './components/reset.css';
+@import './components/preload.css';
+@import './components/layout.css';
+/* 3rd party components */
+/* your components */
+@import './components/button.css';
+@import './components/faq.css';
+@import './components/footer.css';
+@import './components/form.css';
+@import './components/gallery.css';
+@import './components/header.css';
+@import './components/hero-home.css';
+@import './components/menu.css';
+@import './components/pricing.css';
+@import './components/testimonials.css';
+
+/*
+***********************************************
+ABOUT PAGE STYLES GOES BELOW THIS COMMENT
+***********************************************
+*/
+/* hero background */
+body > .bg-breadcrumbs {
+    background-image: url(../img/breadcrumbs/bg.jpg);
+}
+
+
+/* hedear and hero part, sumaziname atstumus tarp header ir hero container'iu naudojant HOME hreo pagrinda */
+.container.header-cont-basic {
+    padding-bottom: 20px;
+}
+.container.hero-cont-basic {
+    padding-bottom: 65px;
+}
+
+/* HEADER start */
+/* HEADER end */
+/* HERO start */
+
+/* sioje situacijoje nereikia padding'o todel nuimame */
+.center {
+    padding: 0;
+}
+
+/* standart pages titles parameters */
+.hero-title-basic {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom:10px ;
+    color: white;
+}
+
+/* next text part below title in hero */
+.below-title {
+    display: inline-block;
+    color: white;
+    font-weight: 200;
+    width:100%;
+    font-size: 15px;
+}
+
+/* text with link to Home page */
+.below-title > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+
+}
+
+/* text aftre '//' */
+.below-title > div {
+    position: relative;
+    display: inline-block;
+    margin-left:30px;
+}
+    /* before text is created '//' */
+    .below-title > div::before {
+        position:absolute;
+        display: inline-block;
+        content: '//';
+        font-size: 26px;
+        top:-7px;
+        left: -24px;
+    }
+
+
+
+
+/* HERO end */
+
+/* ABOUT start */
+/* ABOUT end */
+/* WHAT WE DO start */
+/* WHAT WE DO end */
+/* MEET THE PROFESSIONAL start */
+/* MEET THE PROFESSIONAL end */
+/* OUR NEWS AND ... start */
+/* OUR NEWS AND ... end */
+/* PARTNERS start */
+/* PARTNERS end */
+/* CLIENTS REVIEWS start */
+/* CLIENTS REVIEWS end */
+/* FOOTER start */
+/* FOOTER end */
+/* CHAT start */
+/* CHAT end */
