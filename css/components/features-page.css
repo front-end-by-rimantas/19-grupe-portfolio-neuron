@@ -208,4 +208,30 @@ img.fea {
 .medium-block > p {
     margin-bottom: 0;
 }
+
+@media (max-width: 1080px) {
+    .container.grey > .row > .right.col-6 {
+        grid-row: 1;
+        grid-column-start: 1;
+    }
+    .small-block > img {
+        height: 70%;
+        width: 8%;
+    }
+    .right > .underline-title.services::after {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 860px) {
+    .right > .underline-title.services::after {
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 680px) {
+    .right > .underline-title.services::after {
+        margin-left: 14%;
+    }
+}
 /* chat */
