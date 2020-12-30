@@ -173,12 +173,12 @@ img.fea {
 .container.white {
     text-align: unset;
 }
-.left > img {
+.left-side > img {
     width: 100%;
     height: 100%;
     padding: 120px 0;
 }
-.container > .row > .left.col-6 {
+.container > .row > .left-side.col-6 {
     grid-row: 1 / 3;
     grid-column-start: 1;
 }
@@ -195,10 +195,17 @@ img.fea {
     z-index: -1;
 }
 .medium-block {
-    padding: 20px;
+    padding: 25px;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 0 20px #00000030;
     margin-bottom: 40px;
+}
+.medium-block:hover {
+    background: linear-gradient(122deg, rgba(4,160,251,1) 25%, rgba(10,197,121,1) 79%);
+    transition: 1s;
+}
+.medium-block > p {
+    margin-bottom: 0;
 }
 /* chat */
