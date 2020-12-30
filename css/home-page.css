@@ -13,6 +13,7 @@
 @import './components/hero-home.css';
 @import './components/menu.css';
 @import './components/pricing.css';
+@import './components/services.css';
 @import './components/testimonials.css';
 
 /*
@@ -20,7 +21,9 @@
 CUSTOM HOME PAGE STYLES GOES BELOW THIS COMMENT
 ***********************************************
 */
-
+.margin-top {
+    margin-top: -60px;
+}
 /* main style */
 h2, h3 {
     color: #333333;
@@ -69,7 +72,7 @@ body > .bg {
     margin-bottom: 40px;
 }
     .block > img {
-        height: 60px;
+        height: 50px;
         margin-bottom: 20px;
     }
     .block > h3 {
@@ -177,6 +180,9 @@ body > .bg {
 .grey {
     background-color: #eff1f8;
     /* background: transparent; */
+}
+ .container.grey > .block .icon-services {
+        color: linear-gradient(122deg, rgba(4,160,251,1) 25%, rgba(10,197,121,1) 79%);
 }
 .block {
     background-color: white;
@@ -479,14 +485,35 @@ img {
 
 
 /* blog */
-
+.container.blog {
+    padding-bottom: 175px;
+}
+.slider-item {
+    display: inline-block;
+    width: 100%;
+}
+.view {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.list {
+    display: inline-block;
+    width: 100%;
+    transition: all 1s;
+}
+.list.teleport {
+    transition: none;
+}
 .blog-card {
-    padding: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px 20px 0;
     border-radius: 0;
     float: left;
-    box-shadow: 0 0 20px #00000030;
+    /* box-shadow: 0 0 20px #00000030; */
+    transition: all 10s;
 }
-
 
 .blog-card > .blog-card-top img {
     height: 100%;
