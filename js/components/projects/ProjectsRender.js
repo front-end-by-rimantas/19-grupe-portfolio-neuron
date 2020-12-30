@@ -72,7 +72,6 @@ let slides = document.querySelectorAll('.slide-single');
 let slider = [];
 let wrapper = document.querySelector('#slide')
 let flag = true;
-console.log(wrapper)
 for(let i = 0; i < slides.length; i++) {
    slider[i] = slides[i].src;
    slides[i].remove();

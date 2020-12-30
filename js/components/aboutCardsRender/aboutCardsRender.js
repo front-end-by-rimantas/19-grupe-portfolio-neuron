@@ -11,7 +11,6 @@ function aboutCardsRender(selector1, selector2, aboutCardsData) {
     const DOM2 = document.querySelector(selector2);
     let HTML1 = '';
     let HTML2 = '';
-    console.log(DOM1, DOM2)
     const aboutCount = aboutCardsData.data.length;  //
     for(let i = 0; i < aboutCount/2; i++) {
         const aboutCard = aboutCardsData.data[i]; // 

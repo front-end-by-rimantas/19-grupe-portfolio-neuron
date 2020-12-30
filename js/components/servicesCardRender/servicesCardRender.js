@@ -21,7 +21,6 @@ function servicesCardRender(selector, servicesCardData) {
                     </div>
                     </div>`
     }
-    console.log(HTML)
     DOM.innerHTML = HTML
 }
 export { servicesCardRender }

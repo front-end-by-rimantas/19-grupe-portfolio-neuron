@@ -1,7 +1,7 @@
 const servicesCardsData = {
     data :[
         {
-        img: './img/icon/ai - Copy.png',
+        img: './img/icon/ai2.png',
         title: 'Personal assitants',
         text: `Capitalize on low hanging fruit to identify a ball park value 
         added activity to beta test. Override the digital divide with additional</p>`
@@ -31,7 +31,7 @@ const servicesCardsData = {
             Override the digital divide with additional`
         },
         {
-            img: './img/icon/ai - Copy.png',
+            img: './img/icon/ai2.png',
             title: 'Online Fraud Detection',
             text: `Capitalize on low hanging fruit to identify a ball park value added activity to beta test.
             Override the digital divide with additional`
