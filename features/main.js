@@ -3,21 +3,16 @@ ALL IMPORTS
 ****************/
 /* header */
 import { stickyMenu } from '../js/components/Menu/menu.js';
-/* hero */
-/* about */
-/* about video */
-/* counter */
-/* services */
-/* projects */
-/* news */
-/* partners */
-/* how */
-/* blog */
-/* contact */
+
 /* footer */
 import { copyRightRender } from '../js/components/copyRightRender/copyRightRender.js';
-/* chat */
-
+/* features page */
+import { blockData } from '../js/data/blockData.js';
+import { blockRender } from '../js/components/blockRender/blockRender.js';
+import { smallBlocks } from '../js/data/smallBlocks.js';
+import { smallBlocksRender } from '../js/components/smallBlocksRender/smallBlocksRender.js';
+import { mediumBlocks } from '../js/data/mediumBlocks.js';
+import { mediumBlocksRender } from '../js/components/mediumBlocksRender/mediumBlocksRender.js';
 
 /***************
 EXECUTION
@@ -28,18 +23,10 @@ window.onload = function() {
 }
 /* header */
  stickyMenu();
-/* hero */
-/* about */
-/* about video */
-/* counter */
-// counterAnimation();
-/* services */
-/* projects */
-/* news */
-/* partners */
-/* how */
-/* blog */
-/* contact */
+
 /* footer */
 copyRightRender('.copyRight');
-/* chat */
+/* features page */
+blockRender('#blockRender', blockData);
+smallBlocksRender('.small-blocks.left', '.small-blocks.right', smallBlocks);
+mediumBlocksRender('.medium-blocks.one', '.medium-blocks.two', mediumBlocks);
