@@ -14,6 +14,8 @@
 @import './components/menu.css';
 @import './components/pricing.css';
 @import '/shop-page/shop.css';
+@import './components/services.css';
+
 @import './components/testimonials.css';
 
 /*
@@ -181,6 +183,9 @@ body > .bg {
     background-color: #eff1f8;
     /* background: transparent; */
 }
+ .container.grey > .block .icon-services {
+        color: linear-gradient(122deg, rgba(4,160,251,1) 25%, rgba(10,197,121,1) 79%);
+}
 .block {
     background-color: white;
 }
@@ -190,10 +195,13 @@ body > .bg {
         }
 
         .block:hover > p {
-            color: #fff
+            color: #fff;
+        }
+        .block:hover > img {
+            filter: brightness(0) invert(1);
         }
         .block:hover > h3 {
-            color: #fff
+            color: #fff;
         }
         .underline-title.services {
             position: relative;
@@ -215,10 +223,36 @@ body > .bg {
 .center {
     text-align: center;
 }
-img.project {
-    height: auto;
-    width: 100%;
+.projWrap {
+        /*width: 900px;*/
+        width: 100%;
+        height: 380px;
+        /*border: 2px solid;*/
+        position: relative; 
+        margin: 0 auto;
+        overflow: hidden;
 }
+
+.wrap {
+    display: inline-block;
+   width: 200%;
+   overflow: hidden;
+}
+.slide-single {
+    width: 31%;
+    height: 380px;
+    margin: 0 15px;
+    position: absolute;
+    transition: all 1s ease, height 1ms;
+    left: 0;
+    top: 0;
+}
+@media (max-width: 1300px) {
+    .slide-single {
+        height: 320px;
+    }
+}
+
 /* news */
 .block-news {
     background-color: #fff;
@@ -580,7 +614,7 @@ input[value] {
     background-image: url(../img/bg/contact-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+  /*width: 100vw;*/
     height: 630px;
     /* overflow: hidden; */
     /* z-index: -5; */

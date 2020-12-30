@@ -2,7 +2,7 @@ const aboutCardsData = {
     imgFolder : 'about',
     data :[
         {
-        img: './img/icon/ai.png',
+        img: './img/icon/ai2.png',
         title: 'Advanced Programing',
         text: 'Find out what\'s working and what\'s not Dig your data to find'
         },
