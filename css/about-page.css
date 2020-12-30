@@ -22,7 +22,8 @@ ABOUT PAGE STYLES GOES BELOW THIS COMMENT
 */
 /* hero background */
 body > .bg-breadcrumbs {
-    background-image: url(../img/breadcrumbs/bg.jpg);
+    background-image: url(../img/bg/bg-feature.jpg);
+    background-size: 100% 100%;
 }
 
 
@@ -38,8 +39,8 @@ body > .bg-breadcrumbs {
 /* HEADER end */
 /* HERO start */
 
-/* sioje situacijoje nereikia padding'o todel nuimame */
-.center {
+/* sioje situacijoje hero'se nereikia padding'o todel nuimame */
+.row > .hero-center.center {
     padding: 0;
 }
 
@@ -87,11 +88,150 @@ body > .bg-breadcrumbs {
     }
 
 
-
-
 /* HERO end */
 
+
 /* ABOUT start */
+
+/* paveiksliukas aprasytas ABOUT gale ! */
+
+
+/* paveiksliuko desineje esanti sekcija */
+.right-side {
+    display:inline-block;
+    padding: 0 15px;
+}
+
+    /* desniojo bloko dalis su h ir p */
+    .right-side > .learnMore {
+        display: inline-block;
+        margin-bottom: 26px;
+    }
+
+        /* antraste */
+        .right-side > .learnMore > .underline-title {
+            margin-bottom: 26px;
+        }
+
+        /* tik po pirmos pastraipos tarpa padarome */
+        .right-side > .learnMore > p:first-of-type {
+            margin-bottom: 26px;
+        }
+
+/* po teksto (p) dalies sukuriame elementa su grid, kuriame bus isvardintas listas ir pridetas parasas */
+.right-side > .row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-left: -15px;
+    margin-right: -15px;
+    color: #333333;
+    font-size: 16px;
+    gap: 30px;
+}
+
+    /* keiciantis ekranui kiti grida'ai nurodyta zemiau */
+    .right-side > .row > .col-6 { grid-column: auto / span 6; }
+
+        /* list'o dalis */
+        .right-side .left-list {
+            display: inline-block;
+            padding: 0 15px;
+        }
+
+            .right-side .left-list > ul > li {
+                position: relative;
+                display: inline-block;
+                width: calc(100% - 10px);
+                margin-bottom: 10px;
+                margin-left: 10px;
+                font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .right-side .left-list > ul > li:last-child {
+                margin-bottom: 0;
+            }
+
+                /* nurodoma koks fontawesome bus */
+                .right-side .left-list > ul > li::before {
+                    position: absolute;
+                    display: inline-block;
+                    font-family: FontAwesome;
+                    margin-bottom: 10px;
+                    margin-left: -10px;
+                    color: #01a0f9;
+                }
+
+        /* signature part */
+        .right-side .signature-side{
+            display: inline-block;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+            /* Signature of Ceo text */
+            .right-side .signature-side > span {
+                display: inline-block;
+                font-size: 13px;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+                margin-bottom: 26px;
+            }
+            
+            .right-side .signature-side > .signature-box {
+                display: inline-block;
+                width: 100%;
+            }
+
+                /* signature */
+                .right-side .signature-side > .signature-box > img {
+                    max-width: 200px;
+                    height: auto;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+
+
+/* left sekcija, picture */
+.slide-move {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:100%;
+    transform: translateX(-10px);
+    animation: slide-moving 4s ease-in-out 1s infinite;
+}
+
+
+@keyframes slide-moving {
+    0% {
+        transform: translateX(-10px);
+    }
+    10% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    90% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+
+@media (max-width: 680px) {
+    .right-side > .row > .col-xs-12 { grid-column: auto / span 12; }
+    
+    /* signature part */
+    .right-side .signature-side{
+        text-align: left;
+    }
+
+}
+
 /* ABOUT end */
 /* WHAT WE DO start */
 /* WHAT WE DO end */
