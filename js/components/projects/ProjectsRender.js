@@ -1,3 +1,4 @@
+/*
 class Project {
     constructor(params) {
         this.selector = params.selector || 'body;'
@@ -51,7 +52,7 @@ class Project {
         this.projectView = document.querySelector('.view-project');
     };
 /******************************************************************************************** */
-
+/*
 addEvents() {
     for(let i = 0; i < this.imagesDOM.length; i++) {
         const img = this.imagesDOM[i];
@@ -60,7 +61,65 @@ addEvents() {
             this.projectView.style.marginLeft = -34 * i + '%';
         })
     }
+} */
+/*********************************************************************** */ 
+/*
 }
-/*********************************************************************** */
+export { Project } */
+/******************************************************************************************** */
+function projectSlide() {
+let slides = document.querySelectorAll('.slide-single');
+let slider = [];
+let wrapper = document.querySelector('#slide')
+let flag = true;
+console.log(wrapper)
+for(let i = 0; i < slides.length; i++) {
+   slider[i] = slides[i].src;
+   slides[i].remove();
 }
-export { Project }
+
+let step = 0;
+let onMove = true;
+//let offset = 0;
+
+function draw(offset) {
+    let img = document.createElement('img');
+    img.src = slider[step];
+    img.classList.add('slide-single');
+    img.style.left = offset*33 +'%';
+    document.querySelector('#slide').appendChild(img);
+    step++;
+    if(step === slider.length) {
+        step = 0;
+    }
+} 
+
+function left() {
+    let slides2 = document.querySelectorAll('.slide-single');
+    let offset2 = 0;
+    console.log()
+    slides2[0].style.left = -33 + '%';
+    setTimeout(function() {
+    slides2[0].remove();
+    }, 2000);
+    
+    for(let i = 1; i < slides2.length; i++) {
+        slides2[i].style.left = offset2*33 + '%'; 
+        offset2++;
+    }
+    setTimeout(function(){
+       draw(3);
+    }, 2000);
+}
+draw(0);draw(1);draw(2); draw(3);
+ 
+   setInterval(function(){ if(flag){left()} }, 6000);
+
+wrapper.addEventListener('mouseover', function(){
+       flag = false;
+})
+wrapper.addEventListener('mouseout', function(){
+    flag = true;
+})
+}
+export {projectSlide}

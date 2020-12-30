@@ -14,9 +14,10 @@ import { counterOnScroll } from "./components/counter/counterOnScroll.js";
 /* services */
 import { servicesCardsData } from './data/servicesCardsData.js';
 import { servicesCardRender } from './components/servicesCardRender/servicesCardRender.js';
-/* projects */
+/* projects */ /*
 import { Project } from "./components/projects/ProjectsRender.js";
-import { projectData } from "./data/projectData.js";
+import { projectData } from "./data/projectData.js";*/
+import { projectSlide } from "./components/projects/ProjectsRender.js"
 /* news */
 /* partners */
 /* how */
@@ -47,14 +48,14 @@ counterOnScroll();
 /* services */
 servicesCardRender('#serviceRender', servicesCardsData);
 /* projects */
-//Default parametru priskirimas
+/*
 const projectParams = {
     selector: '#project-block',
     data: projectData,
     maxProjects: 7,
-    // Galimi kiti papildomi variantai, kaip rodykles, max elements ir so on...
 }
-new Project(projectParams);
+new Project(projectParams);*/
+projectSlide();
 /* news */
 /* partners */
 /* how */
