@@ -24,9 +24,7 @@ import { blogData } from './data/blogData.js';
 /* footer */
 import { copyRightRender } from './components/copyRightRender/copyRightRender.js';
 /* chat */
-// shop
-import { shopCardData } from "./data/shopCardsData.js";
-import { shopCardsRender } from "./components/shopCardsRender/shopCardRender.js";
+ 
 
 /***************
 EXECUTION
@@ -69,4 +67,3 @@ if (mediaQuery.matches) {
 copyRightRender('.copyRight');
 /* chat */
 /* shop */
-shopCardsRender('.shopCard', shopCardData);
