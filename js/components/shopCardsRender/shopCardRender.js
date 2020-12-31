@@ -24,7 +24,7 @@ function shopCardsRender(selector3, shopCardData) {
              <h3>${item.title}</h3>
              <span class="shop-price">${item.price}</span>
              <div class="btn btn-oval-shop">
-             <a href="#">Add to card</a>
+             <a href="#">Add to cart</a>
              </div>
          </div>`;
     }

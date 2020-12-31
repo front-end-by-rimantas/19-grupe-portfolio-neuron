@@ -57,7 +57,15 @@
      color: white;
      text-decoration: none;
 }
-    .shop-link a {
+.shop-link > p {
+    display: inline-block;
+    grid-column: 6 / 7;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+    .shop-link > p > a {
         display: inline-block;
         grid-column: 6 / 7;
         font-size: 18px;
@@ -65,7 +73,8 @@
         color: white;
         text-decoration: none;
     }
-    .ashop::after {
-        content: ' // ';
-        size: 20px;
-    }
+             .ashop:hover {
+                                color: grey;
+                transition: 0.5s;
+            } 
+    

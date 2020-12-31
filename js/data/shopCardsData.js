@@ -6,7 +6,7 @@ const shopCardData = [
     },
     {
         img: '2s.jpg',
-        title: 'Mini Bucket Bag in Olive',
+        title: 'Mini Bucket Bag',
         price: '25 USD',
     },
     {
