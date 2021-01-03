@@ -29,7 +29,7 @@ import { blogData } from './data/blogData.js';
 /* footer */
 import { copyRightRender } from './components/copyRightRender/copyRightRender.js';
 /* chat */
-
+ 
 
 /***************
 EXECUTION
@@ -80,3 +80,4 @@ if (mediaQuery.matches) {
 /* footer */
 copyRightRender('.copyRight');
 /* chat */
+/* shop */
