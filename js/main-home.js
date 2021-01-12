@@ -12,7 +12,12 @@ import { aboutCardsRender } from './components/aboutCardsRender/aboutCardsRender
 import { counterAnimation } from "./components/counter/counterAnimation.js";
 import { counterOnScroll } from "./components/counter/counterOnScroll.js";
 /* services */
-/* projects */
+import { servicesCardsData } from './data/servicesCardsData.js';
+import { servicesCardRender } from './components/servicesCardRender/servicesCardRender.js';
+/* projects */ /*
+import { Project } from "./components/projects/ProjectsRender.js";
+import { projectData } from "./data/projectData.js";*/
+import { projectSlide } from "./components/projects/ProjectsRender.js"
 /* news */
 /* partners */
 /* how */
@@ -24,7 +29,7 @@ import { blogData } from './data/blogData.js';
 /* footer */
 import { copyRightRender } from './components/copyRightRender/copyRightRender.js';
 /* chat */
-
+ 
 
 /***************
 EXECUTION
@@ -44,7 +49,16 @@ aboutCardsRender('.testclass1', '.testclass2', aboutCardsData);
 // counterAnimation();
 counterOnScroll();
 /* services */
+servicesCardRender('#serviceRender', servicesCardsData);
 /* projects */
+/*
+const projectParams = {
+    selector: '#project-block',
+    data: projectData,
+    maxProjects: 7,
+}
+new Project(projectParams);*/
+projectSlide();
 /* news */
 /* partners */
 /* how */
@@ -66,3 +80,4 @@ if (mediaQuery.matches) {
 /* footer */
 copyRightRender('.copyRight');
 /* chat */
+/* shop */
