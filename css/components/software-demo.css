@@ -183,3 +183,25 @@ form > input.light {
     padding: 10px 30px;
     text-transform: none;
 }
+
+@media (max-width: 1080px) {
+    .up {
+        grid-row: 1/2;
+    }
+    .col-6.topmargin2 {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    .topmargin {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    form > input.dark {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 860px) {
+    form > input.dark {
+        width: 60%;
+    }
+}
